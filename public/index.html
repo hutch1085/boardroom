@@ -415,15 +415,18 @@ body {
 
 @media (max-width: 480px) {
   html { font-size: 14px; }
-  .boardroom { height: 100vh; min-height: 600px; }
+  /* Shorter container so wide image isn't cropped as much */
+  .boardroom { height: 48vh; min-height: 280px; }
+  /* Show full image width — agents span the whole scene */
+  .boardroom img { object-fit: contain; object-position: center bottom; }
 
-  /* Boards: small, top corners, don't cover agents */
+  /* Boards: compact, float over the dark space above the image */
   .screen-holdings, .screen-aggregate {
-    width: 47%;
-    max-height: 28%;
+    width: 48%;
+    max-height: 52%;
   }
-  .screen-holdings { left: 1%; top: 6%; }
-  .screen-aggregate { right: 1%; top: 6%; }
+  .screen-holdings { left: 1%; top: 2%; }
+  .screen-aggregate { right: 1%; top: 2%; }
   .screen-body { font-size: 0.55rem; padding: 2px 4px; max-height: 80px; }
   .screen-summary { font-size: 0.5rem; padding: 3px 4px; }
   .screen-overlay .screen-title { font-size: 0.55rem; padding: 4px 6px; }
@@ -438,19 +441,19 @@ body {
   .history-chart-area { height: 50px !important; min-height: 40px !important; }
   .chart-label { font-size: 0.45rem; }
 
-  /* Agent nameplates: visible below hero midpoint */
-  .nameplate { font-size: 0.5rem; padding: 2px 6px; bottom: 12%; }
+  /* Agent nameplates: sit at bottom of image area */
+  .nameplate { font-size: 0.5rem; padding: 2px 6px; bottom: 3%; }
   .nameplate.dawn  { left: 13%; }
   .nameplate.noon  { left: 38%; }
   .nameplate.close { left: 63%; }
   .nameplate.night { left: 88%; }
   .nameplate .plate-time { display: none; }
-  .nameplate .plate-avatar { width: 26px; height: 26px; }
+  .nameplate .plate-avatar { width: 22px; height: 22px; }
 
-  /* Speech bubbles: hide on small screens to avoid clutter */
+  /* Speech bubbles: hide on small screens */
   .agent-bubbles { display: none; }
 
-  .chat-log { height: 160px; }
+  .chat-log { height: 180px; }
   .bottom-section { padding: 4px 8px 6px; }
 }
 </style>
