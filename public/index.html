@@ -426,8 +426,8 @@ body {
 
 @media (max-width: 480px) {
   html { font-size: 14px; }
-  /* Shorter container — contain keeps all agents visible */
-  .boardroom { height: 48vh; min-height: 280px; }
+  /* Taller container — room for boards on top, agents below */
+  .boardroom { height: 56vh; min-height: 320px; }
   .boardroom img { object-fit: contain; object-position: center bottom; }
   /* Gentle gradient — new image has no speech bubbles */
   .boardroom-dim {
@@ -440,10 +440,10 @@ body {
       var(--bg) 100%);
   }
 
-  /* Boards: bigger, fill the space */
+  /* Boards: at the top, sized to fit above agents */
   .screen-holdings, .screen-aggregate {
     width: 48%;
-    max-height: 42%;
+    max-height: 36%;
   }
   .screen-holdings { left: 1%; top: 11%; }
   .screen-aggregate { right: 1%; top: 11%; }
@@ -461,7 +461,7 @@ body {
   .history-chart-area { height: 50px !important; min-height: 40px !important; }
   .chart-label { font-size: 0.45rem; }
 
-  /* Nameplates: small, at very bottom edge */
+  /* Nameplates: at bottom near agents */
   .nameplate { font-size: 0.45rem; padding: 2px 5px; bottom: 1%; }
   .plate-badge { font-size: 0.35rem; }
   .nameplate.dawn  { left: 10%; }
