@@ -96,7 +96,7 @@ body {
   z-index: 10;
 }
 .screen-overlay .screen-title {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -108,17 +108,17 @@ body {
 
 /* LEFT SCREEN — Positions */
 .screen-holdings {
-  top: 8%;
-  left: 2%;
-  width: 33%;
-  max-height: 42%;
+  top: 6%;
+  left: 1.5%;
+  width: 38%;
+  max-height: 52%;
 }
 /* RIGHT SCREEN — Aggregate */
 .screen-aggregate {
-  top: 8%;
-  right: 2%;
-  width: 33%;
-  max-height: 42%;
+  top: 6%;
+  right: 1.5%;
+  width: 38%;
+  max-height: 52%;
 }
 
 .screen-body {
@@ -126,7 +126,7 @@ body {
   overflow-y: auto;
   max-height: calc(100% - 28px);
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.6rem;
+  font-size: 0.82rem;
 }
 .screen-body::-webkit-scrollbar { width: 3px; }
 .screen-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
@@ -136,9 +136,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 6px 12px;
-  padding: 4px 6px;
+  padding: 5px 8px;
   background: rgba(26,31,46,0.7);
-  font-size: 0.58rem;
+  font-size: 0.72rem;
   font-family: 'JetBrains Mono', monospace;
   color: var(--text-dim);
   border-bottom: 1px solid rgba(42,48,64,0.4);
@@ -156,9 +156,9 @@ body {
   border-bottom: 1px solid rgba(42,48,64,0.3);
 }
 .h-row:last-child { border-bottom: none; }
-.h-sym { font-weight: 700; color: var(--text); font-size: 0.62rem; min-width: 36px; }
-.h-val { color: var(--text-dim); font-size: 0.55rem; }
-.h-pnl { font-weight: 600; font-size: 0.58rem; }
+.h-sym { font-weight: 700; color: var(--text); font-size: 0.82rem; min-width: 40px; }
+.h-val { color: var(--text-dim); font-size: 0.72rem; }
+.h-pnl { font-weight: 600; font-size: 0.75rem; }
 .h-pnl.up { color: var(--green); }
 .h-pnl.down { color: var(--red); }
 .h-pnl.loading { color: var(--text-dim); }
@@ -170,19 +170,19 @@ body {
   border-bottom: 1px solid rgba(42,48,64,0.4);
 }
 .agg-label {
-  font-size: 0.5rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-dim);
   margin-bottom: 2px;
 }
 .agg-value {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 700;
   font-family: 'JetBrains Mono', monospace;
 }
 .agg-sub {
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   color: var(--text-dim);
   font-family: 'JetBrains Mono', monospace;
   margin-top: 2px;
@@ -192,7 +192,7 @@ body {
   justify-content: space-around;
   padding: 4px 6px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.52rem;
+  font-size: 0.68rem;
   color: var(--text-dim);
   border-bottom: 1px solid rgba(42,48,64,0.3);
 }
@@ -208,7 +208,7 @@ body {
   display: block;
 }
 .chart-label {
-  font-size: 0.45rem;
+  font-size: 0.6rem;
   color: var(--text-dim);
   font-family: 'JetBrains Mono', monospace;
   text-align: center;
@@ -223,7 +223,7 @@ body {
   backdrop-filter: blur(8px);
   border-radius: 6px;
   padding: 4px 12px;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -231,12 +231,28 @@ body {
   white-space: nowrap;
   text-align: center;
 }
-.nameplate.dawn  { bottom: 32%; left: 10%;  color: var(--dawn);  border-color: rgba(255,159,67,0.5); transform: translateX(-50%); }
-.nameplate.noon  { bottom: 32%; left: 35%;  color: var(--noon);  border-color: rgba(59,130,246,0.5);  transform: translateX(-50%); }
-.nameplate.close { bottom: 32%; left: 63%;  color: var(--close); border-color: rgba(233,30,99,0.5);   transform: translateX(-50%); }
-.nameplate.night { bottom: 32%; left: 88%;  color: var(--night); border-color: rgba(124,77,255,0.5);  transform: translateX(-50%); }
+.nameplate .plate-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 4px;
+  object-fit: cover;
+  border: 2px solid;
+  border-color: inherit;
+}
+.nameplate .plate-avatar-emoji {
+  font-size: 1.6rem;
+  display: none;
+  margin-bottom: 2px;
+  line-height: 1;
+}
+.nameplate.dawn  { bottom: 28%; left: 10%;  color: var(--dawn);  border-color: rgba(255,159,67,0.5); transform: translateX(-50%); }
+.nameplate.noon  { bottom: 28%; left: 35%;  color: var(--noon);  border-color: rgba(59,130,246,0.5);  transform: translateX(-50%); }
+.nameplate.close { bottom: 28%; left: 63%;  color: var(--close); border-color: rgba(233,30,99,0.5);   transform: translateX(-50%); }
+.nameplate.night { bottom: 28%; left: 88%;  color: var(--night); border-color: rgba(124,77,255,0.5);  transform: translateX(-50%); }
 .nameplate .plate-time {
-  font-size: 0.48rem;
+  font-size: 0.58rem;
   font-weight: 500;
   color: var(--text-dim);
   display: block;
@@ -246,7 +262,7 @@ body {
 /* === SPEECH BUBBLES === */
 .agent-bubbles {
   position: absolute;
-  bottom: 38%;
+  bottom: 34%;
   left: 2%;
   right: 2%;
   display: flex;
@@ -260,7 +276,7 @@ body {
   backdrop-filter: blur(12px);
   border-radius: 10px;
   padding: 8px 12px;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   line-height: 1.4;
   max-width: 22%;
   border: 1px solid var(--border);
@@ -292,7 +308,7 @@ body {
   position: relative;
   z-index: 50;
   background: var(--bg);
-  padding: 16px 20px 20px;
+  padding: 8px 20px 10px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -312,9 +328,9 @@ body {
   color: var(--accent);
 }
 .chat-log {
-  height: 260px;
+  height: 150px;
   overflow-y: auto;
-  padding: 12px;
+  padding: 8px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -422,17 +438,18 @@ body {
   }
   .screen-holdings { left: 1%; top: 7%; }
   .screen-aggregate { right: 1%; top: 7%; }
-  .screen-body { font-size: 0.52rem; }
-  .screen-summary { font-size: 0.5rem; gap: 4px 8px; }
-  .h-sym { font-size: 0.55rem; }
-  .agg-value { font-size: 0.9rem; }
-  .agg-label { font-size: 0.45rem; }
-  .nameplate { font-size: 0.55rem; padding: 3px 8px; }
-  .nameplate .plate-time { font-size: 0.4rem; }
-  .speech-bubble { max-width: 30%; font-size: 0.62rem; padding: 6px 8px; }
-  .agent-bubbles { bottom: 35%; }
-  .chat-log { height: 200px; }
-  .bottom-section { padding: 12px; }
+  .screen-body { font-size: 0.68rem; }
+  .screen-summary { font-size: 0.6rem; gap: 4px 8px; }
+  .h-sym { font-size: 0.68rem; }
+  .agg-value { font-size: 1.1rem; }
+  .agg-label { font-size: 0.55rem; }
+  .nameplate { font-size: 0.65rem; padding: 4px 10px; }
+  .nameplate .plate-time { font-size: 0.48rem; }
+  .nameplate .plate-avatar { width: 36px; height: 36px; }
+  .speech-bubble { max-width: 30%; font-size: 0.7rem; padding: 6px 8px; }
+  .agent-bubbles { bottom: 32%; }
+  .chat-log { height: 130px; }
+  .bottom-section { padding: 6px 12px 8px; }
 }
 
 @media (max-width: 480px) {
@@ -442,17 +459,18 @@ body {
     width: 48%;
     max-height: 38%;
   }
-  .screen-body { font-size: 0.48rem; padding: 2px 4px; }
-  .screen-summary { font-size: 0.46rem; padding: 3px 4px; }
-  .screen-overlay .screen-title { font-size: 0.5rem; padding: 4px 6px; }
+  .screen-body { font-size: 0.58rem; padding: 2px 4px; }
+  .screen-summary { font-size: 0.52rem; padding: 3px 4px; }
+  .screen-overlay .screen-title { font-size: 0.55rem; padding: 4px 6px; }
   .h-row { padding: 2px 3px; }
-  .agg-value { font-size: 0.75rem; }
-  .agg-sub { font-size: 0.48rem; }
-  .agg-row { font-size: 0.46rem; }
-  .nameplate { font-size: 0.48rem; padding: 2px 6px; bottom: 28%; }
+  .agg-value { font-size: 0.9rem; }
+  .agg-sub { font-size: 0.52rem; }
+  .agg-row { font-size: 0.52rem; }
+  .nameplate { font-size: 0.52rem; padding: 2px 6px; bottom: 24%; }
   .nameplate .plate-time { display: none; }
-  .speech-bubble { max-width: 40%; font-size: 0.56rem; }
-  .agent-bubbles { bottom: 32%; flex-wrap: wrap; justify-content: center; }
+  .nameplate .plate-avatar { width: 28px; height: 28px; }
+  .speech-bubble { max-width: 40%; font-size: 0.6rem; }
+  .agent-bubbles { bottom: 28%; flex-wrap: wrap; justify-content: center; }
 }
 </style>
 </head>
@@ -496,10 +514,10 @@ body {
   </div>
 
   <!-- AGENT NAMEPLATES -->
-  <div class="nameplate dawn">&#x2600;&#xFE0F; Dawn<span class="plate-time">6AM HST</span></div>
-  <div class="nameplate noon">&#x1F4CA; Noon<span class="plate-time">12PM HST</span></div>
-  <div class="nameplate close">&#x1F6E1;&#xFE0F; Close<span class="plate-time">4PM HST</span></div>
-  <div class="nameplate night">&#x1F989; Night<span class="plate-time">8PM HST</span></div>
+  <div class="nameplate dawn"><img class="plate-avatar" src="dawn.webp" alt="Dawn" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x2615;</span>Dawn<span class="plate-time">6AM HST</span></div>
+  <div class="nameplate noon"><img class="plate-avatar" src="noon.webp" alt="Noon" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x1F3C4;</span>Noon<span class="plate-time">12PM HST</span></div>
+  <div class="nameplate close"><img class="plate-avatar" src="close.webp" alt="Close" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x1F913;</span>Close<span class="plate-time">4PM HST</span></div>
+  <div class="nameplate night"><img class="plate-avatar" src="night.webp" alt="Night" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x1F9DB;</span>Night<span class="plate-time">8PM HST</span></div>
 
   <!-- SPEECH BUBBLES -->
   <div class="agent-bubbles">
@@ -597,10 +615,10 @@ let pricesLoaded = false;
 let historyData = []; // [{date, value}]
 
 const AGENTS = {
-  dawn:  { name:'Dawn',  color:'#FF9F43', bg:'rgba(255,159,67,0.15)', icon:'☀️' },
-  noon:  { name:'Noon',  color:'#3b82f6', bg:'rgba(59,130,246,0.15)', icon:'📊' },
-  close: { name:'Close', color:'#E91E63', bg:'rgba(233,30,99,0.15)',  icon:'🛡️' },
-  night: { name:'Night', color:'#7C4DFF', bg:'rgba(124,77,255,0.15)', icon:'🦉' },
+  dawn:  { name:'Dawn',  color:'#FF9F43', bg:'rgba(255,159,67,0.15)', icon:'☕' },
+  noon:  { name:'Noon',  color:'#3b82f6', bg:'rgba(59,130,246,0.15)', icon:'🏄' },
+  close: { name:'Close', color:'#E91E63', bg:'rgba(233,30,99,0.15)',  icon:'🤓' },
+  night: { name:'Night', color:'#7C4DFF', bg:'rgba(124,77,255,0.15)', icon:'🧛' },
 };
 
 // ============================================================
