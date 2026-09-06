@@ -431,10 +431,10 @@ body {
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
-  .boardroom { height: 70vh; min-height: 400px; }
+  .boardroom { height: 80vh; min-height: 500px; }
   .screen-holdings, .screen-aggregate {
     width: 46%;
-    max-height: 40%;
+    max-height: 35%;
   }
   .screen-holdings { left: 1%; top: 7%; }
   .screen-aggregate { right: 1%; top: 7%; }
@@ -443,34 +443,60 @@ body {
   .h-sym { font-size: 0.68rem; }
   .agg-value { font-size: 1.1rem; }
   .agg-label { font-size: 0.55rem; }
-  .nameplate { font-size: 0.65rem; padding: 4px 10px; }
+  .nameplate { font-size: 0.65rem; padding: 4px 10px; bottom: 20%; }
   .nameplate .plate-time { font-size: 0.48rem; }
   .nameplate .plate-avatar { width: 36px; height: 36px; }
   .speech-bubble { max-width: 30%; font-size: 0.7rem; padding: 6px 8px; }
-  .agent-bubbles { bottom: 32%; }
+  .agent-bubbles { bottom: 28%; }
   .chat-log { height: 80px; }
   .bottom-section { padding: 4px 12px 6px; }
 }
 
 @media (max-width: 480px) {
   html { font-size: 14px; }
-  .boardroom { height: 55vh; min-height: 320px; }
+  .boardroom { height: auto; min-height: 100vh; }
+
+  /* Stack boards at top, full width */
   .screen-holdings, .screen-aggregate {
-    width: 48%;
-    max-height: 38%;
+    position: relative;
+    width: 96%;
+    max-height: none;
+    margin: 0 auto 4px;
+    top: auto; left: auto; right: auto;
+    transform: none;
   }
-  .screen-body { font-size: 0.58rem; padding: 2px 4px; }
-  .screen-summary { font-size: 0.52rem; padding: 3px 4px; }
-  .screen-overlay .screen-title { font-size: 0.55rem; padding: 4px 6px; }
-  .h-row { padding: 2px 3px; }
-  .agg-value { font-size: 0.9rem; }
-  .agg-sub { font-size: 0.52rem; }
-  .agg-row { font-size: 0.52rem; }
-  .nameplate { font-size: 0.52rem; padding: 2px 6px; bottom: 24%; }
+  .screen-holdings { margin-top: 48px; }
+  .screen-body { font-size: 0.72rem; padding: 4px 6px; max-height: 120px; }
+  .screen-summary { font-size: 0.6rem; padding: 4px 6px; }
+  .screen-overlay .screen-title { font-size: 0.65rem; padding: 5px 8px; }
+  .h-row { padding: 3px 4px; }
+  .agg-value { font-size: 1.1rem; }
+  .agg-sub { font-size: 0.6rem; }
+  .agg-row { font-size: 0.6rem; }
+  .history-chart-area { height: 80px !important; min-height: 60px !important; }
+
+  /* Hero image visible between boards and agents */
+  .boardroom img { min-height: 100vh; }
+
+  /* Agent nameplates in a row near bottom */
+  .nameplate {
+    font-size: 0.58rem;
+    padding: 3px 8px;
+    bottom: 14%;
+  }
+  .nameplate.dawn  { left: 13%; }
+  .nameplate.noon  { left: 38%; }
+  .nameplate.close { left: 63%; }
+  .nameplate.night { left: 88%; }
   .nameplate .plate-time { display: none; }
-  .nameplate .plate-avatar { width: 28px; height: 28px; }
-  .speech-bubble { max-width: 40%; font-size: 0.6rem; }
-  .agent-bubbles { bottom: 28%; flex-wrap: wrap; justify-content: center; }
+  .nameplate .plate-avatar { width: 32px; height: 32px; }
+
+  /* Speech bubbles above nameplates */
+  .speech-bubble { max-width: 44%; font-size: 0.62rem; padding: 5px 8px; }
+  .agent-bubbles { bottom: 22%; flex-wrap: wrap; justify-content: center; gap: 4px; }
+
+  .chat-log { height: 80px; }
+  .bottom-section { padding: 4px 8px 6px; }
 }
 </style>
 </head>
