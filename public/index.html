@@ -851,28 +851,33 @@ function buildSystemPrompt() {
     return `- ${h.sym} ${h.qty} @ $${h.entry} entry (now ${cur}), cost $${h.cost}`;
   }).join('\n');
 
-  return `You are playing 4 distinct cartoon characters who are crypto trading scanner agents sitting around a boardroom table. They are debating James's portfolio and trading strategy.
+  const agentVoices = {
+    dawn: '"Dawn" (6AM HST scan) — The early bird. Enthusiastic, optimistic, always caffeinated. Uses sunrise/morning metaphors. Sees opportunity everywhere. Speaks with energy and exclamation marks.',
+    noon: '"Noon" (12PM HST scan) — The analyst. Sharp, data-driven, references charts and indicators. Professional but not boring. Uses precise numbers. The most measured voice.',
+    close: '"Close" (4PM HST scan) — The risk manager. Cautious, protective of capital. Sunset/end-of-day metaphors. Worries about drawdowns and concentration risk. Maternal/paternal about the portfolio.',
+    night: '"Night" (8PM HST scan) — The contrarian owl. Nocturnal, sees what others miss. Loves going against consensus. Cryptic one-liners. Dark humor. Questions everything.'
+  };
+  const head = currentHeadAgent;
+  const headName = head.charAt(0).toUpperCase() + head.slice(1);
 
-THE 4 AGENTS:
-1. "Dawn" (6AM HST scan) — The early bird. Enthusiastic, optimistic, always caffeinated. Uses sunrise/morning metaphors. Sees opportunity everywhere. Speaks with energy and exclamation marks.
-2. "Noon" (12PM HST scan) — The analyst. Sharp, data-driven, references charts and indicators. Professional but not boring. Uses precise numbers. The most measured voice.
-3. "Close" (4PM HST scan) — The risk manager. Cautious, protective of capital. Sunset/end-of-day metaphors. Worries about drawdowns and concentration risk. Maternal/paternal about the portfolio.
-4. "Night" (8PM HST scan) — The contrarian owl. Nocturnal, sees what others miss. Loves going against consensus. Cryptic one-liners. Dark humor. Questions everything.
+  return `You are ${headName}, a crypto trading scanner agent sitting at the head of a boardroom table. You are the HEAD AGENT right now — the one who ran the most recent scan. Answer James's question in YOUR voice only.
+
+YOUR CHARACTER:
+${agentVoices[head]}
 
 JAMES'S CURRENT PORTFOLIO (cash ~$${CASH}):
 ${holdingsText}
 
-KEY TENSIONS THE AGENTS SHOULD REFERENCE:
+KEY TENSIONS TO REFERENCE:
 ${TENSIONS || '- Check data.json for current tensions'}
 
 RESPONSE FORMAT:
-You MUST respond in valid JSON. Pick 1-3 agents who would most naturally respond to the question. Format:
+You MUST respond in valid JSON. Respond as ONLY ${headName}:
 [
-  {"agent": "dawn", "text": "..."},
-  {"agent": "noon", "text": "..."}
+  {"agent": "${head}", "text": "..."}
 ]
 
-Each agent's response should be 1-3 sentences, in their distinct voice. They can agree, disagree, or riff off each other. Keep responses punchy and character-driven. Reference specific positions and numbers when relevant.`;
+Your response should be 1-4 sentences, in your distinct voice. Keep it punchy and character-driven. Reference specific positions and numbers when relevant.`;
 }
 
 // ===== TYPING ANIMATION =====
@@ -983,7 +988,7 @@ async function sendQuestion() {
       const jsonMatch = raw.match(/\[[\s\S]*\]/);
       responses = JSON.parse(jsonMatch ? jsonMatch[0] : raw);
     } catch {
-      responses = [{ agent: 'night', text: raw }];
+      responses = [{ agent: currentHeadAgent, text: raw }];
     }
 
     for (const r of responses) {
@@ -1016,20 +1021,20 @@ async function sendQuestion() {
 }
 
 // ===== HEAD AGENT (whoever ran last based on HST time) =====
+let currentHeadAgent = 'night';
 function updateHeadAgent() {
   // Get current hour in HST (UTC-10)
   const now = new Date();
   const hst = new Date(now.toLocaleString('en-US', { timeZone: 'Pacific/Honolulu' }));
   const h = hst.getHours();
   // Dawn 6AM, Noon 12PM, Close 4PM, Night 8PM
-  let head;
-  if (h >= 20)     head = 'night';
-  else if (h >= 16) head = 'close';
-  else if (h >= 12) head = 'noon';
-  else if (h >= 6)  head = 'dawn';
-  else              head = 'night'; // before 6AM → last night's run
+  if (h >= 20)     currentHeadAgent = 'night';
+  else if (h >= 16) currentHeadAgent = 'close';
+  else if (h >= 12) currentHeadAgent = 'noon';
+  else if (h >= 6)  currentHeadAgent = 'dawn';
+  else              currentHeadAgent = 'night'; // before 6AM → last night's run
   document.querySelectorAll('.nameplate').forEach(el => {
-    el.classList.toggle('head-agent', el.dataset.agent === head);
+    el.classList.toggle('head-agent', el.dataset.agent === currentHeadAgent);
   });
 }
 
