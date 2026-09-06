@@ -85,10 +85,10 @@ body {
   pointer-events: none;
 }
 
-/* === OVERLAY BOARDS (positioned on the screens in the image) === */
+/* === OVERLAY BOARDS === */
 .screen-overlay {
   position: absolute;
-  background: rgba(11,14,20,0.82);
+  background: rgba(11,14,20,0.85);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(99,102,241,0.3);
   border-radius: 6px;
@@ -104,18 +104,18 @@ body {
   border-bottom: 1px solid rgba(42,48,64,0.5);
 }
 .screen-title.holdings { color: var(--green); }
-.screen-title.watchlist { color: var(--blue); }
+.screen-title.aggregate { color: var(--accent); }
 
-/* LEFT SCREEN — Holdings */
+/* LEFT SCREEN — Positions */
 .screen-holdings {
-  top: 4%;
+  top: 8%;
   left: 2%;
   width: 33%;
   max-height: 42%;
 }
-/* RIGHT SCREEN — Watchlist */
-.screen-watchlist {
-  top: 4%;
+/* RIGHT SCREEN — Aggregate */
+.screen-aggregate {
+  top: 8%;
   right: 2%;
   width: 33%;
   max-height: 42%;
@@ -163,40 +163,56 @@ body {
 .h-pnl.down { color: var(--red); }
 .h-pnl.loading { color: var(--text-dim); }
 
-/* Mini watchlist row */
-.w-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3px 4px;
-  border-bottom: 1px solid rgba(42,48,64,0.3);
-}
-.w-row:last-child { border-bottom: none; }
-.w-sym { font-weight: 700; color: var(--text); font-size: 0.62rem; }
-.w-price { color: var(--text-dim); font-size: 0.58rem; }
-.w-chg { font-size: 0.52rem; }
-.w-chg.up { color: var(--green); }
-.w-chg.down { color: var(--red); }
-.w-exited {
-  font-size: 0.45rem;
-  background: var(--red);
-  color: white;
-  padding: 0 3px;
-  border-radius: 2px;
-  margin-left: 3px;
-  font-weight: 600;
-}
-
-/* === CHART OVERLAY (on holdings screen) === */
-.chart-area {
-  height: 50px;
-  padding: 2px 4px;
+/* === AGGREGATE P&L PANEL === */
+.agg-big {
+  padding: 8px 10px;
+  text-align: center;
   border-bottom: 1px solid rgba(42,48,64,0.4);
 }
-.chart-area canvas {
+.agg-label {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  margin-bottom: 2px;
+}
+.agg-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+.agg-sub {
+  font-size: 0.55rem;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 2px;
+}
+.agg-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 4px 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.52rem;
+  color: var(--text-dim);
+  border-bottom: 1px solid rgba(42,48,64,0.3);
+}
+.agg-row strong { color: var(--text); }
+
+/* 4-week chart */
+.history-chart-area {
+  padding: 4px 6px 2px;
+}
+.history-chart-area canvas {
   width: 100%;
   height: 100%;
   display: block;
+}
+.chart-label {
+  font-size: 0.45rem;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+  padding: 0 0 3px;
 }
 
 /* === AGENT NAMEPLATES === */
@@ -227,7 +243,7 @@ body {
   letter-spacing: 0.04em;
 }
 
-/* === SPEECH BUBBLES (overlaid on hero) === */
+/* === SPEECH BUBBLES === */
 .agent-bubbles {
   position: absolute;
   bottom: 38%;
@@ -271,7 +287,7 @@ body {
 .bubble-agent.close { color: var(--close); }
 .bubble-agent.night { color: var(--purple); }
 
-/* === BOTTOM SECTION (Chat below the scene) === */
+/* === BOTTOM SECTION (Chat) === */
 .bottom-section {
   position: relative;
   z-index: 50;
@@ -400,40 +416,43 @@ body {
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
   .boardroom { height: 70vh; min-height: 400px; }
-  .screen-holdings, .screen-watchlist {
+  .screen-holdings, .screen-aggregate {
     width: 46%;
-    max-height: 38%;
+    max-height: 40%;
   }
-  .screen-holdings { left: 1%; top: 3%; }
-  .screen-watchlist { right: 1%; top: 3%; }
+  .screen-holdings { left: 1%; top: 7%; }
+  .screen-aggregate { right: 1%; top: 7%; }
   .screen-body { font-size: 0.52rem; }
   .screen-summary { font-size: 0.5rem; gap: 4px 8px; }
-  .h-sym, .w-sym { font-size: 0.55rem; }
+  .h-sym { font-size: 0.55rem; }
+  .agg-value { font-size: 0.9rem; }
+  .agg-label { font-size: 0.45rem; }
   .nameplate { font-size: 0.55rem; padding: 3px 8px; }
   .nameplate .plate-time { font-size: 0.4rem; }
   .speech-bubble { max-width: 30%; font-size: 0.62rem; padding: 6px 8px; }
   .agent-bubbles { bottom: 35%; }
   .chat-log { height: 200px; }
   .bottom-section { padding: 12px; }
-  .chart-area { height: 36px; }
 }
 
 @media (max-width: 480px) {
   html { font-size: 14px; }
   .boardroom { height: 55vh; min-height: 320px; }
-  .screen-holdings, .screen-watchlist {
+  .screen-holdings, .screen-aggregate {
     width: 48%;
-    max-height: 35%;
+    max-height: 38%;
   }
   .screen-body { font-size: 0.48rem; padding: 2px 4px; }
   .screen-summary { font-size: 0.46rem; padding: 3px 4px; }
   .screen-overlay .screen-title { font-size: 0.5rem; padding: 4px 6px; }
-  .h-row, .w-row { padding: 2px 3px; }
+  .h-row { padding: 2px 3px; }
+  .agg-value { font-size: 0.75rem; }
+  .agg-sub { font-size: 0.48rem; }
+  .agg-row { font-size: 0.46rem; }
   .nameplate { font-size: 0.48rem; padding: 2px 6px; bottom: 28%; }
   .nameplate .plate-time { display: none; }
   .speech-bubble { max-width: 40%; font-size: 0.56rem; }
   .agent-bubbles { bottom: 32%; flex-wrap: wrap; justify-content: center; }
-  .chart-area { height: 28px; }
 }
 </style>
 </head>
@@ -450,31 +469,37 @@ body {
   <img src="boardroom-hero.jpg" alt="Four AI trading agents around a boardroom table">
   <div class="boardroom-dim"></div>
 
-  <!-- HOLDINGS SCREEN OVERLAY (left screen in image) -->
+  <!-- LEFT SCREEN — Individual Positions -->
   <div class="screen-overlay screen-holdings">
-    <div class="screen-title holdings">Holdings</div>
+    <div class="screen-title holdings">Positions</div>
     <div id="holdingsSummary" class="screen-summary">
       <span>Loading prices...</span>
     </div>
-    <div class="chart-area"><canvas id="portfolioChart"></canvas></div>
     <div class="screen-body" id="holdingsRows">
-      <div style="padding:8px;text-align:center;color:var(--text-dim)">⏳</div>
+      <div style="padding:8px;text-align:center;color:var(--text-dim)">&#x23F3;</div>
     </div>
   </div>
 
-  <!-- WATCHLIST SCREEN OVERLAY (right screen in image) -->
-  <div class="screen-overlay screen-watchlist">
-    <div class="screen-title watchlist">Watchlist</div>
-    <div class="screen-body" id="watchlistRows">
-      <div style="padding:8px;text-align:center;color:var(--text-dim)">⏳</div>
+  <!-- RIGHT SCREEN — Aggregate P&L + 4-Week Chart -->
+  <div class="screen-overlay screen-aggregate">
+    <div class="screen-title aggregate">Portfolio</div>
+    <div id="aggPanel" class="agg-big">
+      <div class="agg-label">Total P&amp;L</div>
+      <div class="agg-value" id="aggPnl" style="color:var(--text-dim)">Loading...</div>
+      <div class="agg-sub" id="aggSub"></div>
     </div>
+    <div id="aggDetails" class="agg-row"></div>
+    <div class="history-chart-area" style="height:calc(100% - 110px);min-height:60px;">
+      <canvas id="historyChart"></canvas>
+    </div>
+    <div class="chart-label" id="chartLabel">4-Week Performance</div>
   </div>
 
   <!-- AGENT NAMEPLATES -->
-  <div class="nameplate dawn">☀️ Dawn<span class="plate-time">6AM HST</span></div>
-  <div class="nameplate noon">📊 Noon<span class="plate-time">12PM HST</span></div>
-  <div class="nameplate close">🛡️ Close<span class="plate-time">4PM HST</span></div>
-  <div class="nameplate night">🦉 Night<span class="plate-time">8PM HST</span></div>
+  <div class="nameplate dawn">&#x2600;&#xFE0F; Dawn<span class="plate-time">6AM HST</span></div>
+  <div class="nameplate noon">&#x1F4CA; Noon<span class="plate-time">12PM HST</span></div>
+  <div class="nameplate close">&#x1F6E1;&#xFE0F; Close<span class="plate-time">4PM HST</span></div>
+  <div class="nameplate night">&#x1F989; Night<span class="plate-time">8PM HST</span></div>
 
   <!-- SPEECH BUBBLES -->
   <div class="agent-bubbles">
@@ -528,19 +553,7 @@ let HOLDINGS = [
   { sym:'LTC', id:'ltc-litecoin', qty:3.84515721, entry:52.01, date:'Sep 4', cost:200.00 },
   { sym:'DOT', id:'dot-polkadot', qty:154.152, entry:0.908, date:'Sep 4', cost:140.00 },
 ];
-let WATCHLIST = [
-  { sym:'XRP', id:'xrp-xrp' },
-  { sym:'DOGE', id:'doge-dogecoin' },
-  { sym:'SHIB', id:'shib-shiba-inu' },
-  { sym:'AVAX', id:'avax-avalanche' },
-  { sym:'PEPE', id:'pepe-pepe' },
-  { sym:'XLM', id:'xlm-stellar', recentlyExited:true },
-  { sym:'HYPE', id:'hype-hyperliquid', recentlyExited:true },
-  { sym:'ETC', id:'etc-ethereum-classic' },
-  { sym:'BCH', id:'bch-bitcoin-cash' },
-  { sym:'ENS', id:'ens-ethereum-name-service' },
-  { sym:'ARB', id:'arb-arbitrum', recentlyExited:true },
-];
+let WATCHLIST = [];
 let CASH = 105;
 let TENSIONS = '';
 let OPENING = [];
@@ -571,6 +584,7 @@ async function loadPortfolioData() {
 // ============================================================
 let priceCache = {};
 let pricesLoaded = false;
+let historyData = []; // [{date, value}]
 
 const AGENTS = {
   dawn:  { name:'Dawn',  color:'#FF9F43', bg:'rgba(255,159,67,0.15)', icon:'☀️' },
@@ -596,9 +610,63 @@ async function fetchAllPrices() {
   });
   pricesLoaded = Object.keys(priceCache).length > 0;
   renderHoldings();
-  renderWatchlist();
-  drawChart();
+  renderAggregate();
   updateTimestamp();
+}
+
+// ============================================================
+// === FETCH 4-WEEK HISTORICAL PRICES ===
+// ============================================================
+async function fetchHistoricalPrices() {
+  const now = new Date();
+  const start = new Date(now);
+  start.setDate(start.getDate() - 28);
+  const startStr = start.toISOString().split('T')[0];
+
+  // Fetch daily historical data for each holding
+  const holdingIds = [...new Set(HOLDINGS.map(h => h.id))];
+  const histResults = await Promise.allSettled(
+    holdingIds.map(id =>
+      fetch(`https://api.coinpaprika.com/v1/tickers/${id}/historical?start=${startStr}&interval=1d`)
+        .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    )
+  );
+
+  // Build a map: coinId -> [{timestamp, price}]
+  const histMap = {};
+  histResults.forEach((r, i) => {
+    if (r.status === 'fulfilled' && Array.isArray(r.value)) {
+      histMap[holdingIds[i]] = r.value.map(d => ({
+        date: d.timestamp.split('T')[0],
+        price: d.price
+      }));
+    }
+  });
+
+  // Get all unique dates across all coins
+  const allDates = new Set();
+  Object.values(histMap).forEach(arr => arr.forEach(d => allDates.add(d.date)));
+  const sortedDates = [...allDates].sort();
+
+  // Calculate daily portfolio value
+  const totalCost = HOLDINGS.reduce((s, h) => s + h.cost, 0);
+  historyData = sortedDates.map(date => {
+    let dayValue = 0;
+    let allFound = true;
+    for (const h of HOLDINGS) {
+      const coinHist = histMap[h.id];
+      if (!coinHist) { allFound = false; continue; }
+      const dayData = coinHist.find(d => d.date === date);
+      if (dayData) {
+        dayValue += h.qty * dayData.price;
+      } else {
+        allFound = false;
+      }
+    }
+    return { date, value: dayValue, pnl: dayValue - totalCost, complete: allFound };
+  }).filter(d => d.complete && d.value > 0);
+
+  drawHistoryChart();
 }
 
 function updateTimestamp() {
@@ -621,7 +689,7 @@ function fmtCompact(n) {
 }
 
 // ============================================================
-// === RENDER HOLDINGS (compact rows for screen overlay) ===
+// === RENDER HOLDINGS (left screen — positions only) ===
 // ============================================================
 function renderHoldings() {
   const container = document.getElementById('holdingsRows');
@@ -646,28 +714,66 @@ function renderHoldings() {
   }
   container.innerHTML = html;
 
-  // Summary — only show P&L when prices are loaded
+  // Summary bar
   if (!pricesLoaded || loaded === 0) {
-    summaryEl.innerHTML = `<span>Portfolio: <strong>Loading...</strong></span>
-      <span>Cost: <strong>${fmtUSD(totalCost)}</strong></span>
-      <span>Cash: <strong style="color:var(--blue)">~$${CASH}</strong></span>`;
+    summaryEl.innerHTML = `<span>Cost: <strong>${fmtUSD(totalCost)}</strong></span>
+      <span>Cash: <strong style="color:var(--blue)">~$${CASH}</strong></span>
+      <span>Prices: <strong style="color:var(--text-dim)">Loading...</strong></span>`;
   } else {
     const pnl = totalValue - totalCost;
     const pnlPct = totalCost > 0 ? (pnl / totalCost) * 100 : 0;
     const up = pnl >= 0;
     summaryEl.innerHTML = `<span>Val: <strong>${fmtCompact(totalValue)}</strong></span>
       <span>Cost: <strong>${fmtCompact(totalCost)}</strong></span>
-      <span class="${up ? 's-up' : 's-down'}">P&L: <strong>${(up?'+':'')+fmtCompact(pnl)} (${(up?'+':'')+pnlPct.toFixed(1)}%)</strong></span>
-      <span>Cash: <strong style="color:var(--blue)">~$${CASH}</strong></span>`;
+      <span class="${up ? 's-up' : 's-down'}">P&L: <strong>${(up?'+':'')+fmtCompact(pnl)} (${(up?'+':'')+pnlPct.toFixed(1)}%)</strong></span>`;
   }
 }
 
 // ============================================================
-// === DRAW PORTFOLIO CHART (actual position values) ===
+// === RENDER AGGREGATE (right screen) ===
 // ============================================================
-function drawChart() {
-  const canvas = document.getElementById('portfolioChart');
-  if (!canvas) return;
+function renderAggregate() {
+  const pnlEl = document.getElementById('aggPnl');
+  const subEl = document.getElementById('aggSub');
+  const detailsEl = document.getElementById('aggDetails');
+
+  let totalValue = 0, totalCost = 0, loaded = 0;
+  for (const h of HOLDINGS) {
+    const ticker = priceCache[h.id];
+    const price = ticker ? ticker.quotes.USD.price : null;
+    if (price != null) { totalValue += h.qty * price; loaded++; }
+    totalCost += h.cost;
+  }
+
+  if (!pricesLoaded || loaded === 0) {
+    pnlEl.textContent = 'Loading...';
+    pnlEl.style.color = 'var(--text-dim)';
+    subEl.textContent = '';
+    detailsEl.innerHTML = `<span>Cost Basis: <strong>${fmtUSD(totalCost)}</strong></span>
+      <span>Cash: <strong>~$${CASH}</strong></span>`;
+    return;
+  }
+
+  const pnl = totalValue - totalCost;
+  const pnlPct = totalCost > 0 ? (pnl / totalCost) * 100 : 0;
+  const up = pnl >= 0;
+
+  pnlEl.textContent = (up ? '+' : '') + fmtCompact(pnl);
+  pnlEl.style.color = up ? 'var(--green)' : 'var(--red)';
+  subEl.textContent = (up ? '+' : '') + pnlPct.toFixed(1) + '% all-time';
+
+  const totalEquity = totalValue + CASH;
+  detailsEl.innerHTML = `<span>Value: <strong>${fmtCompact(totalValue)}</strong></span>
+    <span>Cost: <strong>${fmtCompact(totalCost)}</strong></span>
+    <span>Equity: <strong style="color:var(--accent)">${fmtCompact(totalEquity)}</strong></span>`;
+}
+
+// ============================================================
+// === DRAW 4-WEEK HISTORY CHART ===
+// ============================================================
+function drawHistoryChart() {
+  const canvas = document.getElementById('historyChart');
+  if (!canvas || historyData.length < 2) return;
   const ctx = canvas.getContext('2d');
   const dpr = window.devicePixelRatio || 1;
   const rect = canvas.getBoundingClientRect();
@@ -675,61 +781,86 @@ function drawChart() {
   canvas.height = rect.height * dpr;
   ctx.scale(dpr, dpr);
   const W = rect.width, H = rect.height;
+  const pad = { top: 8, bottom: 14, left: 4, right: 4 };
+  const plotW = W - pad.left - pad.right;
+  const plotH = H - pad.top - pad.bottom;
 
-  // Build data points: each holding's current value, sorted by cost basis
-  const points = HOLDINGS.map(h => {
-    const ticker = priceCache[h.id];
-    const val = ticker ? h.qty * ticker.quotes.USD.price : h.cost;
-    return { sym: h.sym, val, cost: h.cost };
-  }).sort((a, b) => b.val - a.val);
-
-  if (points.length === 0) return;
-
-  const maxVal = Math.max(...points.map(p => Math.max(p.val, p.cost)), 1);
-  const barW = (W - 4) / points.length;
+  const totalCost = HOLDINGS.reduce((s, h) => s + h.cost, 0);
+  const values = historyData.map(d => d.value);
+  const minVal = Math.min(...values, totalCost) * 0.98;
+  const maxVal = Math.max(...values, totalCost) * 1.02;
+  const range = maxVal - minVal || 1;
 
   ctx.clearRect(0, 0, W, H);
 
-  points.forEach((p, i) => {
-    const x = 2 + i * barW;
-    const valH = (p.val / maxVal) * (H - 10);
-    const costH = (p.cost / maxVal) * (H - 10);
-    const isUp = p.val >= p.cost;
+  // Cost basis line (dashed)
+  const costY = pad.top + plotH - ((totalCost - minVal) / range) * plotH;
+  ctx.beginPath();
+  ctx.setLineDash([3, 3]);
+  ctx.strokeStyle = 'rgba(136,146,164,0.4)';
+  ctx.lineWidth = 1;
+  ctx.moveTo(pad.left, costY);
+  ctx.lineTo(pad.left + plotW, costY);
+  ctx.stroke();
+  ctx.setLineDash([]);
 
-    // Cost basis bar (dim)
-    ctx.fillStyle = 'rgba(136,146,164,0.25)';
-    ctx.fillRect(x + 1, H - costH, barW - 2, costH);
+  // Cost basis label
+  ctx.fillStyle = 'rgba(136,146,164,0.6)';
+  ctx.font = '7px "JetBrains Mono"';
+  ctx.textAlign = 'right';
+  ctx.fillText('cost', pad.left + plotW - 2, costY - 2);
 
-    // Current value bar
-    ctx.fillStyle = isUp ? 'rgba(34,197,94,0.7)' : 'rgba(239,68,68,0.7)';
-    ctx.fillRect(x + 1, H - valH, barW - 2, valH);
+  // Portfolio value line
+  const points = historyData.map((d, i) => ({
+    x: pad.left + (i / (historyData.length - 1)) * plotW,
+    y: pad.top + plotH - ((d.value - minVal) / range) * plotH,
+    value: d.value
+  }));
 
-    // Label
-    ctx.fillStyle = '#e2e8f0';
-    ctx.font = `${Math.min(7, barW * 0.35)}px "JetBrains Mono"`;
-    ctx.textAlign = 'center';
-    ctx.fillText(p.sym, x + barW / 2, 7);
-  });
-}
+  // Fill area under line
+  const lastPoint = points[points.length - 1];
+  const isUp = lastPoint.value >= totalCost;
 
-// ============================================================
-// === RENDER WATCHLIST ===
-// ============================================================
-function renderWatchlist() {
-  const container = document.getElementById('watchlistRows');
-  let html = '';
-  for (const w of WATCHLIST) {
-    const ticker = priceCache[w.id];
-    const price = ticker ? ticker.quotes.USD.price : null;
-    const chg24 = ticker ? ticker.quotes.USD.percent_change_24h : null;
-    const exitTag = w.recentlyExited ? '<span class="w-exited">EXIT</span>' : '';
-    html += `<div class="w-row">
-      <span class="w-sym">${w.sym}${exitTag}</span>
-      <span class="w-price">${price != null ? fmtCompact(price) : '...'}</span>
-      <span class="w-chg ${chg24 != null && chg24 >= 0 ? 'up' : 'down'}">${chg24 != null ? (chg24 >= 0 ? '+' : '') + chg24.toFixed(1) + '%' : ''}</span>
-    </div>`;
+  ctx.beginPath();
+  ctx.moveTo(points[0].x, points[0].y);
+  for (let i = 1; i < points.length; i++) {
+    ctx.lineTo(points[i].x, points[i].y);
   }
-  container.innerHTML = html;
+  ctx.lineTo(lastPoint.x, pad.top + plotH);
+  ctx.lineTo(points[0].x, pad.top + plotH);
+  ctx.closePath();
+  ctx.fillStyle = isUp ? 'rgba(34,197,94,0.12)' : 'rgba(239,68,68,0.12)';
+  ctx.fill();
+
+  // Line itself
+  ctx.beginPath();
+  ctx.moveTo(points[0].x, points[0].y);
+  for (let i = 1; i < points.length; i++) {
+    ctx.lineTo(points[i].x, points[i].y);
+  }
+  ctx.strokeStyle = isUp ? '#22c55e' : '#ef4444';
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+
+  // Current value dot
+  ctx.beginPath();
+  ctx.arc(lastPoint.x, lastPoint.y, 3, 0, Math.PI * 2);
+  ctx.fillStyle = isUp ? '#22c55e' : '#ef4444';
+  ctx.fill();
+
+  // Date labels
+  ctx.fillStyle = 'rgba(136,146,164,0.5)';
+  ctx.font = '6px "JetBrains Mono"';
+  ctx.textAlign = 'center';
+  const labelIndices = [0, Math.floor(historyData.length / 4), Math.floor(historyData.length / 2),
+                        Math.floor(3 * historyData.length / 4), historyData.length - 1];
+  for (const idx of labelIndices) {
+    if (idx < historyData.length) {
+      const d = historyData[idx].date;
+      const label = d.slice(5); // MM-DD
+      ctx.fillText(label, points[idx].x, H - 2);
+    }
+  }
 }
 
 // ============================================================
@@ -897,11 +1028,12 @@ async function sendQuestion() {
 window.addEventListener('load', async () => {
   await loadPortfolioData();
   renderHoldings();
-  renderWatchlist();
+  renderAggregate();
   fetchAllPrices();
+  fetchHistoricalPrices();
   setInterval(fetchAllPrices, 60000);
   setTimeout(runOpeningDebate, 1500);
-  window.addEventListener('resize', drawChart);
+  window.addEventListener('resize', drawHistoryChart);
 });
 </script>
 </body>
