@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>The Boardroom — Crypto Scanner HQ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -41,73 +41,218 @@ body {
 
 /* === HEADER === */
 .header {
-  padding: 16px 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border);
-  background: var(--surface);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background: rgba(11,14,20,0.85);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  border-bottom: 1px solid rgba(42,48,64,0.5);
 }
 .header-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 .header-title span { color: var(--accent); }
 .header-meta {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--text-dim);
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* === HERO === */
-.hero {
+/* === BOARDROOM SCENE (full viewport) === */
+.boardroom {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/9;
-  max-height: 420px;
+  height: 100vh;
+  min-height: 500px;
   overflow: hidden;
 }
-.hero img {
+.boardroom img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.hero-overlay {
+.boardroom-dim {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 40%, var(--bg) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.3) 60%, rgba(11,14,20,0.95) 92%, var(--bg) 100%);
+  pointer-events: none;
 }
 
-/* === AGENT BUBBLES (overlaid on hero) === */
+/* === OVERLAY BOARDS (positioned on the screens in the image) === */
+.screen-overlay {
+  position: absolute;
+  background: rgba(11,14,20,0.82);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(99,102,241,0.3);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+.screen-overlay .screen-title {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(42,48,64,0.5);
+}
+.screen-title.holdings { color: var(--green); }
+.screen-title.watchlist { color: var(--blue); }
+
+/* LEFT SCREEN — Holdings */
+.screen-holdings {
+  top: 4%;
+  left: 2%;
+  width: 33%;
+  max-height: 42%;
+}
+/* RIGHT SCREEN — Watchlist */
+.screen-watchlist {
+  top: 4%;
+  right: 2%;
+  width: 33%;
+  max-height: 42%;
+}
+
+.screen-body {
+  padding: 4px 6px;
+  overflow-y: auto;
+  max-height: calc(100% - 28px);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+}
+.screen-body::-webkit-scrollbar { width: 3px; }
+.screen-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* Holdings summary bar */
+.screen-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  padding: 4px 6px;
+  background: rgba(26,31,46,0.7);
+  font-size: 0.58rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-dim);
+  border-bottom: 1px solid rgba(42,48,64,0.4);
+}
+.screen-summary strong { color: var(--text); }
+.screen-summary .s-up strong { color: var(--green); }
+.screen-summary .s-down strong { color: var(--red); }
+
+/* Mini holding row */
+.h-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 4px;
+  border-bottom: 1px solid rgba(42,48,64,0.3);
+}
+.h-row:last-child { border-bottom: none; }
+.h-sym { font-weight: 700; color: var(--text); font-size: 0.62rem; min-width: 36px; }
+.h-val { color: var(--text-dim); font-size: 0.55rem; }
+.h-pnl { font-weight: 600; font-size: 0.58rem; }
+.h-pnl.up { color: var(--green); }
+.h-pnl.down { color: var(--red); }
+.h-pnl.loading { color: var(--text-dim); }
+
+/* Mini watchlist row */
+.w-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 4px;
+  border-bottom: 1px solid rgba(42,48,64,0.3);
+}
+.w-row:last-child { border-bottom: none; }
+.w-sym { font-weight: 700; color: var(--text); font-size: 0.62rem; }
+.w-price { color: var(--text-dim); font-size: 0.58rem; }
+.w-chg { font-size: 0.52rem; }
+.w-chg.up { color: var(--green); }
+.w-chg.down { color: var(--red); }
+.w-exited {
+  font-size: 0.45rem;
+  background: var(--red);
+  color: white;
+  padding: 0 3px;
+  border-radius: 2px;
+  margin-left: 3px;
+  font-weight: 600;
+}
+
+/* === CHART OVERLAY (on holdings screen) === */
+.chart-area {
+  height: 50px;
+  padding: 2px 4px;
+  border-bottom: 1px solid rgba(42,48,64,0.4);
+}
+.chart-area canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* === AGENT NAMEPLATES === */
+.nameplate {
+  position: absolute;
+  z-index: 20;
+  background: rgba(11,14,20,0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid;
+  white-space: nowrap;
+  text-align: center;
+}
+.nameplate.dawn  { bottom: 32%; left: 10%;  color: var(--dawn);  border-color: rgba(255,159,67,0.5); transform: translateX(-50%); }
+.nameplate.noon  { bottom: 32%; left: 35%;  color: var(--noon);  border-color: rgba(59,130,246,0.5);  transform: translateX(-50%); }
+.nameplate.close { bottom: 32%; left: 63%;  color: var(--close); border-color: rgba(233,30,99,0.5);   transform: translateX(-50%); }
+.nameplate.night { bottom: 32%; left: 88%;  color: var(--night); border-color: rgba(124,77,255,0.5);  transform: translateX(-50%); }
+.nameplate .plate-time {
+  font-size: 0.48rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  display: block;
+  letter-spacing: 0.04em;
+}
+
+/* === SPEECH BUBBLES (overlaid on hero) === */
 .agent-bubbles {
   position: absolute;
-  bottom: 24px;
-  left: 16px;
-  right: 16px;
+  bottom: 38%;
+  left: 2%;
+  right: 2%;
   display: flex;
-  gap: 8px;
-  z-index: 10;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 6px;
+  z-index: 15;
+  pointer-events: none;
 }
 .speech-bubble {
   background: rgba(20, 24, 32, 0.92);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 12px;
-  padding: 10px 14px;
-  font-size: 0.8rem;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.72rem;
   line-height: 1.4;
-  max-width: 280px;
+  max-width: 22%;
   border: 1px solid var(--border);
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(8px);
   transition: opacity 0.4s, transform 0.4s;
   display: none;
+  pointer-events: auto;
 }
 .speech-bubble.visible {
   opacity: 1;
@@ -116,225 +261,84 @@ body {
 }
 .bubble-agent {
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 .bubble-agent.dawn { color: var(--dawn); }
 .bubble-agent.noon { color: var(--noon); }
 .bubble-agent.close { color: var(--close); }
 .bubble-agent.night { color: var(--purple); }
 
-/* === BOARDS === */
-.boards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  padding: 20px;
-  max-width: 1200px;
+/* === BOTTOM SECTION (Chat below the scene) === */
+.bottom-section {
+  position: relative;
+  z-index: 50;
+  background: var(--bg);
+  padding: 16px 20px 20px;
+  max-width: 1000px;
   margin: 0 auto;
-}
-.board {
-  background: var(--surface);
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  overflow: hidden;
-}
-.board-header {
-  padding: 14px 18px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.board-title {
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-.board-title.holdings { color: var(--green); }
-.board-title.watchlist { color: var(--blue); }
-
-.board-summary {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 12px 18px;
-  background: var(--surface2);
-  font-size: 0.78rem;
-  font-family: 'JetBrains Mono', monospace;
-}
-.sum-item { color: var(--text-dim); }
-.sum-item strong { color: var(--text); }
-.sum-up strong { color: var(--green) !important; }
-.sum-down strong { color: var(--red) !important; }
-
-.board-cards {
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  max-height: 480px;
-  overflow-y: auto;
-}
-.board-cards::-webkit-scrollbar { width: 4px; }
-.board-cards::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
-
-/* Holdings card */
-.board-card {
-  background: var(--surface2);
-  border-radius: 10px;
-  padding: 12px 14px;
-  border-left: 3px solid var(--border);
-  transition: background 0.2s;
-}
-.board-card.profit { border-left-color: var(--green); }
-.board-card.loss { border-left-color: var(--red); }
-.card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 6px;
-}
-.card-coin {
-  font-weight: 700;
-  font-size: 0.95rem;
-  font-family: 'JetBrains Mono', monospace;
-}
-.card-pnl {
-  font-weight: 700;
-  font-size: 0.85rem;
-  font-family: 'JetBrains Mono', monospace;
-}
-.card-pnl.up { color: var(--green); }
-.card-pnl.down { color: var(--red); }
-.card-details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 14px;
-  font-size: 0.72rem;
-  color: var(--text-dim);
-  font-family: 'JetBrains Mono', monospace;
-}
-
-/* Watchlist card */
-.watch-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--surface2);
-  border-radius: 10px;
-  padding: 10px 14px;
-}
-.watch-coin {
-  font-weight: 700;
-  font-size: 0.9rem;
-  font-family: 'JetBrains Mono', monospace;
-}
-.exited-tag {
-  display: inline-block;
-  font-size: 0.6rem;
-  background: var(--red);
-  color: white;
-  padding: 1px 6px;
-  border-radius: 4px;
-  margin-left: 6px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.watch-price {
-  font-weight: 600;
-  font-size: 0.85rem;
-  font-family: 'JetBrains Mono', monospace;
-  text-align: right;
-}
-.watch-changes {
-  display: flex;
-  gap: 10px;
-  font-size: 0.7rem;
-  font-family: 'JetBrains Mono', monospace;
-  margin-top: 2px;
-  justify-content: flex-end;
-}
-.change-up { color: var(--green); }
-.change-down { color: var(--red); }
-
-/* === CHAT === */
-.chat-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px 20px;
 }
 .chat-container {
   background: var(--surface);
-  border-radius: 16px;
+  border-radius: 14px;
   border: 1px solid var(--border);
   overflow: hidden;
 }
 .chat-header {
-  padding: 14px 18px;
+  padding: 12px 16px;
   border-bottom: 1px solid var(--border);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--accent);
 }
 .chat-log {
-  height: 320px;
+  height: 260px;
   overflow-y: auto;
-  padding: 14px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 .chat-log::-webkit-scrollbar { width: 4px; }
 .chat-log::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
 .chat-msg {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: flex-start;
 }
 .avatar-sm {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 15px;
   border: 2px solid;
-  overflow: hidden;
-}
-.avatar-sm img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
 }
 .msg-body {
   background: var(--surface2);
   border-radius: 10px;
-  padding: 10px 14px;
-  font-size: 0.82rem;
+  padding: 8px 12px;
+  font-size: 0.78rem;
   line-height: 1.5;
   border: 1px solid var(--border);
   max-width: 85%;
 }
 .msg-name {
   font-weight: 700;
-  font-size: 0.7rem;
+  font-size: 0.62rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
-.user-msg {
-  justify-content: flex-end;
-}
+.user-msg { justify-content: flex-end; }
 .user-msg .msg-body {
   background: var(--accent);
   border-color: var(--accent);
@@ -344,7 +348,7 @@ body {
 .chat-input-bar {
   display: flex;
   gap: 8px;
-  padding: 12px 14px;
+  padding: 10px 12px;
   border-top: 1px solid var(--border);
   background: var(--surface2);
 }
@@ -353,12 +357,11 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 10px 14px;
+  padding: 8px 12px;
   color: var(--text);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-family: 'Inter', sans-serif;
   outline: none;
-  transition: border-color 0.2s;
 }
 .chat-input-bar input::placeholder { color: var(--text-dim); }
 .chat-input-bar input:focus { border-color: var(--accent); }
@@ -367,15 +370,20 @@ body {
   color: white;
   border: none;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 8px 18px;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  transition: opacity 0.2s;
 }
-.chat-input-bar button:hover { opacity: 0.85; }
 .chat-input-bar button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 0.65rem;
+  color: var(--text-dim);
+}
 
 /* === TYPING CURSOR === */
 .typing-cursor {
@@ -389,49 +397,43 @@ body {
 }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
-/* === FOOTER === */
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.7rem;
-  color: var(--text-dim);
-  border-top: 1px solid var(--border);
-  margin-top: 12px;
-}
-
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
-  .boards {
-    grid-template-columns: 1fr;
-    padding: 12px;
-    gap: 12px;
+  .boardroom { height: 70vh; min-height: 400px; }
+  .screen-holdings, .screen-watchlist {
+    width: 46%;
+    max-height: 38%;
   }
-  .hero { max-height: 240px; }
-  .agent-bubbles {
-    bottom: 12px;
-    left: 8px;
-    right: 8px;
-    gap: 6px;
-  }
-  .speech-bubble {
-    max-width: 200px;
-    font-size: 0.72rem;
-    padding: 8px 10px;
-  }
-  .board-cards { max-height: 360px; }
-  .chat-log { height: 260px; }
-  .chat-section { padding: 0 12px 12px; }
-  .header { padding: 12px 16px; }
-  .header-title { font-size: 0.95rem; }
+  .screen-holdings { left: 1%; top: 3%; }
+  .screen-watchlist { right: 1%; top: 3%; }
+  .screen-body { font-size: 0.52rem; }
+  .screen-summary { font-size: 0.5rem; gap: 4px 8px; }
+  .h-sym, .w-sym { font-size: 0.55rem; }
+  .nameplate { font-size: 0.55rem; padding: 3px 8px; }
+  .nameplate .plate-time { font-size: 0.4rem; }
+  .speech-bubble { max-width: 30%; font-size: 0.62rem; padding: 6px 8px; }
+  .agent-bubbles { bottom: 35%; }
+  .chat-log { height: 200px; }
+  .bottom-section { padding: 12px; }
+  .chart-area { height: 36px; }
 }
 
 @media (max-width: 480px) {
   html { font-size: 14px; }
-  .hero { max-height: 180px; }
-  .speech-bubble { max-width: 160px; font-size: 0.68rem; }
-  .agent-bubbles { flex-wrap: nowrap; overflow-x: auto; }
-  .board-summary { gap: 8px; font-size: 0.72rem; }
-  .card-details { gap: 4px 10px; font-size: 0.68rem; }
+  .boardroom { height: 55vh; min-height: 320px; }
+  .screen-holdings, .screen-watchlist {
+    width: 48%;
+    max-height: 35%;
+  }
+  .screen-body { font-size: 0.48rem; padding: 2px 4px; }
+  .screen-summary { font-size: 0.46rem; padding: 3px 4px; }
+  .screen-overlay .screen-title { font-size: 0.5rem; padding: 4px 6px; }
+  .h-row, .w-row { padding: 2px 3px; }
+  .nameplate { font-size: 0.48rem; padding: 2px 6px; bottom: 28%; }
+  .nameplate .plate-time { display: none; }
+  .speech-bubble { max-width: 40%; font-size: 0.56rem; }
+  .agent-bubbles { bottom: 32%; flex-wrap: wrap; justify-content: center; }
+  .chart-area { height: 28px; }
 }
 </style>
 </head>
@@ -443,10 +445,38 @@ body {
   <div class="header-meta" id="lastUpdated">Loading...</div>
 </header>
 
-<!-- HERO with agent bubbles -->
-<section class="hero">
+<!-- FULL-SCREEN BOARDROOM SCENE -->
+<section class="boardroom">
   <img src="boardroom-hero.jpg" alt="Four AI trading agents around a boardroom table">
-  <div class="hero-overlay"></div>
+  <div class="boardroom-dim"></div>
+
+  <!-- HOLDINGS SCREEN OVERLAY (left screen in image) -->
+  <div class="screen-overlay screen-holdings">
+    <div class="screen-title holdings">Holdings</div>
+    <div id="holdingsSummary" class="screen-summary">
+      <span>Loading prices...</span>
+    </div>
+    <div class="chart-area"><canvas id="portfolioChart"></canvas></div>
+    <div class="screen-body" id="holdingsRows">
+      <div style="padding:8px;text-align:center;color:var(--text-dim)">⏳</div>
+    </div>
+  </div>
+
+  <!-- WATCHLIST SCREEN OVERLAY (right screen in image) -->
+  <div class="screen-overlay screen-watchlist">
+    <div class="screen-title watchlist">Watchlist</div>
+    <div class="screen-body" id="watchlistRows">
+      <div style="padding:8px;text-align:center;color:var(--text-dim)">⏳</div>
+    </div>
+  </div>
+
+  <!-- AGENT NAMEPLATES -->
+  <div class="nameplate dawn">☀️ Dawn<span class="plate-time">6AM HST</span></div>
+  <div class="nameplate noon">📊 Noon<span class="plate-time">12PM HST</span></div>
+  <div class="nameplate close">🛡️ Close<span class="plate-time">4PM HST</span></div>
+  <div class="nameplate night">🦉 Night<span class="plate-time">8PM HST</span></div>
+
+  <!-- SPEECH BUBBLES -->
   <div class="agent-bubbles">
     <div class="speech-bubble" id="bubble-dawn">
       <div class="bubble-agent dawn">Dawn</div>
@@ -467,37 +497,13 @@ body {
   </div>
 </section>
 
-<!-- BOARDS -->
-<section class="boards">
-  <!-- Holdings Board -->
-  <div class="board">
-    <div class="board-header">
-      <div class="board-title holdings">Holdings</div>
-    </div>
-    <div id="holdingsSummary"></div>
-    <div class="board-cards" id="holdingsCards">
-      <div style="padding:20px;text-align:center;color:var(--text-dim)">Loading prices...</div>
-    </div>
-  </div>
-
-  <!-- Watchlist Board -->
-  <div class="board">
-    <div class="board-header">
-      <div class="board-title watchlist">Watchlist</div>
-    </div>
-    <div class="board-cards" id="watchlistCards">
-      <div style="padding:20px;text-align:center;color:var(--text-dim)">Loading prices...</div>
-    </div>
-  </div>
-</section>
-
-<!-- CHAT -->
-<section class="chat-section">
+<!-- CHAT BELOW THE SCENE -->
+<section class="bottom-section">
   <div class="chat-container">
     <div class="chat-header">Agent Chat</div>
     <div class="chat-log" id="chatLog"></div>
     <div class="chat-input-bar">
-      <input type="text" id="userInput" placeholder="Ask the agents about the portfolio..."
+      <input type="text" id="userInput" placeholder="Ask the agents..."
              onkeydown="if(event.key==='Enter')sendQuestion()">
       <button id="sendBtn" onclick="sendQuestion()">Ask</button>
     </div>
@@ -557,15 +563,14 @@ async function loadPortfolioData() {
       const el = document.getElementById('dataTimestamp');
       if (el) el.textContent = 'Last scan: ' + d.toLocaleDateString() + ' ' + d.toLocaleTimeString();
     }
-  } catch(e) {
-    console.warn('Could not load data.json', e);
-  }
+  } catch(e) { console.warn('Could not load data.json', e); }
 }
 
 // ============================================================
 // === STATE ===
 // ============================================================
 let priceCache = {};
+let pricesLoaded = false;
 
 const AGENTS = {
   dawn:  { name:'Dawn',  color:'#FF9F43', bg:'rgba(255,159,67,0.15)', icon:'☀️' },
@@ -589,110 +594,140 @@ async function fetchAllPrices() {
   results.forEach((r, i) => {
     if (r.status === 'fulfilled') priceCache[unique[i]] = r.value;
   });
+  pricesLoaded = Object.keys(priceCache).length > 0;
   renderHoldings();
   renderWatchlist();
+  drawChart();
   updateTimestamp();
 }
 
 function updateTimestamp() {
-  const el = document.getElementById('lastUpdated');
-  const now = new Date();
-  el.textContent = now.toLocaleTimeString();
+  document.getElementById('lastUpdated').textContent = new Date().toLocaleTimeString();
 }
 
-function fmt(n, decimals = 2) {
+function fmt(n) {
   if (n == null || isNaN(n)) return '—';
-  if (Math.abs(n) >= 1) return n.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+  if (Math.abs(n) >= 1) return n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   if (Math.abs(n) < 0.01) return n.toFixed(6);
   return n.toFixed(4);
 }
-
-function fmtUSD(n) {
-  if (n == null || isNaN(n)) return '—';
-  return '$' + fmt(n);
+function fmtUSD(n) { return n == null || isNaN(n) ? '—' : '$' + fmt(n); }
+function fmtCompact(n) {
+  if (n == null || isNaN(n)) return '...';
+  if (Math.abs(n) >= 1000) return '$' + (n/1000).toFixed(1) + 'k';
+  if (Math.abs(n) >= 1) return '$' + n.toFixed(2);
+  if (Math.abs(n) < 0.01) return '$' + n.toFixed(6);
+  return '$' + n.toFixed(4);
 }
 
 // ============================================================
-// === RENDER HOLDINGS ===
+// === RENDER HOLDINGS (compact rows for screen overlay) ===
 // ============================================================
 function renderHoldings() {
-  const container = document.getElementById('holdingsCards');
+  const container = document.getElementById('holdingsRows');
   const summaryEl = document.getElementById('holdingsSummary');
-  let totalValue = 0, totalCost = 0;
+  let totalValue = 0, totalCost = 0, loaded = 0;
   let html = '';
-  const today = new Date();
 
   for (const h of HOLDINGS) {
     const ticker = priceCache[h.id];
-    const currentPrice = ticker ? ticker.quotes.USD.price : null;
-    const currentValue = currentPrice != null ? h.qty * currentPrice : null;
-    const pnlPct = currentPrice != null ? ((currentPrice - h.entry) / h.entry) * 100 : null;
-    const pnlAbs = currentValue != null ? currentValue - h.cost : null;
-    const entryDate = new Date(`${h.date}, 2025`);
-    const daysHeld = Math.max(1, Math.round((today - entryDate) / 86400000));
-    if (currentValue != null) totalValue += currentValue;
+    const price = ticker ? ticker.quotes.USD.price : null;
+    const val = price != null ? h.qty * price : null;
+    const pnlPct = price != null ? ((price - h.entry) / h.entry) * 100 : null;
+    if (val != null) { totalValue += val; loaded++; }
     totalCost += h.cost;
     const isUp = pnlPct != null && pnlPct >= 0;
-    const pnlClass = isUp ? 'up' : 'down';
-    const cardClass = isUp ? 'profit' : 'loss';
 
-    html += `
-      <div class="board-card ${pnlPct != null ? cardClass : ''}">
-        <div class="card-top">
-          <div class="card-coin">${h.sym}</div>
-          <div class="card-pnl ${pnlClass}">${pnlPct != null ? (isUp ? '+' : '') + pnlPct.toFixed(1) + '%' : '...'}</div>
-        </div>
-        <div class="card-details">
-          <span>Qty: ${fmt(h.qty, 4)}</span>
-          <span>Entry: ${fmtUSD(h.entry)}</span>
-          <span>Now: ${currentPrice != null ? fmtUSD(currentPrice) : '...'}</span>
-          <span>Cost: ${fmtUSD(h.cost)}</span>
-          <span>Val: ${currentValue != null ? fmtUSD(currentValue) : '...'}</span>
-          <span>P&L: ${pnlAbs != null ? (pnlAbs >= 0 ? '+' : '') + fmtUSD(pnlAbs) : '...'}</span>
-          <span>${daysHeld}d</span>
-        </div>
-      </div>`;
+    html += `<div class="h-row">
+      <span class="h-sym">${h.sym}</span>
+      <span class="h-val">${val != null ? fmtCompact(val) : '...'}</span>
+      <span class="h-pnl ${pnlPct != null ? (isUp ? 'up' : 'down') : 'loading'}">${pnlPct != null ? (isUp ? '+' : '') + pnlPct.toFixed(1) + '%' : '...'}</span>
+    </div>`;
   }
   container.innerHTML = html;
 
-  const totalPnl = totalValue - totalCost;
-  const totalPnlPct = totalCost > 0 ? (totalPnl / totalCost) * 100 : 0;
-  const isUp = totalPnl >= 0;
-  const cls = isUp ? 'sum-up' : 'sum-down';
-  summaryEl.innerHTML = `
-    <div class="board-summary">
-      <span class="sum-item">Portfolio: <strong>${fmtUSD(totalValue)}</strong></span>
-      <span class="sum-item">Cost: <strong>${fmtUSD(totalCost)}</strong></span>
-      <span class="sum-item ${cls}">P&L: <strong>${(isUp ? '+' : '') + fmtUSD(totalPnl)} (${(isUp ? '+' : '') + totalPnlPct.toFixed(1)}%)</strong></span>
-      <span class="sum-item" style="color:var(--blue);">Cash: <strong>~$${CASH}</strong></span>
-    </div>`;
+  // Summary — only show P&L when prices are loaded
+  if (!pricesLoaded || loaded === 0) {
+    summaryEl.innerHTML = `<span>Portfolio: <strong>Loading...</strong></span>
+      <span>Cost: <strong>${fmtUSD(totalCost)}</strong></span>
+      <span>Cash: <strong style="color:var(--blue)">~$${CASH}</strong></span>`;
+  } else {
+    const pnl = totalValue - totalCost;
+    const pnlPct = totalCost > 0 ? (pnl / totalCost) * 100 : 0;
+    const up = pnl >= 0;
+    summaryEl.innerHTML = `<span>Val: <strong>${fmtCompact(totalValue)}</strong></span>
+      <span>Cost: <strong>${fmtCompact(totalCost)}</strong></span>
+      <span class="${up ? 's-up' : 's-down'}">P&L: <strong>${(up?'+':'')+fmtCompact(pnl)} (${(up?'+':'')+pnlPct.toFixed(1)}%)</strong></span>
+      <span>Cash: <strong style="color:var(--blue)">~$${CASH}</strong></span>`;
+  }
+}
+
+// ============================================================
+// === DRAW PORTFOLIO CHART (actual position values) ===
+// ============================================================
+function drawChart() {
+  const canvas = document.getElementById('portfolioChart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  ctx.scale(dpr, dpr);
+  const W = rect.width, H = rect.height;
+
+  // Build data points: each holding's current value, sorted by cost basis
+  const points = HOLDINGS.map(h => {
+    const ticker = priceCache[h.id];
+    const val = ticker ? h.qty * ticker.quotes.USD.price : h.cost;
+    return { sym: h.sym, val, cost: h.cost };
+  }).sort((a, b) => b.val - a.val);
+
+  if (points.length === 0) return;
+
+  const maxVal = Math.max(...points.map(p => Math.max(p.val, p.cost)), 1);
+  const barW = (W - 4) / points.length;
+
+  ctx.clearRect(0, 0, W, H);
+
+  points.forEach((p, i) => {
+    const x = 2 + i * barW;
+    const valH = (p.val / maxVal) * (H - 10);
+    const costH = (p.cost / maxVal) * (H - 10);
+    const isUp = p.val >= p.cost;
+
+    // Cost basis bar (dim)
+    ctx.fillStyle = 'rgba(136,146,164,0.25)';
+    ctx.fillRect(x + 1, H - costH, barW - 2, costH);
+
+    // Current value bar
+    ctx.fillStyle = isUp ? 'rgba(34,197,94,0.7)' : 'rgba(239,68,68,0.7)';
+    ctx.fillRect(x + 1, H - valH, barW - 2, valH);
+
+    // Label
+    ctx.fillStyle = '#e2e8f0';
+    ctx.font = `${Math.min(7, barW * 0.35)}px "JetBrains Mono"`;
+    ctx.textAlign = 'center';
+    ctx.fillText(p.sym, x + barW / 2, 7);
+  });
 }
 
 // ============================================================
 // === RENDER WATCHLIST ===
 // ============================================================
 function renderWatchlist() {
-  const container = document.getElementById('watchlistCards');
+  const container = document.getElementById('watchlistRows');
   let html = '';
   for (const w of WATCHLIST) {
     const ticker = priceCache[w.id];
     const price = ticker ? ticker.quotes.USD.price : null;
     const chg24 = ticker ? ticker.quotes.USD.percent_change_24h : null;
-    const chg7d = ticker ? ticker.quotes.USD.percent_change_7d : null;
-    const exitedTag = w.recentlyExited ? '<span class="exited-tag">Exited</span>' : '';
-    html += `
-      <div class="watch-card">
-        <div>
-          <span class="watch-coin">${w.sym}</span>${exitedTag}
-        </div>
-        <div style="text-align:right">
-          <div class="watch-price">${price != null ? fmtUSD(price) : '...'}</div>
-          <div class="watch-changes">
-            <span class="${chg24 != null && chg24 >= 0 ? 'change-up' : 'change-down'}">24h: ${chg24 != null ? (chg24 >= 0 ? '+' : '') + chg24.toFixed(1) + '%' : '...'}</span>
-            <span class="${chg7d != null && chg7d >= 0 ? 'change-up' : 'change-down'}">7d: ${chg7d != null ? (chg7d >= 0 ? '+' : '') + chg7d.toFixed(1) + '%' : '...'}</span>
-          </div>
-        </div>
-      </div>`;
+    const exitTag = w.recentlyExited ? '<span class="w-exited">EXIT</span>' : '';
+    html += `<div class="w-row">
+      <span class="w-sym">${w.sym}${exitTag}</span>
+      <span class="w-price">${price != null ? fmtCompact(price) : '...'}</span>
+      <span class="w-chg ${chg24 != null && chg24 >= 0 ? 'up' : 'down'}">${chg24 != null ? (chg24 >= 0 ? '+' : '') + chg24.toFixed(1) + '%' : ''}</span>
+    </div>`;
   }
   container.innerHTML = html;
 }
@@ -861,9 +896,12 @@ async function sendQuestion() {
 // ===== INIT =====
 window.addEventListener('load', async () => {
   await loadPortfolioData();
+  renderHoldings();
+  renderWatchlist();
   fetchAllPrices();
   setInterval(fetchAllPrices, 60000);
   setTimeout(runOpeningDebate, 1500);
+  window.addEventListener('resize', drawChart);
 });
 </script>
 </body>
