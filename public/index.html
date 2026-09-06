@@ -498,7 +498,7 @@ body {
     </div>
   </div>
 
-  <!-- RIGHT SCREEN — Aggregate P&L + 4-Week Chart -->
+  <!-- RIGHT SCREEN — Aggregate P&L + 7-Day Chart -->
   <div class="screen-overlay screen-aggregate">
     <div class="screen-title aggregate">Portfolio</div>
     <div id="aggPanel" class="agg-big">
@@ -510,7 +510,7 @@ body {
     <div class="history-chart-area" style="height:calc(100% - 110px);min-height:60px;">
       <canvas id="historyChart"></canvas>
     </div>
-    <div class="chart-label" id="chartLabel">4-Week Performance</div>
+    <div class="chart-label" id="chartLabel">7-Day Performance</div>
   </div>
 
   <!-- AGENT NAMEPLATES -->
@@ -724,7 +724,7 @@ function renderAggregate() {
 }
 
 // ============================================================
-// === DRAW 4-WEEK HISTORY CHART ===
+// === DRAW 7-DAY HISTORY CHART ===
 // ============================================================
 function drawHistoryChart() {
   const canvas = document.getElementById('historyChart');
