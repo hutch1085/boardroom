@@ -247,10 +247,21 @@ body {
   margin-bottom: 2px;
   line-height: 1;
 }
-.nameplate.dawn  { bottom: 28%; left: 10%;  color: var(--dawn);  border-color: rgba(255,159,67,0.5); transform: translateX(-50%); }
-.nameplate.noon  { bottom: 28%; left: 35%;  color: var(--noon);  border-color: rgba(59,130,246,0.5);  transform: translateX(-50%); }
-.nameplate.close { bottom: 28%; left: 63%;  color: var(--close); border-color: rgba(233,30,99,0.5);   transform: translateX(-50%); }
-.nameplate.night { bottom: 28%; left: 88%;  color: var(--night); border-color: rgba(124,77,255,0.5);  transform: translateX(-50%); }
+.nameplate.dawn  { bottom: 8%; left: 10%;  color: var(--dawn);  border-color: rgba(255,159,67,0.5); transform: translateX(-50%); }
+.nameplate.noon  { bottom: 8%; left: 35%;  color: var(--noon);  border-color: rgba(59,130,246,0.5);  transform: translateX(-50%); }
+.nameplate.close { bottom: 8%; left: 63%;  color: var(--close); border-color: rgba(233,30,99,0.5);   transform: translateX(-50%); }
+.nameplate.night { bottom: 8%; left: 88%;  color: var(--night); border-color: rgba(124,77,255,0.5);  transform: translateX(-50%); }
+.plate-badge {
+  display: none;
+  font-size: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fbbf24;
+  margin-top: 1px;
+}
+.nameplate.head-agent .plate-badge { display: block; }
+.nameplate.head-agent { border-color: rgba(251,191,36,0.7); box-shadow: 0 0 8px rgba(251,191,36,0.3); }
 .nameplate .plate-time {
   font-size: 0.58rem;
   font-weight: 500;
@@ -452,6 +463,7 @@ body {
 
   /* Nameplates: small, at very bottom edge */
   .nameplate { font-size: 0.45rem; padding: 2px 5px; bottom: 1%; }
+  .plate-badge { font-size: 0.35rem; }
   .nameplate.dawn  { left: 10%; }
   .nameplate.noon  { left: 33%; }
   .nameplate.close { left: 58%; }
@@ -508,10 +520,10 @@ body {
   </div>
 
   <!-- AGENT NAMEPLATES -->
-  <div class="nameplate dawn"><img class="plate-avatar" src="dawn.webp" alt="Dawn" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x2615;</span>Dawn<span class="plate-time">6AM HST</span></div>
-  <div class="nameplate noon"><img class="plate-avatar" src="noon.webp" alt="Noon" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x1F3C4;</span>Noon<span class="plate-time">12PM HST</span></div>
-  <div class="nameplate close"><img class="plate-avatar" src="close.webp" alt="Close" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x1F913;</span>Close<span class="plate-time">4PM HST</span></div>
-  <div class="nameplate night"><img class="plate-avatar" src="night.webp" alt="Night" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x1F9DB;</span>Night<span class="plate-time">8PM HST</span></div>
+  <div class="nameplate dawn" data-agent="dawn"><img class="plate-avatar" src="dawn.webp" alt="Dawn" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x2615;</span>Dawn<span class="plate-time">6AM HST</span><span class="plate-badge">&#9733; Head Agent</span></div>
+  <div class="nameplate noon" data-agent="noon"><img class="plate-avatar" src="noon.webp" alt="Noon" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x1F3C4;</span>Noon<span class="plate-time">12PM HST</span><span class="plate-badge">&#9733; Head Agent</span></div>
+  <div class="nameplate close" data-agent="close"><img class="plate-avatar" src="close.webp" alt="Close" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x1F913;</span>Close<span class="plate-time">4PM HST</span><span class="plate-badge">&#9733; Head Agent</span></div>
+  <div class="nameplate night" data-agent="night"><img class="plate-avatar" src="night.webp" alt="Night" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="plate-avatar-emoji">&#x1F9DB;</span>Night<span class="plate-time">8PM HST</span><span class="plate-badge">&#9733; Head Agent</span></div>
 
   <!-- SPEECH BUBBLES -->
   <div class="agent-bubbles">
@@ -567,6 +579,7 @@ let HOLDINGS = [
 ];
 let WATCHLIST = [];
 let CASH = 105;
+const COST_BASIS = 1086; // fixed: cost basis when we started buying crypto
 let TENSIONS = '';
 let OPENING = [];
 
@@ -645,7 +658,8 @@ function fmtCompact(n) {
 function renderHoldings() {
   const container = document.getElementById('holdingsRows');
   const summaryEl = document.getElementById('holdingsSummary');
-  let totalValue = 0, totalCost = 0, loaded = 0;
+  let totalValue = 0, loaded = 0;
+  const totalCost = COST_BASIS;
   let html = '';
 
   for (const h of HOLDINGS) {
@@ -653,7 +667,6 @@ function renderHoldings() {
     const val = price != null ? h.qty * price : null;
     const pnlPct = price != null ? ((price - h.entry) / h.entry) * 100 : null;
     if (val != null) { totalValue += val; loaded++; }
-    totalCost += h.cost;
     const isUp = pnlPct != null && pnlPct >= 0;
 
     html += `<div class="h-row">
@@ -687,11 +700,11 @@ function renderAggregate() {
   const subEl = document.getElementById('aggSub');
   const detailsEl = document.getElementById('aggDetails');
 
-  let totalValue = 0, totalCost = 0, loaded = 0;
+  let totalValue = 0, loaded = 0;
+  const totalCost = COST_BASIS;
   for (const h of HOLDINGS) {
     const price = priceCache[h.sym] != null ? priceCache[h.sym] : null;
     if (price != null) { totalValue += h.qty * price; loaded++; }
-    totalCost += h.cost;
   }
 
   if (!pricesLoaded || loaded === 0) {
@@ -747,7 +760,7 @@ function drawHistoryChart() {
   const plotW = W - pad.left - pad.right;
   const plotH = H - pad.top - pad.bottom;
 
-  const totalCost = HOLDINGS.reduce((s, h) => s + h.cost, 0);
+  const totalCost = COST_BASIS;
   const values = historyData.map(d => d.value);
   const minVal = Math.min(...values, totalCost) * 0.98;
   const maxVal = Math.max(...values, totalCost) * 1.02;
@@ -999,18 +1012,38 @@ async function sendQuestion() {
   btn.textContent = 'Ask';
 }
 
+// ===== HEAD AGENT (whoever ran last based on HST time) =====
+function updateHeadAgent() {
+  // Get current hour in HST (UTC-10)
+  const now = new Date();
+  const hst = new Date(now.toLocaleString('en-US', { timeZone: 'Pacific/Honolulu' }));
+  const h = hst.getHours();
+  // Dawn 6AM, Noon 12PM, Close 4PM, Night 8PM
+  let head;
+  if (h >= 20)     head = 'night';
+  else if (h >= 16) head = 'close';
+  else if (h >= 12) head = 'noon';
+  else if (h >= 6)  head = 'dawn';
+  else              head = 'night'; // before 6AM → last night's run
+  document.querySelectorAll('.nameplate').forEach(el => {
+    el.classList.toggle('head-agent', el.dataset.agent === head);
+  });
+}
+
 // ===== INIT =====
 window.addEventListener('load', async () => {
   await loadPortfolioData();
   renderHoldings();
   renderAggregate();
   drawHistoryChart();
+  updateHeadAgent();
   // Reload data.json every 5 min (prices update with each scan)
   setInterval(async () => {
     await loadPortfolioData();
     renderHoldings();
     renderAggregate();
     drawHistoryChart();
+    updateHeadAgent();
   }, 300000);
   setTimeout(runOpeningDebate, 1500);
   window.addEventListener('resize', drawHistoryChart);
