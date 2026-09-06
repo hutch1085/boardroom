@@ -108,17 +108,17 @@ body {
 
 /* LEFT SCREEN — Positions */
 .screen-holdings {
-  top: 3%;
+  top: 5%;
   left: 1.5%;
   width: 38%;
-  max-height: 62%;
+  max-height: 58%;
 }
 /* RIGHT SCREEN — Aggregate */
 .screen-aggregate {
-  top: 3%;
+  top: 5%;
   right: 1.5%;
   width: 38%;
-  max-height: 62%;
+  max-height: 58%;
 }
 
 .screen-body {
@@ -728,7 +728,20 @@ function renderAggregate() {
 // ============================================================
 function drawHistoryChart() {
   const canvas = document.getElementById('historyChart');
-  if (!canvas || historyData.length < 2) return;
+  if (!canvas) return;
+  if (historyData.length < 2) {
+    const ctx = canvas.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.scale(dpr, dpr);
+    ctx.fillStyle = 'rgba(160,170,190,0.4)';
+    ctx.font = '11px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('Chart builds as scans run — need 2+ days', rect.width / 2, rect.height / 2);
+    return;
+  }
   const ctx = canvas.getContext('2d');
   const dpr = window.devicePixelRatio || 1;
   const rect = canvas.getBoundingClientRect();
