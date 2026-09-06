@@ -259,49 +259,8 @@ body {
   letter-spacing: 0.04em;
 }
 
-/* === SPEECH BUBBLES === */
-.agent-bubbles {
-  position: absolute;
-  bottom: 34%;
-  left: 2%;
-  right: 2%;
-  display: flex;
-  justify-content: space-around;
-  gap: 6px;
-  z-index: 15;
-  pointer-events: none;
-}
-.speech-bubble {
-  background: rgba(20, 24, 32, 0.92);
-  backdrop-filter: blur(12px);
-  border-radius: 10px;
-  padding: 8px 12px;
-  font-size: 0.82rem;
-  line-height: 1.4;
-  max-width: 22%;
-  border: 1px solid var(--border);
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 0.4s, transform 0.4s;
-  display: none;
-  pointer-events: auto;
-}
-.speech-bubble.visible {
-  opacity: 1;
-  transform: translateY(0);
-  display: block;
-}
-.bubble-agent {
-  font-weight: 600;
-  font-size: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 3px;
-}
-.bubble-agent.dawn { color: var(--dawn); }
-.bubble-agent.noon { color: var(--noon); }
-.bubble-agent.close { color: var(--close); }
-.bubble-agent.night { color: var(--purple); }
+/* === SPEECH BUBBLES (hidden — agents talk in chat now) === */
+.agent-bubbles { display: none; }
 
 /* === BOTTOM SECTION (Chat) === */
 .bottom-section {
@@ -319,21 +278,22 @@ body {
   overflow: hidden;
 }
 .chat-header {
-  padding: 6px 12px;
+  padding: 8px 14px;
   border-bottom: 1px solid var(--border);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--accent);
+  background: rgba(99,102,241,0.08);
 }
 .chat-log {
-  height: 90px;
+  height: 220px;
   overflow-y: auto;
-  padding: 6px;
+  padding: 8px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 .chat-log::-webkit-scrollbar { width: 4px; }
 .chat-log::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
@@ -361,6 +321,7 @@ body {
   font-size: 0.78rem;
   line-height: 1.5;
   border: 1px solid var(--border);
+  border-left: 3px solid;
   max-width: 85%;
 }
 .msg-name {
@@ -448,54 +409,48 @@ body {
   .nameplate .plate-avatar { width: 36px; height: 36px; }
   .speech-bubble { max-width: 30%; font-size: 0.7rem; padding: 6px 8px; }
   .agent-bubbles { bottom: 28%; }
-  .chat-log { height: 80px; }
+  .chat-log { height: 180px; }
   .bottom-section { padding: 4px 12px 6px; }
 }
 
 @media (max-width: 480px) {
   html { font-size: 14px; }
-  .boardroom { height: auto; min-height: 100vh; }
+  .boardroom { height: 100vh; min-height: 600px; }
 
-  /* Stack boards at top, full width */
+  /* Boards: small, top corners, don't cover agents */
   .screen-holdings, .screen-aggregate {
-    position: relative;
-    width: 96%;
-    max-height: none;
-    margin: 0 auto 4px;
-    top: auto; left: auto; right: auto;
-    transform: none;
+    width: 47%;
+    max-height: 28%;
   }
-  .screen-holdings { margin-top: 48px; }
-  .screen-body { font-size: 0.72rem; padding: 4px 6px; max-height: 120px; }
-  .screen-summary { font-size: 0.6rem; padding: 4px 6px; }
-  .screen-overlay .screen-title { font-size: 0.65rem; padding: 5px 8px; }
-  .h-row { padding: 3px 4px; }
-  .agg-value { font-size: 1.1rem; }
-  .agg-sub { font-size: 0.6rem; }
-  .agg-row { font-size: 0.6rem; }
-  .history-chart-area { height: 80px !important; min-height: 60px !important; }
+  .screen-holdings { left: 1%; top: 6%; }
+  .screen-aggregate { right: 1%; top: 6%; }
+  .screen-body { font-size: 0.55rem; padding: 2px 4px; max-height: 80px; }
+  .screen-summary { font-size: 0.5rem; padding: 3px 4px; }
+  .screen-overlay .screen-title { font-size: 0.55rem; padding: 4px 6px; }
+  .h-row { padding: 2px 3px; }
+  .h-sym { font-size: 0.55rem; min-width: 28px; }
+  .h-val { font-size: 0.5rem; }
+  .h-pnl { font-size: 0.5rem; }
+  .agg-value { font-size: 0.85rem; }
+  .agg-sub { font-size: 0.48rem; }
+  .agg-row { font-size: 0.48rem; padding: 2px 4px; }
+  .agg-label { font-size: 0.48rem; }
+  .history-chart-area { height: 50px !important; min-height: 40px !important; }
+  .chart-label { font-size: 0.45rem; }
 
-  /* Hero image visible between boards and agents */
-  .boardroom img { min-height: 100vh; }
-
-  /* Agent nameplates in a row near bottom */
-  .nameplate {
-    font-size: 0.58rem;
-    padding: 3px 8px;
-    bottom: 14%;
-  }
+  /* Agent nameplates: visible below hero midpoint */
+  .nameplate { font-size: 0.5rem; padding: 2px 6px; bottom: 12%; }
   .nameplate.dawn  { left: 13%; }
   .nameplate.noon  { left: 38%; }
   .nameplate.close { left: 63%; }
   .nameplate.night { left: 88%; }
   .nameplate .plate-time { display: none; }
-  .nameplate .plate-avatar { width: 32px; height: 32px; }
+  .nameplate .plate-avatar { width: 26px; height: 26px; }
 
-  /* Speech bubbles above nameplates */
-  .speech-bubble { max-width: 44%; font-size: 0.62rem; padding: 5px 8px; }
-  .agent-bubbles { bottom: 22%; flex-wrap: wrap; justify-content: center; gap: 4px; }
+  /* Speech bubbles: hide on small screens to avoid clutter */
+  .agent-bubbles { display: none; }
 
-  .chat-log { height: 80px; }
+  .chat-log { height: 160px; }
   .bottom-section { padding: 4px 8px 6px; }
 }
 </style>
@@ -913,22 +868,27 @@ function typeText(element, text, speed = 25) {
   });
 }
 
-// ===== OPENING DEBATE =====
+// ===== OPENING DEBATE (types into chat room) =====
 async function runOpeningDebate() {
   if (!OPENING.length) return;
   for (const line of OPENING) {
-    const container = document.getElementById(`bubble-${line.agent}`);
-    if (!container) continue;
-    const textEl = container.querySelector('.bubble-text');
-    container.classList.add('visible');
-    await typeText(textEl, line.text, 20);
-    await new Promise(r => setTimeout(r, 1200));
-  }
-  await new Promise(r => setTimeout(r, 3000));
-  for (const line of OPENING) {
-    const el = document.getElementById(`bubble-${line.agent}`);
-    if (el) el.classList.remove('visible');
-    addToChatLog(line.agent, line.text);
+    const a = AGENTS[line.agent];
+    if (!a) continue;
+    // Add message shell to chat, then type into it
+    const log = document.getElementById('chatLog');
+    const div = document.createElement('div');
+    div.className = 'chat-msg';
+    div.innerHTML = `
+      <div class="avatar-sm" style="background:${a.bg};border-color:${a.color}">${a.icon}</div>
+      <div class="msg-body" style="border-left:3px solid ${a.color};border-color:${a.color}30">
+        <div class="msg-name" style="color:${a.color}">${a.name}</div>
+        <span class="msg-text"></span>
+      </div>`;
+    log.appendChild(div);
+    log.scrollTop = log.scrollHeight;
+    const textEl = div.querySelector('.msg-text');
+    await typeText(textEl, line.text, 18);
+    await new Promise(r => setTimeout(r, 600));
   }
 }
 
@@ -941,12 +901,13 @@ function addToChatLog(agentKey, text) {
   div.className = 'chat-msg';
   div.innerHTML = `
     <div class="avatar-sm" style="background:${a.bg};border-color:${a.color}">${a.icon}</div>
-    <div class="msg-body" style="border-color:${a.color}30">
+    <div class="msg-body" style="border-left-color:${a.color};border-color:${a.color}30;border-left:3px solid ${a.color}">
       <div class="msg-name" style="color:${a.color}">${a.name}</div>
-      ${text}
+      <span class="msg-text">${text}</span>
     </div>`;
   log.appendChild(div);
   log.scrollTop = log.scrollHeight;
+  return div.querySelector('.msg-text');
 }
 
 function addUserMsg(text) {
@@ -998,17 +959,24 @@ async function sendQuestion() {
 
     for (const r of responses) {
       const agentKey = r.agent.toLowerCase();
-      if (!AGENTS[agentKey]) continue;
+      const a = AGENTS[agentKey];
+      if (!a) continue;
 
-      const container = document.getElementById(`bubble-${agentKey}`);
-      const textEl = container.querySelector('.bubble-text');
-      textEl.textContent = '';
-      container.classList.add('visible');
+      // Type directly into chat log
+      const log = document.getElementById('chatLog');
+      const div = document.createElement('div');
+      div.className = 'chat-msg';
+      div.innerHTML = `
+        <div class="avatar-sm" style="background:${a.bg};border-color:${a.color}">${a.icon}</div>
+        <div class="msg-body" style="border-left:3px solid ${a.color};border-color:${a.color}30">
+          <div class="msg-name" style="color:${a.color}">${a.name}</div>
+          <span class="msg-text"></span>
+        </div>`;
+      log.appendChild(div);
+      log.scrollTop = log.scrollHeight;
+      const textEl = div.querySelector('.msg-text');
       await typeText(textEl, r.text, 18);
-      await new Promise(res => setTimeout(res, 800));
-
-      addToChatLog(agentKey, r.text);
-      setTimeout(() => container.classList.remove('visible'), 3000);
+      await new Promise(res => setTimeout(res, 400));
     }
   } catch (e) {
     addToChatLog('night', `*static crackle* Something went wrong: ${e.message}`);
