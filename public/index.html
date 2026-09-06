@@ -571,8 +571,18 @@ async function loadPortfolioData() {
     if (data.cash != null) CASH = data.cash;
     if (data.tensions) TENSIONS = data.tensions;
     if (data.opening && data.opening.length) OPENING = data.opening;
+    // Load prices from scan tasks (Robinhood data)
+    if (data.prices && typeof data.prices === 'object') {
+      priceCache = data.prices;
+      pricesLoaded = Object.keys(priceCache).length > 0;
+    }
+    // Load history snapshots for 4-week chart
+    if (data.history && Array.isArray(data.history)) {
+      historyData = data.history;
+    }
     if (data.lastUpdated) {
       const d = new Date(data.lastUpdated);
+      document.getElementById('lastUpdated').textContent = d.toLocaleTimeString();
       const el = document.getElementById('dataTimestamp');
       if (el) el.textContent = 'Last scan: ' + d.toLocaleDateString() + ' ' + d.toLocaleTimeString();
     }
@@ -594,84 +604,13 @@ const AGENTS = {
 };
 
 // ============================================================
-// === COINPAPRIKA PRICE FETCHING ===
+// === PRICES FROM DATA.JSON (no external API) ===
 // ============================================================
-async function fetchAllPrices() {
-  const allIds = [...HOLDINGS.map(h => h.id), ...WATCHLIST.map(w => w.id)];
-  const unique = [...new Set(allIds)];
-  const results = await Promise.allSettled(
-    unique.map(id =>
-      fetch(`https://api.coinpaprika.com/v1/tickers/${id}`)
-        .then(r => r.ok ? r.json() : Promise.reject(r.status))
-    )
-  );
-  results.forEach((r, i) => {
-    if (r.status === 'fulfilled') priceCache[unique[i]] = r.value;
-  });
-  pricesLoaded = Object.keys(priceCache).length > 0;
-  renderHoldings();
-  renderAggregate();
-  updateTimestamp();
-}
-
-// ============================================================
-// === FETCH 4-WEEK HISTORICAL PRICES ===
-// ============================================================
-async function fetchHistoricalPrices() {
-  const now = new Date();
-  const start = new Date(now);
-  start.setDate(start.getDate() - 28);
-  const startStr = start.toISOString().split('T')[0];
-
-  // Fetch daily historical data for each holding
-  const holdingIds = [...new Set(HOLDINGS.map(h => h.id))];
-  const histResults = await Promise.allSettled(
-    holdingIds.map(id =>
-      fetch(`https://api.coinpaprika.com/v1/tickers/${id}/historical?start=${startStr}&interval=1d`)
-        .then(r => r.ok ? r.json() : Promise.reject(r.status))
-    )
-  );
-
-  // Build a map: coinId -> [{timestamp, price}]
-  const histMap = {};
-  histResults.forEach((r, i) => {
-    if (r.status === 'fulfilled' && Array.isArray(r.value)) {
-      histMap[holdingIds[i]] = r.value.map(d => ({
-        date: d.timestamp.split('T')[0],
-        price: d.price
-      }));
-    }
-  });
-
-  // Get all unique dates across all coins
-  const allDates = new Set();
-  Object.values(histMap).forEach(arr => arr.forEach(d => allDates.add(d.date)));
-  const sortedDates = [...allDates].sort();
-
-  // Calculate daily portfolio value
-  const totalCost = HOLDINGS.reduce((s, h) => s + h.cost, 0);
-  historyData = sortedDates.map(date => {
-    let dayValue = 0;
-    let allFound = true;
-    for (const h of HOLDINGS) {
-      const coinHist = histMap[h.id];
-      if (!coinHist) { allFound = false; continue; }
-      const dayData = coinHist.find(d => d.date === date);
-      if (dayData) {
-        dayValue += h.qty * dayData.price;
-      } else {
-        allFound = false;
-      }
-    }
-    return { date, value: dayValue, pnl: dayValue - totalCost, complete: allFound };
-  }).filter(d => d.complete && d.value > 0);
-
-  drawHistoryChart();
-}
-
-function updateTimestamp() {
-  document.getElementById('lastUpdated').textContent = new Date().toLocaleTimeString();
-}
+// Prices are written by scan tasks into data.json as:
+//   "prices": {"BTC": 84500.50, "ETH": 2100.30, ...}
+// History snapshots written as:
+//   "history": [{"date":"2026-09-05","value":1250.00,"cost":1152.57}, ...]
+// loadPortfolioData() populates priceCache and historyData from these fields.
 
 function fmt(n) {
   if (n == null || isNaN(n)) return '—';
@@ -698,8 +637,7 @@ function renderHoldings() {
   let html = '';
 
   for (const h of HOLDINGS) {
-    const ticker = priceCache[h.id];
-    const price = ticker ? ticker.quotes.USD.price : null;
+    const price = priceCache[h.sym] != null ? priceCache[h.sym] : null;
     const val = price != null ? h.qty * price : null;
     const pnlPct = price != null ? ((price - h.entry) / h.entry) * 100 : null;
     if (val != null) { totalValue += val; loaded++; }
@@ -739,8 +677,7 @@ function renderAggregate() {
 
   let totalValue = 0, totalCost = 0, loaded = 0;
   for (const h of HOLDINGS) {
-    const ticker = priceCache[h.id];
-    const price = ticker ? ticker.quotes.USD.price : null;
+    const price = priceCache[h.sym] != null ? priceCache[h.sym] : null;
     if (price != null) { totalValue += h.qty * price; loaded++; }
     totalCost += h.cost;
   }
@@ -868,8 +805,8 @@ function drawHistoryChart() {
 // ============================================================
 function buildSystemPrompt() {
   let holdingsText = HOLDINGS.map(h => {
-    const t = priceCache[h.id];
-    const cur = t ? '$' + t.quotes.USD.price.toFixed(2) : '?';
+    const p = priceCache[h.sym];
+    const cur = p != null ? '$' + p.toFixed(2) : '?';
     return `- ${h.sym} ${h.qty} @ $${h.entry} entry (now ${cur}), cost $${h.cost}`;
   }).join('\n');
 
@@ -1029,9 +966,14 @@ window.addEventListener('load', async () => {
   await loadPortfolioData();
   renderHoldings();
   renderAggregate();
-  fetchAllPrices();
-  fetchHistoricalPrices();
-  setInterval(fetchAllPrices, 60000);
+  drawHistoryChart();
+  // Reload data.json every 5 min (prices update with each scan)
+  setInterval(async () => {
+    await loadPortfolioData();
+    renderHoldings();
+    renderAggregate();
+    drawHistoryChart();
+  }, 300000);
   setTimeout(runOpeningDebate, 1500);
   window.addEventListener('resize', drawHistoryChart);
 });
