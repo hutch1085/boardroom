@@ -1,0 +1,162 @@
+{
+  "holdings": [
+    {
+      "sym": "BTC",
+      "id": "btc-bitcoin",
+      "qty": 0.0003886,
+      "entry": 63462.8,
+      "date": "Aug 16",
+      "cost": 24.66
+    },
+    {
+      "sym": "ETH",
+      "id": "eth-ethereum",
+      "qty": 0.016746,
+      "entry": 1913.05,
+      "date": "Aug 18",
+      "cost": 32.05
+    },
+    {
+      "sym": "SOL",
+      "id": "sol-solana",
+      "qty": 0.96289,
+      "entry": 92.8,
+      "date": "Aug 16",
+      "cost": 89.36
+    },
+    {
+      "sym": "UNI",
+      "id": "uni-uniswap",
+      "qty": 3.2119,
+      "entry": 3.32,
+      "date": "Aug 17",
+      "cost": 10.75
+    },
+    {
+      "sym": "LINK",
+      "id": "link-chainlink",
+      "qty": 30.5616,
+      "entry": 11.42,
+      "date": "Aug 29",
+      "cost": 349.05
+    },
+    {
+      "sym": "AAVE",
+      "id": "aave-new",
+      "qty": 1.18158,
+      "entry": 125,
+      "date": "Aug 31",
+      "cost": 147.7
+    },
+    {
+      "sym": "ZEC",
+      "id": "zec-zcash",
+      "qty": 0.06224,
+      "entry": 939.05,
+      "date": "Sep 3",
+      "cost": 59
+    },
+    {
+      "sym": "ADA",
+      "id": "ada-cardano",
+      "qty": 468.38,
+      "entry": 0.2116,
+      "date": "Sep 4",
+      "cost": 100
+    },
+    {
+      "sym": "LTC",
+      "id": "ltc-litecoin",
+      "qty": 3.84515721,
+      "entry": 52.01,
+      "date": "Sep 4",
+      "cost": 200
+    },
+    {
+      "sym": "DOT",
+      "id": "dot-polkadot",
+      "qty": 154.152,
+      "entry": 0.908,
+      "date": "Sep 4",
+      "cost": 140
+    }
+  ],
+  "watchlist": [
+    {
+      "sym": "XRP",
+      "id": "xrp-xrp",
+      "recentlyExited": false
+    },
+    {
+      "sym": "DOGE",
+      "id": "doge-dogecoin",
+      "recentlyExited": false
+    },
+    {
+      "sym": "AVAX",
+      "id": "avax-avalanche",
+      "recentlyExited": false
+    },
+    {
+      "sym": "SHIB",
+      "id": "shib-shiba-inu",
+      "recentlyExited": false
+    },
+    {
+      "sym": "ETC",
+      "id": "etc-ethereum-classic",
+      "recentlyExited": false
+    },
+    {
+      "sym": "BCH",
+      "id": "bch-bitcoin-cash",
+      "recentlyExited": false
+    },
+    {
+      "sym": "PEPE",
+      "id": "pepe-pepe",
+      "recentlyExited": false
+    },
+    {
+      "sym": "ENS",
+      "id": "ens-ethereum-name-service",
+      "recentlyExited": false
+    },
+    {
+      "sym": "XLM",
+      "id": "xlm-stellar",
+      "recentlyExited": true
+    },
+    {
+      "sym": "HYPE",
+      "id": "hype-hyperliquid",
+      "recentlyExited": true
+    },
+    {
+      "sym": "ARB",
+      "id": "arb-arbitrum",
+      "recentlyExited": true
+    }
+  ],
+  "cash": 105,
+  "tensions": "- LINK is the biggest position by cost (~$349) — heavy concentration (~30% of book)\n- LTC is the second biggest at $200 cost — store-of-value bet, entered Sep 4\n- James has overridden the scanner before (ZEC at $939 was a bold override, now trimmed twice)\n- Only ~$105 cash left — 92% invested during Greed readings\n- 10 positions across blue chips (BTC, ETH, SOL), DeFi (UNI, AAVE), L1s (ADA, DOT), privacy (ZEC), store-of-value (LTC)\n- Recently sold XLM (dead money), HYPE (unlock), and ARB (full exit after +50% weekly pop)\n- CPI Sep 11, FOMC Sep 15-16 — macro risk ahead",
+  "opening": [
+    {
+      "agent": "dawn",
+      "text": "Good morning from the boardroom! Ten positions, all green, portfolio humming. LTC just joined the family yesterday and it's already up 5%. I love this energy!"
+    },
+    {
+      "agent": "noon",
+      "text": "Ten positions on $105 in dry powder. That's 92% deployed during a Greed print with CPI and FOMC in 10 days. The volume is collapsing across every major — this bounce has no legs."
+    },
+    {
+      "agent": "close",
+      "text": "LINK is still 30% of the book. ZEC got trimmed twice but we're still riding $939 entry money. And can someone explain why we added DOT at 98% below ATH? That's not a discount, that's structural decay."
+    },
+    {
+      "agent": "night",
+      "text": "ARB got the axe today — beautiful exit at +50% weekly. Three clean exits in two days: XLM, HYPE, ARB. James is learning to take profits. Though I wonder... with $105 left, who's buying the next dip?"
+    }
+  ],
+  "lastUpdated": "2026-09-06T02:31:47.965Z"
+}
