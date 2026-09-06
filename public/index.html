@@ -415,30 +415,28 @@ body {
 
 @media (max-width: 480px) {
   html { font-size: 14px; }
-  /* Shorter container so wide image isn't cropped as much */
+  /* Shorter container — contain keeps all agents visible */
   .boardroom { height: 48vh; min-height: 280px; }
-  /* Show full image width — agents span the whole scene */
   .boardroom img { object-fit: contain; object-position: center bottom; }
-  /* Darken upper portion to hide speech bubbles baked into the hero image */
+  /* Gentle gradient — new image has no speech bubbles */
   .boardroom-dim {
     background: linear-gradient(to bottom,
-      rgba(11,14,20,1) 0%,
-      rgba(11,14,20,1) 48%,
-      rgba(11,14,20,0.6) 60%,
-      rgba(0,0,0,0.1) 70%,
-      rgba(0,0,0,0.2) 80%,
+      rgba(11,14,20,0.9) 0%,
+      rgba(11,14,20,0.3) 35%,
+      rgba(0,0,0,0.05) 55%,
+      rgba(0,0,0,0.15) 80%,
       rgba(11,14,20,0.95) 93%,
       var(--bg) 100%);
   }
 
-  /* Boards: in dark space above image, below header */
+  /* Boards: bigger, fill the space */
   .screen-holdings, .screen-aggregate {
     width: 48%;
-    max-height: 30%;
+    max-height: 42%;
   }
-  .screen-holdings { left: 1%; top: 12%; }
-  .screen-aggregate { right: 1%; top: 12%; }
-  .screen-body { font-size: 0.55rem; padding: 2px 4px; max-height: 80px; }
+  .screen-holdings { left: 1%; top: 11%; }
+  .screen-aggregate { right: 1%; top: 11%; }
+  .screen-body { font-size: 0.55rem; padding: 2px 4px; max-height: 100px; }
   .screen-summary { font-size: 0.5rem; padding: 3px 4px; }
   .screen-overlay .screen-title { font-size: 0.55rem; padding: 4px 6px; }
   .h-row { padding: 2px 3px; }
@@ -452,13 +450,20 @@ body {
   .history-chart-area { height: 50px !important; min-height: 40px !important; }
   .chart-label { font-size: 0.45rem; }
 
-  /* Hide nameplates on mobile — agents identified in chat */
-  .nameplate { display: none; }
+  /* Nameplates: small, at very bottom edge */
+  .nameplate { font-size: 0.45rem; padding: 2px 5px; bottom: 1%; }
+  .nameplate.dawn  { left: 10%; }
+  .nameplate.noon  { left: 33%; }
+  .nameplate.close { left: 58%; }
+  .nameplate.night { left: 83%; }
+  .nameplate .plate-time { display: none; }
+  .nameplate .plate-avatar { width: 18px; height: 18px; }
 
-  /* Speech bubbles: hide on small screens */
+  /* Speech bubbles: hide */
   .agent-bubbles { display: none; }
 
-  .chat-log { height: 180px; }
+  /* Smaller chat to reduce scrolling */
+  .chat-log { height: 130px; }
   .bottom-section { padding: 4px 8px 6px; }
 }
 </style>
