@@ -1,36 +1,12 @@
 {
   "holdings": [
     {
-      "sym": "BTC",
-      "id": "btc-bitcoin",
-      "qty": 0.0003886,
-      "entry": 63462.8,
-      "date": "Aug 16",
-      "cost": 24.66
-    },
-    {
-      "sym": "ETH",
-      "id": "eth-ethereum",
-      "qty": 0.016746,
-      "entry": 1913.05,
-      "date": "Aug 18",
-      "cost": 32.05
-    },
-    {
       "sym": "SOL",
       "id": "sol-solana",
       "qty": 0.96289,
       "entry": 92.8,
       "date": "Aug 16",
       "cost": 89.36
-    },
-    {
-      "sym": "UNI",
-      "id": "uni-uniswap",
-      "qty": 3.2119,
-      "entry": 3.32,
-      "date": "Aug 17",
-      "cost": 10.75
     },
     {
       "sym": "LINK",
@@ -44,7 +20,7 @@
       "sym": "AAVE",
       "id": "aave-new",
       "qty": 1.18158,
-      "entry": 125,
+      "entry": 125.0,
       "date": "Aug 31",
       "cost": 147.7
     },
@@ -54,7 +30,7 @@
       "qty": 0.06224,
       "entry": 939.05,
       "date": "Sep 3",
-      "cost": 59
+      "cost": 59.0
     },
     {
       "sym": "ADA",
@@ -62,7 +38,7 @@
       "qty": 468.38,
       "entry": 0.2116,
       "date": "Sep 4",
-      "cost": 100
+      "cost": 100.0
     },
     {
       "sym": "LTC",
@@ -70,7 +46,7 @@
       "qty": 3.84515721,
       "entry": 52.01,
       "date": "Sep 4",
-      "cost": 200
+      "cost": 200.0
     },
     {
       "sym": "DOT",
@@ -78,7 +54,15 @@
       "qty": 154.152,
       "entry": 0.908,
       "date": "Sep 4",
-      "cost": 140
+      "cost": 140.0
+    },
+    {
+      "sym": "NEAR",
+      "id": "near-protocol",
+      "qty": 40.33,
+      "entry": 2.4534,
+      "date": "Sep 6",
+      "cost": 98.94
     }
   ],
   "watchlist": [
@@ -138,38 +122,39 @@
       "recentlyExited": true
     }
   ],
-  "cash": 105,
-  "tensions": "The book is fully deployed with roughly $5 of buying power left, so the next drawdown cannot be bought and every position must survive on its own thesis. Fear & Greed at 73 with ZEC up 143% in a month reads late-cycle, and the no-trim mandate is being tested hardest exactly where it is most profitable: UNI at +116% and ZEC at +31% in three days are textbook trim candidates under any conventional risk framework. We are deliberately declining that framework, and should be honest that this is a choice rather than an edge. The NEAR entry compounds it - buying a 13% green candle after a 31% week is chasing, and it scored six lenses precisely because the momentum that makes it attractive is the momentum that makes it extended. If dominance turns up from 59.2%, the whole alt book unwinds at once with no cash to answer. One bookkeeping note: the scan brief states a $1,086 cost basis, but the position table sums to $1,152.57; the arithmetic figure is used here.",
+  "cash": 46.6,
+  "tensions": "The mandate says hold for 100x and never trim a winner. Today the account did the opposite: UNI, the single position that had actually doubled, was sold at the top of its range along with BTC and ETH. The system realized $27 and forfeited the compounding thesis on its best performer. Second tension: Fear & Greed prints 71 (Greed) while total market cap fell 2.7% \u2014 sentiment and tape are diverging, which is late-cycle. Alt strength in LINK and DOT is rotation out of majors, not new money in. Third: the book now carries zero BTC and zero ETH. An eight-coin altcoin portfolio with no major-cap ballast is a leveraged bet on rotation continuing. If dominance climbs from 59.2%, there is nothing in this account that benefits.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Regime is a clean alt bull. BTC $79,838, flat on the day but +23% over thirty. Dominance 59.2% and drifting lower - capital is leaving the majors for the tail. Fear & Greed 73, Greed. Total cap $2.70T, off 3.3% on the day, which is noise inside this trend. All ten holdings green. That is not stock picking; that is the tide doing the work, and it is worth saying so plainly."
+      "text": "BTC opened flat at $79,874 against a $2.70T total cap that shed 2.7% on the day. Dominance 59.2%. The interesting print is not bitcoin \u2014 it is LINK, up 5.8% into a red tape, and DOT up 4.4%. That is rotation with a bid behind it, not a broad melt-up."
     },
     {
       "agent": "noon",
-      "text": "Book marks at $1,289 against $1,153 of cost - up $137, or 11.9%. UNI is the standout at +115.9%, $3.32 to $7.17, and it added 35.9% this week alone; the double is not the exit, it is the entry to the part that matters. ZEC +30.6% in three days, up 21% today and 143% on the month - the privacy cohort is in a real mania and we ride it rather than fade it. LINK is the largest line at $393, +12.6% in eight days. Nothing broken. Zero sells."
+      "text": "NEAR was bought four hours ago at $2.4534 and is already -3.6% at $2.366. That entry chased a move rather than waited for one. It is a $99 position, so the damage is bounded, but it is a process error worth naming: we paid the ask on a coin that was already extended."
     },
     {
       "agent": "close",
-      "text": "Deployed the last of the powder into NEAR - $100 market, roughly 40.25 units at $2.4607, $0.95 taker fee, validated against the broker. Six of seven lenses: +31.2% on the week, turnover a healthy 0.19 of cap, AI-L1 narrative, violent relative strength against BTC's +1.7% week, rank #33 with headroom, no overlap with anything held. The one miss is that it is up 13% today and we are paying up. Passed on XMR at 4/7 - turnover of 0.01 is a trap door, and stacking privacy behind a ZEC position already up 30% is concentration wearing conviction's coat."
+      "text": "At 16:05 HST three positions were liquidated manually, one minute before this scan: UNI at $7.0759 (+109%, +$11.76), BTC at $79,864 (+25%, +$6.08), ETH at $2,501.92 (+29%, +$9.44). Realized roughly +$27. This is a direct violation of the no-trimming mandate. UNI was the only 2x in the book and it was cut precisely when the rule says ride. Eight positions remain: $1,289 market on $1,184 cost, +8.9%."
     },
     {
       "agent": "night",
-      "text": "Buying power falls to about $5 after the NEAR fill. That is the binding constraint now: fully invested, no dry powder, no bid to offer a drawdown. ADA is the weak link at +9.6% over thirty days against a book averaging far more, and it went nowhere today - on watch, not on the block. The plan is unchanged: hold everything, sell only on a broken thesis, let the winners run to absurdity."
+      "text": "Proceeds of ~$95 are unsettled. A $40 LINK preview was rejected by the broker for insufficient buying power, so tonight's PASS is enforced, not chosen. When cash clears, LINK is the queued entry at $100 \u2014 it is the strongest confirmed trend in the book and the only name showing relative strength against a falling market."
     }
   ],
-  "lastUpdated": "2026-09-06T22:09:52.860452Z",
+  "lastUpdated": "2026-09-07T02:07:32.909948Z",
   "prices": {
-    "BTC": 79837.81,
-    "ETH": 2502.75,
-    "SOL": 105.6775,
-    "UNI": 7.166837,
-    "LINK": 12.858525,
-    "AAVE": 134.5822,
-    "ZEC": 1226.71,
-    "ADA": 0.22042,
-    "LTC": 54.712,
-    "DOT": 0.969835
+    "BTC": 79873.59,
+    "ETH": 2502.025,
+    "SOL": 105.2805,
+    "UNI": 7.0769,
+    "LINK": 12.99722,
+    "AAVE": 133.56055,
+    "ZEC": 1186.43,
+    "ADA": 0.220815,
+    "LTC": 54.202,
+    "DOT": 0.9839915,
+    "NEAR": 2.366167
   },
   "history": [
     {
@@ -204,8 +189,8 @@
     },
     {
       "date": "2026-09-06",
-      "value": 1289.18,
-      "cost": 1152.57
+      "value": 1335.8,
+      "cost": 1184.05
     }
   ]
 }
