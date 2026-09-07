@@ -142,7 +142,7 @@
       "text": "Proceeds of ~$95 are unsettled. A $40 LINK preview was rejected by the broker for insufficient buying power, so tonight's PASS is enforced, not chosen. When cash clears, LINK is the queued entry at $100 \u2014 it is the strongest confirmed trend in the book and the only name showing relative strength against a falling market."
     }
   ],
-  "lastUpdated": "2026-09-07T02:07:32.909948Z",
+  "lastUpdated": "2026-09-07T16:04:26.045810Z",
   "prices": {
     "BTC": 79873.59,
     "ETH": 2502.025,
@@ -157,11 +157,6 @@
     "NEAR": 2.366167
   },
   "history": [
-    {
-      "date": "2026-08-31",
-      "value": 1195.83,
-      "cost": 1152.57
-    },
     {
       "date": "2026-09-01",
       "value": 1211.5,
@@ -189,6 +184,11 @@
     },
     {
       "date": "2026-09-06",
+      "value": 1335.8,
+      "cost": 1184.05
+    },
+    {
+      "date": "2026-09-07",
       "value": 1335.8,
       "cost": 1184.05
     }
