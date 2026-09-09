@@ -123,35 +123,37 @@
     }
   ],
   "cash": 1.87,
-  "tensions": "Dawn counts eight winners; Night sees one rally that everything rode. Both describe the same $1,376.50. The forced answer is $1.87 of buying power, which makes the argument theoretical until James funds the account. Two items get decided by calendar rather than opinion: LINK, eleven days in at +2.4% and a third of the book, resolves on Circle Arc mainnet Sep 16; ADA hits its fourteen-day mark on Sep 18 at +1.2%.",
+  "tensions": "- LINK is 30% of the book at $373 \u2014 the single largest concentration, riding a dated Sep 16 Circle Arc catalyst. Right thesis, oversized bet.\n- LTC ($209), AAVE ($158) and DOT ($147) are the next tier; BTC ($31) and UNI ($22) are rounding errors. The sizing does not reflect conviction.\n- ZEC at +130% in 30 days and +2,300% YoY is the clearest climax risk. Position is only $73, so the mechanical trim is not worth the 0.95% taker fee. Mental stop at $1,000 instead.\n- UNI crossed 2x (entry $3.32, now $6.98) and triggers the trim rule. Overriding: fee burn now exceeds issuance and the thesis is accelerating, not exhausting.\n- Macro is binary and near: CPI Sep 11, FOMC Sep 16, options max pain $78k on Sep 18. BTC-rate correlation is at record highs.\n- BTC dominance 59.26% (sell trigger 60%) and F&G 73 (trim trigger 75) are both one bad day from firing.\n- Cash is $105 on $1,365 total \u2014 7.7%. Thin, but deliberately unspent into the print.\n- No exits since the Sep 4 build-out (ADA, LTC, DOT). Nothing has been held long enough to break.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Every single position is green. All eight. Crypto value $1,376.50 on $1,086 deposited, up 26.8%, with the oldest holding only 24 days old. ZEC leads at +35.6%, from $939.05 to $1,273.81 in six days, on Grayscale's ZCSH ETF pulling roughly $463M and privacy leading every sector at +90% over 30 days. DOT ran +24.9% off a short squeeze and a 150% jump in XCM throughput. NEAR is up 14% today with NEAR Day tomorrow. This is what it looks like when the narratives land."
+      "text": "Ten for ten. Every position is green and the book is up 9.3% on $1,153 of cost. UNI has more than doubled since Aug 17 on the UNIfication burn \u2014 2.6% of supply retired annually against 1.4% issuance, which is the rare token that actually shrinks. ZEC printed $1,168 this morning, up 130% in thirty days, and LINK carries a dated catalyst: Circle's Arc mainnet goes live September 16 with Chainlink as oracle partner and BlackRock, DTCC and Visa as founding validators. Nothing here is broken."
     },
     {
       "agent": "noon",
-      "text": "Robinhood confirms 8 of 8 positions with quantities matching the ledger to the decimal. Portfolio $1,378.37 total, $1,376.50 crypto. But the ledger said $46.60 buying power and the broker reports $1.87. That gap is today's real finding: there is no dry powder. Regime reads BTC $78,627, dominance 58.4% (under the 60% trigger but climbing), Fear and Greed 66 falling from 71, ETH/BTC 0.0317, total cap down 2.6%. Alts bled with ADA -6.9%, LINK -5.4%, DOT -5.3%, while ZEC +7.3% and NEAR +7.4% ran the other way. That divergence is rotation, not a broad bid."
+      "text": "The numbers: BTC $79,677, dominance 59.26%, Fear & Greed 73, ETH/BTC 0.0311, perp funding a benign 0.0017% on BTC. Thirty-day performance is uniformly strong \u2014 DOT +18%, LTC +19%, BTC +23%, DOGE +28%, ETH +30%, XRP +37%, SOL +44%, LINK +49%, UNI +76%, ZEC +130% \u2014 but seven-day momentum is narrowing to ZEC (+37%), UNI (+34%), DOT (+11%) and LTC (+9%) while SOL is negative and ETH is flat. That is a market rotating, not broadening. ADA is the laggard at +10% over thirty days and the weakest link in the book."
     },
     {
       "agent": "close",
-      "text": "No sell trigger fires: nothing worse than -15%, no unlocks inside seven days, dominance under 60, nothing sitting fourteen days dead. Fine. But two names are on the clock. LINK is at eleven days and only +2.4%, and it is $446 of cost basis, a third of the book, riding on Circle's Arc mainnet on Sep 16 where LINK is the official oracle with BlackRock, DTCC and Visa validating. ADA is five days in at +1.2% and led today's decline; flat on Sep 18 makes it dead money. And $1.87 of buying power means every position here is a hold by force, not by conviction."
+      "text": "Two thresholds are inside touching distance. BTC dominance at 59.26% sits under a 60% sell trigger, and Fear & Greed at 73 is two points from the 75 trim line. Then the calendar: August CPI on September 11 and the FOMC on September 16, into a market whose correlation to rate-sensitive assets is the highest it has ever been. Buying power is $105 against $1,260 deployed \u2014 8% cash. No new buys today. The dry powder is worth more after Thursday's print than before it. The mechanical rules trigger a one-third trim on UNI at 2x and flag ZEC as a volume climax; both orders were pre-validated and both are being declined, because a 0.95% taker fee on a $7.41 credit destroys more value than the risk reduction is worth."
     },
     {
       "agent": "night",
-      "text": "The uncomfortable read: this book is up 26.8% because it was bought into a rally, not because eight theses were each correct. Greed at 66 and falling, cap down 2.6%, and the two winners are the two most crowded trades on the tape. ZEC has run 2,496% and just elbowed into the top ten by market cap; buying that story at this price is buying somebody else's exit. Sitting at +35.6% with no ability to add is not a problem, it is protection. The actual risk is not missing a buy today. It is funding the account tomorrow and chasing whatever ran hardest today."
+      "text": "ZEC is up 2,300% year over year and the reasons are all public \u2014 a Grayscale ETF conversion with $414 million in assets, a closed SEC investigation, a $1,000 round number breached on $34.5 million of short liquidations. When the bull case is fully legible, the marginal buyer has already bought. It is the smallest conviction position in the book at $73 and the largest source of drawdown risk. Meanwhile BTC sits 37% below its October 2025 high with $78,000 as September 18 max pain \u2014 the options market is pinning us exactly where we stand. The uncomfortable read is that everything green is not a signal of skill. It is a signal that beta did the work."
     }
   ],
-  "lastUpdated": "2026-09-09T16:04:55.075253Z",
+  "lastUpdated": "2026-09-09T22:08:33.849005Z",
   "prices": {
-    "LINK": 12.009185,
-    "LTC": 54.1175,
-    "AAVE": 129.037,
-    "DOT": 1.133664,
-    "ADA": 0.216105,
-    "NEAR": 2.594438,
-    "SOL": 103.1425,
-    "ZEC": 1273.81
+    "BTC": 79677.485,
+    "ETH": 2478.705,
+    "SOL": 105.708,
+    "UNI": 6.9804495,
+    "LINK": 12.2185,
+    "AAVE": 133.85945,
+    "ZEC": 1168.27,
+    "ADA": 0.2173085,
+    "LTC": 54.4682,
+    "DOT": 0.955695
   },
   "history": [
     {
@@ -186,8 +188,8 @@
     },
     {
       "date": "2026-09-09",
-      "value": 1376.55,
-      "cost": 1086
+      "value": 1255.95,
+      "cost": 1281.0
     }
   ]
 }
