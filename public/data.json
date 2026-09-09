@@ -123,37 +123,35 @@
     }
   ],
   "cash": 1.87,
-  "tensions": "- LINK is 30% of the book at $373 \u2014 the single largest concentration, riding a dated Sep 16 Circle Arc catalyst. Right thesis, oversized bet.\n- LTC ($209), AAVE ($158) and DOT ($147) are the next tier; BTC ($31) and UNI ($22) are rounding errors. The sizing does not reflect conviction.\n- ZEC at +130% in 30 days and +2,300% YoY is the clearest climax risk. Position is only $73, so the mechanical trim is not worth the 0.95% taker fee. Mental stop at $1,000 instead.\n- UNI crossed 2x (entry $3.32, now $6.98) and triggers the trim rule. Overriding: fee burn now exceeds issuance and the thesis is accelerating, not exhausting.\n- Macro is binary and near: CPI Sep 11, FOMC Sep 16, options max pain $78k on Sep 18. BTC-rate correlation is at record highs.\n- BTC dominance 59.26% (sell trigger 60%) and F&G 73 (trim trigger 75) are both one bad day from firing.\n- Cash is $105 on $1,365 total \u2014 7.7%. Thin, but deliberately unspent into the print.\n- No exits since the Sep 4 build-out (ADA, LTC, DOT). Nothing has been held long enough to break.",
+  "tensions": "Buying power discrepancy: playbook said $46.60, Robinhood reports $1.87 - a 96% gap that kills any ability to buy this dip. Second: LINK is the largest position at $446 cost and is the only holding flat-to-negative since entry while ranking mid-pack on 7-day momentum (+5.4%). Our biggest bet is our least distinguished performer. Third: Fear and Greed at 66 with BTC dominance at 58.5% is an awkward regime - greedy enough to invite a flush, dominant enough that alts have not truly decoupled. ZEC's +148% month is the exception proving the rule, not evidence of broad alt season.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Ten for ten. Every position is green and the book is up 9.3% on $1,153 of cost. UNI has more than doubled since Aug 17 on the UNIfication burn \u2014 2.6% of supply retired annually against 1.4% issuance, which is the rare token that actually shrinks. ZEC printed $1,168 this morning, up 130% in thirty days, and LINK carries a dated catalyst: Circle's Arc mainnet goes live September 16 with Chainlink as oracle partner and BlackRock, DTCC and Visa as founding validators. Nothing here is broken."
+      "text": "Book marks $1,340.33 against $1,086 cost - up 23.4%. Total crypto market cap fell 3.4% in 24h and six of our eight names are red on the day, yet the portfolio barely flinched because ZEC (+4.8%) and NEAR (+5.8%) carried it. That is what spreading across uncorrelated narratives actually buys you."
     },
     {
       "agent": "noon",
-      "text": "The numbers: BTC $79,677, dominance 59.26%, Fear & Greed 73, ETH/BTC 0.0311, perp funding a benign 0.0017% on BTC. Thirty-day performance is uniformly strong \u2014 DOT +18%, LTC +19%, BTC +23%, DOGE +28%, ETH +30%, XRP +37%, SOL +44%, LINK +49%, UNI +76%, ZEC +130% \u2014 but seven-day momentum is narrowing to ZEC (+37%), UNI (+34%), DOT (+11%) and LTC (+9%) while SOL is negative and ETH is flat. That is a market rotating, not broadening. ADA is the laggard at +10% over thirty days and the weakest link in the book."
+      "text": "ZEC is the story: $939.05 entry to $1,222.90, +30.2% in six days, +52% on the week, +148% on the month, now a top-10 asset by market cap. The privacy bid is not a one-day squeeze. Rule stands - no trim. A $59 cost basis is not where you take profits when the thesis is accelerating."
     },
     {
       "agent": "close",
-      "text": "Two thresholds are inside touching distance. BTC dominance at 59.26% sits under a 60% sell trigger, and Fear & Greed at 73 is two points from the 75 trim line. Then the calendar: August CPI on September 11 and the FOMC on September 16, into a market whose correlation to rate-sensitive assets is the highest it has ever been. Buying power is $105 against $1,260 deployed \u2014 8% cash. No new buys today. The dry powder is worth more after Thursday's print than before it. The mechanical rules trigger a one-third trim on UNI at 2x and flag ZEC as a volume climax; both orders were pre-validated and both are being declined, because a 0.95% taker fee on a $7.41 credit destroys more value than the risk reduction is worth."
+      "text": "DOT printed -11.1% today and it means nothing. It is still +28.7% over seven days and +21.8% above our $0.908 entry from five days ago. Give a parabolic move room to breathe. AAVE is the only name red on a 7-day basis (-1.6%) and flat to entry - that is the one to watch, not the one that dropped double digits after a rip."
     },
     {
       "agent": "night",
-      "text": "ZEC is up 2,300% year over year and the reasons are all public \u2014 a Grayscale ETF conversion with $414 million in assets, a closed SEC investigation, a $1,000 round number breached on $34.5 million of short liquidations. When the bull case is fully legible, the marginal buyer has already bought. It is the smallest conviction position in the book at $73 and the largest source of drawdown risk. Meanwhile BTC sits 37% below its October 2025 high with $78,000 as September 18 max pain \u2014 the options market is pinning us exactly where we stand. The uncomfortable read is that everything green is not a signal of skill. It is a signal that beta did the work."
+      "text": "The real constraint is cash. The playbook carried $46.60 in buying power; the broker reports $1.87. We are fully allocated with no dry powder, so today's alt dip is unactionable no matter how good the setup looks. Zero validated orders. Fund the account or accept that this is a hold-only book until something is sold."
     }
   ],
-  "lastUpdated": "2026-09-09T22:08:33.849005Z",
+  "lastUpdated": "2026-09-09T22:09:05.534552Z",
   "prices": {
-    "BTC": 79677.485,
-    "ETH": 2478.705,
-    "SOL": 105.708,
-    "UNI": 6.9804495,
-    "LINK": 12.2185,
-    "AAVE": 133.85945,
-    "ZEC": 1168.27,
-    "ADA": 0.2173085,
-    "LTC": 54.4682,
-    "DOT": 0.955695
+    "LINK": 11.7014,
+    "LTC": 53.1351,
+    "AAVE": 124.8926,
+    "DOT": 1.10624,
+    "ADA": 0.2115075,
+    "NEAR": 2.440833,
+    "SOL": 101.6544,
+    "ZEC": 1222.9
   },
   "history": [
     {
@@ -188,8 +186,8 @@
     },
     {
       "date": "2026-09-09",
-      "value": 1255.95,
-      "cost": 1281.0
+      "value": 1338.99,
+      "cost": 1086
     }
   ]
 }
