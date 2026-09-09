@@ -1,20 +1,20 @@
 {
   "holdings": [
     {
-      "sym": "LINK",
-      "id": "link-chainlink",
-      "qty": 38.0363,
-      "entry": 11.73,
-      "date": "Aug 29",
-      "cost": 446.0
+      "sym": "SOL",
+      "id": "sol-solana",
+      "qty": 0.96289,
+      "entry": 92.8,
+      "date": "Aug 16",
+      "cost": 89.36
     },
     {
-      "sym": "LTC",
-      "id": "ltc-litecoin",
-      "qty": 3.84515721,
-      "entry": 52.01,
-      "date": "Sep 4",
-      "cost": 200.0
+      "sym": "LINK",
+      "id": "link-chainlink",
+      "qty": 30.5616,
+      "entry": 11.42,
+      "date": "Aug 29",
+      "cost": 349.05
     },
     {
       "sym": "AAVE",
@@ -25,12 +25,12 @@
       "cost": 147.7
     },
     {
-      "sym": "DOT",
-      "id": "dot-polkadot",
-      "qty": 154.152,
-      "entry": 0.908,
-      "date": "Sep 4",
-      "cost": 140.0
+      "sym": "ZEC",
+      "id": "zec-zcash",
+      "qty": 0.06224,
+      "entry": 939.05,
+      "date": "Sep 3",
+      "cost": 59.0
     },
     {
       "sym": "ADA",
@@ -41,28 +41,28 @@
       "cost": 100.0
     },
     {
+      "sym": "LTC",
+      "id": "ltc-litecoin",
+      "qty": 3.84515721,
+      "entry": 52.01,
+      "date": "Sep 4",
+      "cost": 200.0
+    },
+    {
+      "sym": "DOT",
+      "id": "dot-polkadot",
+      "qty": 154.152,
+      "entry": 0.908,
+      "date": "Sep 4",
+      "cost": 140.0
+    },
+    {
       "sym": "NEAR",
       "id": "near-protocol",
       "qty": 40.33,
       "entry": 2.4534,
       "date": "Sep 6",
       "cost": 98.94
-    },
-    {
-      "sym": "SOL",
-      "id": "sol-solana",
-      "qty": 0.96289,
-      "entry": 92.8,
-      "date": "Aug 16",
-      "cost": 89.36
-    },
-    {
-      "sym": "ZEC",
-      "id": "zec-zcash",
-      "qty": 0.06224,
-      "entry": 939.05,
-      "date": "Sep 3",
-      "cost": 59.0
     }
   ],
   "watchlist": [
@@ -122,36 +122,39 @@
       "recentlyExited": true
     }
   ],
-  "cash": 1.87,
-  "tensions": "The real disagreement is cash discipline versus conviction. We are effectively fully invested with $1.87 of dry powder, which means the strongest signals on the board \u2014 DOT breaking out, ZEC in a 126% monthly move \u2014 are unactionable. The no-trim rule protects the long thesis, but it is also why we can neither add to strength nor average down on NEAR. Second tension: alt breadth is expanding hard (DOT +43%, ZEC +41%, NEAR +21% on the week) while BTC dominance holds 58.4% and total market cap fell 2.4% in 24 hours. That is either the healthy start of a rotation or a late-cycle blow-off in the long tail. F&G at 69 and declining is the one number arguing for the second reading.",
+  "cash": 46.6,
+  "tensions": "The mandate says hold for 100x and never trim a winner. Today the account did the opposite: UNI, the single position that had actually doubled, was sold at the top of its range along with BTC and ETH. The system realized $27 and forfeited the compounding thesis on its best performer. Second tension: Fear & Greed prints 71 (Greed) while total market cap fell 2.7% \u2014 sentiment and tape are diverging, which is late-cycle. Alt strength in LINK and DOT is rotation out of majors, not new money in. Third: the book now carries zero BTC and zero ETH. An eight-coin altcoin portfolio with no major-cap ballast is a leveraged bet on rotation continuing. If dominance climbs from 59.2%, there is nothing in this account that benefits.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book marks $1,397.05 against $1,086 of cost \u2014 up 28.6%. Seven of eight positions green. BTC $78,523, dominance 58.4%, Fear & Greed 69 and easing off 71 yesterday. Greedy tape, not a euphoric one."
+      "text": "BTC opened flat at $79,874 against a $2.70T total cap that shed 2.7% on the day. Dominance 59.2%. The interesting print is not bitcoin \u2014 it is LINK, up 5.8% into a red tape, and DOT up 4.4%. That is rotation with a bid behind it, not a broad melt-up."
     },
     {
       "agent": "noon",
-      "text": "DOT is the story. $0.908 to $1.247 in four days: +37.3% for us, +17.1% today alone, +43.3% on the week. ZEC is right behind at +24.5% held, with +41.2% over seven days and +126.1% over thirty. Two live bids \u2014 Polkadot ecosystem and privacy \u2014 and neither has cracked."
+      "text": "NEAR was bought four hours ago at $2.4534 and is already -3.6% at $2.366. That entry chased a move rather than waited for one. It is a $99 position, so the damage is bounded, but it is a process error worth naming: we paid the ask on a coin that was already extended."
     },
     {
       "agent": "close",
-      "text": "NEAR is the lone red at -5.9% from a $2.4534 entry two days ago. But NEAR is +20.6% on the week, which means we bought a local high inside an uptrend, not a broken thesis. Entry-timing error, not a sell signal. LINK +6.7%, SOL +11.2%, LTC +4.2%, AAVE +3.0%, ADA +3.0% grinding underneath."
+      "text": "At 16:05 HST three positions were liquidated manually, one minute before this scan: UNI at $7.0759 (+109%, +$11.76), BTC at $79,864 (+25%, +$6.08), ETH at $2,501.92 (+29%, +$9.44). Realized roughly +$27. This is a direct violation of the no-trimming mandate. UNI was the only 2x in the book and it was cut precisely when the rule says ride. Eight positions remain: $1,289 market on $1,184 cost, +8.9%."
     },
     {
       "agent": "night",
-      "text": "Buying power came back at $1.87, not the ~$46.60 the playbook carried. Flagged. With no deployable cash and no broken theses, this is an eight-for-eight hold. No trims on DOT or ZEC regardless of the run \u2014 the mandate is to ride, not to harvest."
+      "text": "Proceeds of ~$95 are unsettled. A $40 LINK preview was rejected by the broker for insufficient buying power, so tonight's PASS is enforced, not chosen. When cash clears, LINK is the queued entry at $100 \u2014 it is the strongest confirmed trend in the book and the only name showing relative strength against a falling market."
     }
   ],
-  "lastUpdated": "2026-09-08T22:09:13.126584Z",
+  "lastUpdated": "2026-09-09T02:07:08.037350Z",
   "prices": {
-    "LINK": 12.51705,
-    "LTC": 54.1877,
-    "AAVE": 128.71675,
-    "DOT": 1.2469455,
-    "ADA": 0.2199874,
-    "NEAR": 2.3085345,
-    "SOL": 103.2365,
-    "ZEC": 1169.53
+    "BTC": 79873.59,
+    "ETH": 2502.025,
+    "SOL": 105.2805,
+    "UNI": 7.0769,
+    "LINK": 12.99722,
+    "AAVE": 133.56055,
+    "ZEC": 1186.43,
+    "ADA": 0.220815,
+    "LTC": 54.202,
+    "DOT": 0.9839915,
+    "NEAR": 2.366167
   },
   "history": [
     {
@@ -186,8 +189,8 @@
     },
     {
       "date": "2026-09-08",
-      "value": 1397.11,
-      "cost": 1086
+      "value": 1335.8,
+      "cost": 1184.05
     }
   ]
 }
