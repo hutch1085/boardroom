@@ -1,20 +1,44 @@
 {
   "holdings": [
     {
-      "sym": "LINK",
-      "id": "link-chainlink",
-      "qty": 38.0363,
-      "entry": 11.73,
-      "date": "Aug 29",
-      "cost": 446.0
+      "sym": "SOL",
+      "id": "sol-solana",
+      "qty": 0.96289,
+      "entry": 92.8,
+      "date": "Aug 16",
+      "cost": 89.36
     },
     {
-      "sym": "NEAR",
-      "id": "near-protocol",
-      "qty": 99.61,
-      "entry": 2.4534,
-      "date": "Sep 6",
-      "cost": 98.94
+      "sym": "LINK",
+      "id": "link-chainlink",
+      "qty": 30.5616,
+      "entry": 11.42,
+      "date": "Aug 29",
+      "cost": 349.05
+    },
+    {
+      "sym": "AAVE",
+      "id": "aave-new",
+      "qty": 1.18158,
+      "entry": 125.0,
+      "date": "Aug 31",
+      "cost": 147.7
+    },
+    {
+      "sym": "ZEC",
+      "id": "zec-zcash",
+      "qty": 0.06224,
+      "entry": 939.05,
+      "date": "Sep 3",
+      "cost": 59.0
+    },
+    {
+      "sym": "ADA",
+      "id": "ada-cardano",
+      "qty": 468.38,
+      "entry": 0.2116,
+      "date": "Sep 4",
+      "cost": 100.0
     },
     {
       "sym": "LTC",
@@ -33,28 +57,12 @@
       "cost": 140.0
     },
     {
-      "sym": "ADA",
-      "id": "ada-cardano",
-      "qty": 468.38,
-      "entry": 0.2116,
-      "date": "Sep 4",
-      "cost": 100.0
-    },
-    {
-      "sym": "SOL",
-      "id": "sol-solana",
-      "qty": 0.96289,
-      "entry": 92.8,
-      "date": "Aug 16",
-      "cost": 89.36
-    },
-    {
-      "sym": "ZEC",
-      "id": "zec-zcash",
-      "qty": 0.06224,
-      "entry": 939.05,
-      "date": "Sep 3",
-      "cost": 59.0
+      "sym": "NEAR",
+      "id": "near-protocol",
+      "qty": 40.33,
+      "entry": 2.4534,
+      "date": "Sep 6",
+      "cost": 98.94
     }
   ],
   "watchlist": [
@@ -114,35 +122,39 @@
       "recentlyExited": true
     }
   ],
-  "cash": 147.16,
-  "tensions": "Dawn wants the $147 working; Close wants it parked until the September 16 FOMC clears. Close holds \u2014 a 56-62% hike probability with sentiment at Greed is negative skew for a six-day hold. A pre-validated LINK buy ($145 market, ~12.377 LINK, $1.38 fee) sits ready to fire only if the Fed holds. Unresolved and more important than the trade: 59.28 NEAR with no cost basis and no order behind it. Until that reconciles, every NEAR P&L number on this page is suspect.",
+  "cash": 46.6,
+  "tensions": "The mandate says hold for 100x and never trim a winner. Today the account did the opposite: UNI, the single position that had actually doubled, was sold at the top of its range along with BTC and ETH. The system realized $27 and forfeited the compounding thesis on its best performer. Second tension: Fear & Greed prints 71 (Greed) while total market cap fell 2.7% \u2014 sentiment and tape are diverging, which is late-cycle. Alt strength in LINK and DOT is rotation out of majors, not new money in. Third: the book now carries zero BTC and zero ETH. An eight-coin altcoin portfolio with no major-cap ballast is a leveraged bet on rotation continuing. If dominance climbs from 59.2%, there is nothing in this account that benefits.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book is $1,468 against $1,086 deposited \u2014 up 35%, and the winners are doing exactly what we asked them to. DOT +19.7% in six days on a 150% transaction spike and record XCM throughput. ZEC +24.4% in seven on the Grayscale ZCSH ETF going live; the privacy sector is the only category trading above its October 2025 peak, up 213%. SOL +7.4% with Schwab opening it to 39 million accounts and governance cutting $1.5B in emissions. We are not trimming any of it."
+      "text": "BTC opened flat at $79,874 against a $2.70T total cap that shed 2.7% on the day. Dominance 59.2%. The interesting print is not bitcoin \u2014 it is LINK, up 5.8% into a red tape, and DOT up 4.4%. That is rotation with a bid behind it, not a broad melt-up."
     },
     {
       "agent": "noon",
-      "text": "Prices as scanned: LINK $11.612, LTC $52.089, DOT $1.0867, ADA $0.2088, NEAR $2.4602, SOL $99.63, ZEC $1,168.39. BTC $77,137, dominance 58.55%, F&G 69. Three positions are within 1.5% of entry \u2014 LINK -1.0%, LTC +0.2%, ADA -1.3% \u2014 which is noise, not thesis damage, and all are inside the 14-day window. Nothing tripped a sell trigger. Two bookkeeping items: AAVE was sold Sep 9 at $124.14 for $145.29 net, a $2.41 loss, and the NEAR position reads 99.61 units when only 40.33 were ever purchased. The extra 59.28 carries zero cost basis and no matching order. That is a reconciliation problem, not a trade."
+      "text": "NEAR was bought four hours ago at $2.4534 and is already -3.6% at $2.366. That entry chased a move rather than waited for one. It is a $99 position, so the damage is bounded, but it is a process error worth naming: we paid the ask on a coin that was already extended."
     },
     {
       "agent": "close",
-      "text": "The $147.16 stays in cash and I will defend that. CME FedWatch puts a 25bp hike on September 16 somewhere between 56% and 62% after Warsh's Jackson Hole speech \u2014 before that speech the market had a hold at nearly 70%. CPI and PPI print into it. Total market cap fell 4.6% in 24 hours. Buying an altcoin today means holding it through a hawkish binary six days out, with sentiment already at Greed. That is paying full price for the privilege of being wrong fast."
+      "text": "At 16:05 HST three positions were liquidated manually, one minute before this scan: UNI at $7.0759 (+109%, +$11.76), BTC at $79,864 (+25%, +$6.08), ETH at $2,501.92 (+29%, +$9.44). Realized roughly +$27. This is a direct violation of the no-trimming mandate. UNI was the only 2x in the book and it was cut precisely when the rule says ride. Eight positions remain: $1,289 market on $1,184 cost, +8.9%."
     },
     {
       "agent": "night",
-      "text": "The contrarian read is that everyone now expects the hike, which is why the tape is soft \u2014 and the pain trade is a hold that rips risk assets higher. But note what Fear & Greed at 69 actually means: positioning is not defensive. If the market were priced for a hike, we would be in Fear, not Greed. Those two facts do not fit together, and when sentiment and macro disagree this loudly, the resolution is rarely gentle. One thing worth watching: LINK is our largest position at $442, it is flat, and Circle's Arc mainnet launches September 16 with Chainlink as the oracle partner \u2014 the exact day of the Fed. The catalyst and the risk share a calendar square."
+      "text": "Proceeds of ~$95 are unsettled. A $40 LINK preview was rejected by the broker for insufficient buying power, so tonight's PASS is enforced, not chosen. When cash clears, LINK is the queued entry at $100 \u2014 it is the strongest confirmed trend in the book and the only name showing relative strength against a falling market."
     }
   ],
-  "lastUpdated": "2026-09-10T16:05:11.046433Z",
+  "lastUpdated": "2026-09-10T22:09:42.484758Z",
   "prices": {
-    "LINK": 11.611785,
-    "LTC": 52.08895,
-    "DOT": 1.0867475,
-    "ADA": 0.20876535,
-    "NEAR": 2.4601575,
-    "SOL": 99.6285,
-    "ZEC": 1168.39
+    "BTC": 79873.59,
+    "ETH": 2502.025,
+    "SOL": 105.2805,
+    "UNI": 7.0769,
+    "LINK": 12.99722,
+    "AAVE": 133.56055,
+    "ZEC": 1186.43,
+    "ADA": 0.220815,
+    "LTC": 54.202,
+    "DOT": 0.9839915,
+    "NEAR": 2.366167
   },
   "history": [
     {
@@ -177,8 +189,8 @@
     },
     {
       "date": "2026-09-10",
-      "value": 1468.13,
-      "cost": 1086
+      "value": 1335.8,
+      "cost": 1184.05
     }
   ]
 }
