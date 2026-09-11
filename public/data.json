@@ -1,44 +1,12 @@
 {
   "holdings": [
     {
-      "sym": "SOL",
-      "id": "sol-solana",
-      "qty": 0.96289,
-      "entry": 92.8,
-      "date": "Aug 16",
-      "cost": 89.36
-    },
-    {
       "sym": "LINK",
       "id": "link-chainlink",
-      "qty": 30.5616,
-      "entry": 11.42,
+      "qty": 38.0363,
+      "entry": 11.73,
       "date": "Aug 29",
-      "cost": 349.05
-    },
-    {
-      "sym": "AAVE",
-      "id": "aave-new",
-      "qty": 1.18158,
-      "entry": 125.0,
-      "date": "Aug 31",
-      "cost": 147.7
-    },
-    {
-      "sym": "ZEC",
-      "id": "zec-zcash",
-      "qty": 0.06224,
-      "entry": 939.05,
-      "date": "Sep 3",
-      "cost": 59.0
-    },
-    {
-      "sym": "ADA",
-      "id": "ada-cardano",
-      "qty": 468.38,
-      "entry": 0.2116,
-      "date": "Sep 4",
-      "cost": 100.0
+      "cost": 446.0
     },
     {
       "sym": "LTC",
@@ -51,18 +19,42 @@
     {
       "sym": "DOT",
       "id": "dot-polkadot",
-      "qty": 154.152,
-      "entry": 0.908,
+      "qty": 279.419,
+      "entry": 1.0,
       "date": "Sep 4",
-      "cost": 140.0
+      "cost": 280.02
+    },
+    {
+      "sym": "ADA",
+      "id": "ada-cardano",
+      "qty": 468.38,
+      "entry": 0.2116,
+      "date": "Sep 4",
+      "cost": 100.0
     },
     {
       "sym": "NEAR",
       "id": "near-protocol",
-      "qty": 40.33,
-      "entry": 2.4534,
+      "qty": 99.61,
+      "entry": 2.43,
       "date": "Sep 6",
-      "cost": 98.94
+      "cost": 243.94
+    },
+    {
+      "sym": "SOL",
+      "id": "sol-solana",
+      "qty": 0.96289,
+      "entry": 92.8,
+      "date": "Aug 16",
+      "cost": 89.36
+    },
+    {
+      "sym": "ZEC",
+      "id": "zec-zcash",
+      "qty": 0.06224,
+      "entry": 939.05,
+      "date": "Sep 3",
+      "cost": 59.0
     }
   ],
   "watchlist": [
@@ -122,46 +114,37 @@
       "recentlyExited": true
     }
   ],
-  "cash": 46.6,
-  "tensions": "The mandate says hold for 100x and never trim a winner. Today the account did the opposite: UNI, the single position that had actually doubled, was sold at the top of its range along with BTC and ETH. The system realized $27 and forfeited the compounding thesis on its best performer. Second tension: Fear & Greed prints 71 (Greed) while total market cap fell 2.7% \u2014 sentiment and tape are diverging, which is late-cycle. Alt strength in LINK and DOT is rotation out of majors, not new money in. Third: the book now carries zero BTC and zero ETH. An eight-coin altcoin portfolio with no major-cap ballast is a leveraged bet on rotation continuing. If dominance climbs from 59.2%, there is nothing in this account that benefits.",
+  "cash": 7,
+  "tensions": "LINK: Close wants it gone at the 14-day mark tomorrow \u2014 a fully retraced 16% spike reads as distribution. Dawn says the RWA/oracle catalyst chain (Bottomline, Coinbase Base) is the strongest fundamental story in the book and flat is not broken. Unresolved; forced by Sep 12. Night reframes the whole argument: the issue is not that LINK is down, it is that $446 \u2014 a third of the portfolio and 7.6x our ZEC stake \u2014 sits in the slowest name while the winners are sized like afterthoughts. Noon notes the debate is academic today regardless: $7.14 of buying power means nothing can be redeployed without selling first.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "BTC opened flat at $79,874 against a $2.70T total cap that shed 2.7% on the day. Dominance 59.2%. The interesting print is not bitcoin \u2014 it is LINK, up 5.8% into a red tape, and DOT up 4.4%. That is rotation with a bid behind it, not a broad melt-up."
+      "text": "Book is $1,487 against $1,231 deposited \u2014 up 20.8%, and six of seven names are green. ZEC is the engine: $939 to $1,175 in eight days, +24%, riding the first U.S. spot privacy-coin ETF (Grayscale ZCSH, ~$463M gathered in two weeks). NEAR +8.1% in five days on the AI/intents narrative, SOL back over $100 at +9.8%. Alts are outrunning BTC today with funding flat at 0.01% \u2014 that is a rally with no leverage underneath it, which is the kind that lasts. Hold everything."
     },
     {
       "agent": "noon",
-      "text": "NEAR was bought four hours ago at $2.4534 and is already -3.6% at $2.366. That entry chased a move rather than waited for one. It is a $99 position, so the damage is bounded, but it is a process error worth naming: we paid the ask on a coin that was already extended."
+      "text": "Two denominators, and they tell different stories. Against $1,231 deposited we are +20.8%. Against the actual $1,418 cost basis now sitting in these seven positions, we are +4.3%. The gap is recycled profit from the UNI/BTC/ETH exits \u2014 real, but do not let the headline number flatter the current book. BTC dominance 58.2%, below the 60% panic line. F&G 56, down from 69 two days ago: greed cooling, not breaking. No unlocks inside seven days on any holding. Buying power is $7.14, so the scan is advisory only \u2014 there is nothing to deploy."
     },
     {
       "agent": "close",
-      "text": "At 16:05 HST three positions were liquidated manually, one minute before this scan: UNI at $7.0759 (+109%, +$11.76), BTC at $79,864 (+25%, +$6.08), ETH at $2,501.92 (+29%, +$9.44). Realized roughly +$27. This is a direct violation of the no-trimming mandate. UNI was the only 2x in the book and it was cut precisely when the rule says ride. Eight positions remain: $1,289 market on $1,184 cost, +8.9%."
+      "text": "LINK is the problem and it has a deadline. Thirteen days held, +0.2%. It touched $13.64 on Sep 7 on the Bottomline/SWIFT partnership and surrendered every cent of it inside four sessions. A 16% spike fully retraced is not consolidation, it is distribution \u2014 someone sold that news into our bid. The oracle thesis is genuinely intact (70%+ market share, $28T secured, Coinbase picked them for tokenized equities on Base), but a thesis that does not print is an opinion. The 14-day dead-money rule fires tomorrow. ADA is the other soft spot: -1.5%, down ~40% on the year, no ETF, DeFi activity dead, clinging to $0.21. If dry powder is needed, it comes from those two \u2014 never from ZEC."
     },
     {
       "agent": "night",
-      "text": "Proceeds of ~$95 are unsettled. A $40 LINK preview was rejected by the broker for insufficient buying power, so tonight's PASS is enforced, not chosen. When cash clears, LINK is the queued entry at $100 \u2014 it is the strongest confirmed trend in the book and the only name showing relative strength against a falling market."
+      "text": "The uncomfortable read: ZEC is up 2,496% in a year and moved from 82nd to 7th by market cap. Every position that ends badly looks exactly like this on the way up. The no-trim rule is the right rule and I am not arguing against it \u2014 but understand that at $59 cost it is 5% of the book, so the rule costs us almost nothing to honor and buys us almost nothing if it 10x's. The real asymmetry problem is elsewhere: $446 in LINK, a third of the book, doing nothing for two weeks while ZEC and NEAR carry us. The dead capital is not the loss. It is the position that refuses to die and refuses to work."
     }
   ],
-  "lastUpdated": "2026-09-11T02:07:11.186603Z",
+  "lastUpdated": "2026-09-11T16:04:57.417411Z",
   "prices": {
-    "BTC": 79873.59,
-    "ETH": 2502.025,
-    "SOL": 105.2805,
-    "UNI": 7.0769,
-    "LINK": 12.99722,
-    "AAVE": 133.56055,
-    "ZEC": 1186.43,
-    "ADA": 0.220815,
-    "LTC": 54.202,
-    "DOT": 0.9839915,
-    "NEAR": 2.366167
+    "LINK": 11.7524,
+    "LTC": 53.506,
+    "DOT": 1.053932,
+    "ADA": 0.2084616,
+    "NEAR": 2.6470125,
+    "SOL": 101.9195,
+    "ZEC": 1175.21
   },
   "history": [
-    {
-      "date": "2026-09-04",
-      "value": 1245.9,
-      "cost": 1152.57
-    },
     {
       "date": "2026-09-05",
       "value": 1263.16,
@@ -191,6 +174,11 @@
       "date": "2026-09-10",
       "value": 1335.8,
       "cost": 1184.05
+    },
+    {
+      "date": "2026-09-11",
+      "value": 1479.84,
+      "cost": 1231
     }
   ]
 }
