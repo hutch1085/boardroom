@@ -115,34 +115,34 @@
     }
   ],
   "cash": 7,
-  "tensions": "Capital, not conviction, is the binding constraint. The portfolio is +17% and the regime is risk-on at F&G 63, but $7.14 of buying power means every signal this scanner generates is unactionable - a confirmed rejection on a $100 preview, not a theoretical limit. Second tension: the 7-day tape (LINK -0.8%, ADA -1.4%, BTC -2.9%) contradicts the 30-day tape (+21% to +131% across the book). Either this is consolidation before continuation, or the 30-day move already happened and we are holding the top. ZEC's +131% month makes that question expensive to get wrong - but the no-trim rule is explicit, and selling a 131% runner into strength is exactly the mistake the mandate was written to prevent.",
+  "tensions": "Fear & Greed climbed 56 -> 63 while BTC dropped 3% on the week and lost its 20d SMA \u2014 sentiment is running ahead of price. NEAR's $2.73 spike-and-fade and DOT's -6% off the high are the same pattern in miniature: buyers exhausting at resistance. With ~$7 buying power there is no dry powder for a dip, so the only decision left is whether any thesis breaks. None has. Unverified position data this run (Robinhood tools declined) is itself a tension \u2014 the table is from Sep 11 and should be right, but it was not confirmed.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book is $1,440.44 against $1,231 cost - up 17.0%, or $209. BTC $77,279, dominance 58.3%, F&G 63 (Greed). Total market cap $2.66T, down 1.85% on the day. The 30-day tape is uniformly strong across every position we hold; the 7-day tape is flat to soft. That divergence is the whole story today: we are holding gains earned two to four weeks ago, not making new ones this week."
+      "text": "BTC $77,330, dominance 58.2%, Fear & Greed 63 (Greed, up from 56). BTC is -3.1% on the week and below its 20-day SMA at $78.7k, but still +22% over 30 days. Total market cap -2.1% in 24h. This is consolidation inside an uptrend, not a reversal \u2014 yet. Today's BTC low of $76.0k is the line."
     },
     {
       "agent": "noon",
-      "text": "ZEC is the outlier and it is not close. $939.05 to $1,143.43 in eight days, +21.8% for us and +131% on the 30-day, now rank 10 by market cap. That is the wave the mandate says to ride. SOL reclaimed $100 (+9.8%, 26 days held, +35% on the month). DOT shows +5.4% for us and +18.1% over seven days even after a -5.9% session today - a hot week giving a little back, not a thesis cracking. LTC quietly +3.1% and the steadiest name in the book."
+      "text": "Book is $1,446 against $1,231 cost, +17.4%. ZEC leads at +22.4% ($939 -> $1,149), +135% on the month \u2014 not trimming. DOT +5.2% with the strongest 7-day momentum in the book (+15%) despite a -6% pullback from the $1.13 high. SOL +9.7%, LTC +4.1%. Laggards: NEAR -3.3% after a $2.73 intraday spike faded 13%, LINK -1.4% sitting on its 20d SMA, ADA -1.1% just below its 20d SMA."
     },
     {
       "agent": "close",
-      "text": "The red is trivial and young. NEAR -3.8% at five days held, LINK -1.7% at thirteen, ADA -2.1% at seven. Nothing here is a sell. ADA is the genuine laggard - +14.3% on the 30-day against a book where the next-worst is LINK at +33% - and it is the name to watch if we ever need to free capital. But a laggard is not a broken thesis, and we do not sell winners or cut two-week-old positions over sub-4% drawdowns."
+      "text": "All seven positions: HOLD. No thesis is broken. ADA has the weakest lens count \u2014 flat momentum, below 20d SMA, +15% 30d is the worst in the book \u2014 but 'weak' is not 'broken.' No sells. No buys: buying power is ~$7, nothing to deploy. Robinhood MCP calls were auto-declined during this run, so prices are OKX and the position table is assumed, not verified."
     },
     {
       "agent": "night",
-      "text": "No orders. Buying power is $7.14 and a $100 ZEC buy preview came back rejected by Robinhood for insufficient crypto buying power - a validated hard stop, not a judgment call. The seven-lens screen is academic when every tier ($200 conviction, $100-150 secondary) is unreachable. Until funds land, this is a watch-only feed: we can score setups but we cannot take them. That is the single most actionable line in today's scan."
+      "text": "Risk map for the weekend: DOT, NEAR and ZEC are the extended names \u2014 a BTC flush through $76k hits them hardest. LINK and SOL are pinned to their 20d SMAs and will resolve direction with BTC. Greed rising while price stalls is the classic setup for a shakeout; if it comes, it is a hold-through, not a sell."
     }
   ],
-  "lastUpdated": "2026-09-12T02:07:19.053543Z",
+  "lastUpdated": "2026-09-12T08:10:19.990435Z",
   "prices": {
-    "LINK": 11.532905,
-    "LTC": 53.627,
-    "DOT": 1.0540905,
-    "ADA": 0.2072072,
-    "NEAR": 2.356248,
-    "SOL": 101.884,
-    "ZEC": 1143.425
+    "LINK": 11.57,
+    "LTC": 54.16,
+    "DOT": 1.052,
+    "ADA": 0.2093,
+    "NEAR": 2.369,
+    "SOL": 101.77,
+    "ZEC": 1149.04
   },
   "history": [
     {
@@ -177,7 +177,7 @@
     },
     {
       "date": "2026-09-11",
-      "value": 1440.43,
+      "value": 1445.8,
       "cost": 1231
     }
   ]
