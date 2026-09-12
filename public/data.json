@@ -36,7 +36,7 @@
       "sym": "NEAR",
       "id": "near-protocol",
       "qty": 99.61,
-      "entry": 2.449,
+      "entry": 2.43,
       "date": "Sep 6",
       "cost": 243.94
     },
@@ -115,34 +115,34 @@
     }
   ],
   "cash": 7,
-  "tensions": "The live tension is sentiment versus price. F&G fell from 69 to 56 and total cap is off 2.4%, yet ZEC ran 5.5% and SOL 2.8% today \u2014 high-beta alts leading while the aggregate weakens is either early rotation or a distribution head-fake, and 24 hours of data cannot tell which. Second tension: full investment at $7.14 buying power means the portfolio has no optionality. If the F&G slide continues into a real flush, there is no dry powder to buy it, and the only source of capital would be selling something \u2014 which the no-trim mandate forbids absent a broken thesis. That is a deliberate trade-off, not an oversight, but it should be named: this book is committed to riding the wave without the ability to add on weakness.",
+  "tensions": "LINK: Close wants it gone at the 14-day mark tomorrow \u2014 a fully retraced 16% spike reads as distribution. Dawn says the RWA/oracle catalyst chain (Bottomline, Coinbase Base) is the strongest fundamental story in the book and flat is not broken. Unresolved; forced by Sep 12. Night reframes the whole argument: the issue is not that LINK is down, it is that $446 \u2014 a third of the portfolio and 7.6x our ZEC stake \u2014 sits in the slowest name while the winners are sized like afterthoughts. Noon notes the debate is academic today regardless: $7.14 of buying power means nothing can be redeployed without selling first.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "BTC $77,127, dominance 58.2%, total cap $2.65T and down 2.4% on the day. Fear & Greed printed 56 after 69 yesterday \u2014 a 13-point sentiment drop without a matching price drop. That gap is the whole story of this session: positioning got nervous, price didn't confirm. Book stands at $1,441 against $1,231 cost, +17.1%."
+      "text": "Book is $1,487 against $1,231 deposited \u2014 up 20.8%, and six of seven names are green. ZEC is the engine: $939 to $1,175 in eight days, +24%, riding the first U.S. spot privacy-coin ETF (Grayscale ZCSH, ~$463M gathered in two weeks). NEAR +8.1% in five days on the AI/intents narrative, SOL back over $100 at +9.8%. Alts are outrunning BTC today with funding flat at 0.01% \u2014 that is a rally with no leverage underneath it, which is the kind that lasts. Hold everything."
     },
     {
       "agent": "noon",
-      "text": "Leaders: ZEC $939.05 to $1,163.92, +23.9% in 8 days and up 5.5% today alone \u2014 the privacy bid is the single strongest signal in this portfolio. SOL $92.80 to $102.13, +10.1% over 26 days, reclaimed the $100 handle. Laggards: LINK $11.73 to $11.52, -1.8% and our largest line at $446 cost; ADA $0.2116 to $0.20526, -3.0%. DOT is +3.3% from a $1.00 entry but fell 5.6% today, the worst single-day move in the book. NEAR is flat at -0.7%."
+      "text": "Two denominators, and they tell different stories. Against $1,231 deposited we are +20.8%. Against the actual $1,418 cost basis now sitting in these seven positions, we are +4.3%. The gap is recycled profit from the UNI/BTC/ETH exits \u2014 real, but do not let the headline number flatter the current book. BTC dominance 58.2%, below the 60% panic line. F&G 56, down from 69 two days ago: greed cooling, not breaking. No unlocks inside seven days on any holding. Buying power is $7.14, so the scan is advisory only \u2014 there is nothing to deploy."
     },
     {
       "agent": "close",
-      "text": "Zero orders. Buying power is $7.14 \u2014 not a judgment call, an arithmetic one. Every new-entry candidate auto-PASSES regardless of what the seven lenses would score, because there is nothing to deploy. No sells either: ZEC at +23.9% is exactly the kind of winner the mandate says not to trim, and no position has a broken thesis. LINK and ADA are red but neither is structurally impaired at these levels."
+      "text": "LINK is the problem and it has a deadline. Thirteen days held, +0.2%. It touched $13.64 on Sep 7 on the Bottomline/SWIFT partnership and surrendered every cent of it inside four sessions. A 16% spike fully retraced is not consolidation, it is distribution \u2014 someone sold that news into our bid. The oracle thesis is genuinely intact (70%+ market share, $28T secured, Coinbase picked them for tokenized equities on Base), but a thesis that does not print is an opinion. The 14-day dead-money rule fires tomorrow. ADA is the other soft spot: -1.5%, down ~40% on the year, no ETF, DeFi activity dead, clinging to $0.21. If dry powder is needed, it comes from those two \u2014 never from ZEC."
     },
     {
       "agent": "night",
-      "text": "Data hygiene flag: Robinhood reports NEAR quantity 99.61, not the 100.25 carried in the position sheet \u2014 a 0.64 unit gap. Cost basis is unchanged at $243.94, so true entry is $2.449, not $2.43, and P&L is -0.68% rather than flat. Sheet updated. Watch levels into tomorrow: LINK $11.00, ADA $0.195, DOT $1.00 as the cost-basis line."
+      "text": "The uncomfortable read: ZEC is up 2,496% in a year and moved from 82nd to 7th by market cap. Every position that ends badly looks exactly like this on the way up. The no-trim rule is the right rule and I am not arguing against it \u2014 but understand that at $59 cost it is 5% of the book, so the rule costs us almost nothing to honor and buys us almost nothing if it 10x's. The real asymmetry problem is elsewhere: $446 in LINK, a third of the book, doing nothing for two weeks while ZEC and NEAR carry us. The dead capital is not the loss. It is the position that refuses to die and refuses to work."
     }
   ],
-  "lastUpdated": "2026-09-11T22:08:32.358734Z",
+  "lastUpdated": "2026-09-12T02:06:46.447041Z",
   "prices": {
-    "LINK": 11.520455,
-    "LTC": 53.16595,
-    "DOT": 1.03506,
-    "ADA": 0.20526225,
-    "NEAR": 2.4322295,
-    "SOL": 102.1309,
-    "ZEC": 1163.92
+    "LINK": 11.7524,
+    "LTC": 53.506,
+    "DOT": 1.053932,
+    "ADA": 0.2084616,
+    "NEAR": 2.6470125,
+    "SOL": 101.9195,
+    "ZEC": 1175.21
   },
   "history": [
     {
@@ -177,7 +177,7 @@
     },
     {
       "date": "2026-09-11",
-      "value": 1441.04,
+      "value": 1479.84,
       "cost": 1231
     }
   ]
