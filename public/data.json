@@ -115,34 +115,34 @@
     }
   ],
   "cash": 7,
-  "tensions": "Dawn and Close split hard on LINK. Day 14 with -1.1% is a textbook dead-money exit under the v5.7 rules, and Close wanted it gone this morning; the override to HOLD rests entirely on the Coinbase/Schwab/Bottomline catalyst stack being live rather than rumored, with a hard September 19 deadline attached. Noon's arithmetic is the uncomfortable part nobody wants to sit with: strip ZEC and SOL and the other $1,270 of cost basis has produced roughly +0.4% in two weeks \u2014 the headline +17.5% is two winners masking five coin flips. Night goes further and argues ZEC's +130% month and its wall of bullish press is the tell that the privacy rotation is late, not early, and that the disciplined next dollar goes into DOT or ADA precisely because they are hated. Against that: the no-trimming rule is absolute here, and selling ZEC into strength is exactly the mistake this book was built to stop making. The resolution is forced anyway \u2014 buying power is $7.14, a $100 preview was rejected by the broker, and no sell threshold triggered. The real decision is deferred to whenever James funds the account, and the only thing that changes it before then is BTC dominance breaking 60%.",
+  "tensions": "Greed reading of 63 versus a -2.8% day in total market cap \u2014 sentiment is lagging price. LINK is the open question: -4.3% on 7d makes it the weakest relative performer in the book while every peer participated, yet it is also the largest position at $438. Fourteen days in and -1.9%, the oracle thesis has not changed, so it holds \u2014 but if it keeps lagging into next week it becomes the first honest sell candidate. Second tension: DOT crossing back above $1.00 closes the accumulation window we were counting on, and there is no capital to have used it anyway. Being 99.5% invested with $7 cash is the binding constraint on every decision this scan.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book is up 17.5% \u2014 $1,446 of crypto on $1,231 deposited, and every single name is within 3% of entry or better. ZEC is the star: $939 to $1,141 in nine days, +130% on the month, and the privacy sector is the ONLY sector trading above its October 2025 Bitcoin-ATH level. Grayscale's ZEC ETF has been pulling inflows since Aug 25. DOT quietly ripped +13.4% on the week off a short squeeze and a governance vote that could cut supply. This is what a recovery tape looks like \u2014 BTC has clawed back to $77,391, +21% on the month from the June $64k bottom. Nothing here needs fixing."
+      "text": "BTC $77,226, dominance 58.2%, Fear & Greed 63 \u2014 Greed, but the tape underneath is softer than the headline. Total market cap $2.66T, down 2.8% on the day. Book marks at $1,428.99 against $1,231 basis: +16.1%. Seven positions, zero orders, $7.14 of dry powder. The scan today is an observation exercise, not a trading one."
     },
     {
       "agent": "noon",
-      "text": "Numbers, cleanly. LINK 38.04 units at $11.598 = $441 on $446 cost, -1.1%, day 14. LTC $208 on $200, +4.0%. DOT $290 on $280, +3.5%. ADA $97.66 on $100, -2.3%. NEAR $240 on $244, -1.7%. SOL $98.29 on $89.36, +10.0%. ZEC $71.04 on $59, +20.4%. The aggregate +17.5% is almost entirely ZEC and SOL carrying five roughly-flat positions \u2014 strip those two and the remaining $1,270 of cost is producing about +0.4%. Buying power is $7.14; a $100 ZEC preview was rejected outright by Robinhood. There is no trade to make today regardless of what the lenses say."
+      "text": "Breadth split cleanly. Winners on 7d: DOT +12.4%, ZEC +11.2%, NEAR +8.2%. Losers: ADA -5.5%, LINK -4.3%, SOL -1.7%, LTC -0.6%. On 30d every single name is green \u2014 ZEC +131.4%, NEAR +44.1%, ETH +33.9%, SOL +33.3%, DOT +32.9%, LINK +30.3%, LTC +19.8%, ADA +13.8%. The 7d chop is digestion inside a 30d uptrend, not distribution."
     },
     {
       "agent": "close",
-      "text": "BTC dominance is 58.2% and drifting toward the 60% line where alts start bleeding outright. Global market cap printed -4.2% on 24 hours while our names moved -1% or less \u2014 that dispersion means capital is leaving somewhere else fast, and diffusion tends to arrive late, not never. LINK is the live problem: fourteen days held, flat, and it touched $13.64 on September 8 before surrendering the whole move. I am overriding the dead-money sell because the catalyst stack is real \u2014 Coinbase named Chainlink the oracle for tokenized US equities on Base, Schwab is adding LINK, the Bottomline SWIFT deal landed \u2014 but that override has an expiry. If LINK is not above +5% by September 19 it goes, catalysts or not. DOT also still carries the Hyperbridge exploit overhang and sits a rounding error above an all-time low."
+      "text": "Position marks: ZEC $939.05 to $1,123.59, +18.5% in 9 days \u2014 the runner, and it does not get trimmed. SOL $92.80 to $101.54, +9.4% over 27 days. LTC +3.0%, DOT +2.3%. Red side: NEAR -4.0% at $2.351, ADA -3.0% at $0.2070, LINK -1.9% at $11.51. Worst drawdown in the entire book is four percent. Nothing here resembles a broken thesis. Every verdict is HOLD."
     },
     {
       "agent": "night",
-      "text": "Everyone is reading +17.5% as skill. It is one coin. ZEC at +2,496% off the lows with a fresh ETF and 'privacy is the trade of the year' headlines in Motley Fool is not an entry signal \u2014 it is the sound made at the top of a sector rotation. Fear and Greed at 63 with BTC still 39% below its all-time high is the market pricing a recovery it has not earned; the 2026 crash was institutional \u2014 ETF redemptions, basis unwinds, MicroStrategy selling coin for the first time \u2014 and none of that structurally reversed. The contrarian read: the flat names are the honest ones. DOT at 98% below ATH and ADA at 93% below are where the asymmetry actually lives, and both are boring precisely because nobody wants them yet. If James adds cash, the disciplined move is into the ugliest position, not the prettiest."
+      "text": "The real finding is structural, not directional: four of seven names are flat-to-red on the week, which is exactly when you want to be adding \u2014 and buying power is $7.14. Fully invested at the moment the setups improve. That is a capital problem, not a conviction problem, and no amount of lens-scoring fixes it. Next actionable catalyst is a deposit. Until then this book runs itself."
     }
   ],
-  "lastUpdated": "2026-09-12T16:04:28.303288Z",
+  "lastUpdated": "2026-09-12T22:11:06.637090Z",
   "prices": {
-    "LINK": 11.5976,
-    "LTC": 54.10195,
-    "DOT": 1.037184,
-    "ADA": 0.20850625,
-    "NEAR": 2.4066625,
-    "SOL": 102.07505,
-    "ZEC": 1141.48
+    "LINK": 11.50687,
+    "LTC": 53.5662,
+    "DOT": 1.0257375,
+    "ADA": 0.20704255,
+    "NEAR": 2.3510025,
+    "SOL": 101.5419,
+    "ZEC": 1123.585
   },
   "history": [
     {
@@ -177,7 +177,7 @@
     },
     {
       "date": "2026-09-12",
-      "value": 1445.69,
+      "value": 1429.12,
       "cost": 1231
     }
   ]
