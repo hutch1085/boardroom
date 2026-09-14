@@ -35,10 +35,26 @@
     {
       "sym": "ZEC",
       "id": "zec-zcash",
-      "qty": 0.06224,
-      "entry": 939.05,
+      "qty": 0.19901,
+      "entry": 1049.0,
       "date": "Sep 3",
-      "cost": 59.0
+      "cost": 209.0
+    },
+    {
+      "sym": "INJ",
+      "id": "inj-injective",
+      "qty": 32.319,
+      "entry": 6.12,
+      "date": "Sep 13",
+      "cost": 200.0
+    },
+    {
+      "sym": "XTZ",
+      "id": "xtz-tezos",
+      "qty": 345.332,
+      "entry": 0.284,
+      "date": "Sep 13",
+      "cost": 100.0
     }
   ],
   "watchlist": [
@@ -98,33 +114,35 @@
       "recentlyExited": true
     }
   ],
-  "cash": 712.92,
-  "tensions": "Custody, not conviction, is the open question. Something liquidated 51% of this book minutes before the scan ran and left no attribution trail \u2014 every position sizing decision below is provisional until that is explained. Second tension: the scan's best idea (FIL, AI-storage, 5/7) cannot be bought on Robinhood, so the recommendation set is the best available rather than the best identified. Third: the no-trim doctrine and the ADA read are in direct conflict, and the doctrine is currently winning on a position whose thesis I do not think ever existed.",
+  "cash": 263.24,
+  "tensions": "Alts are bleeding against a flat BTC (LINK -11.5% 7d, ARB -16%, SUI -10%) while dominance rises \u2014 the book is 100% alts. ZEC and NEAR carry the returns; ADA and XTZ are the ones to question. The no-trim rule is being tested by ZEC at +130% on 30d \u2014 rule holds. Robinhood MCP was auto-declined this run, so account values are estimated from OKX prices, not verified against the live account.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "The book got cut in half while nobody was looking. LINK sold at $11.30 against an $11.73 entry \u2014 a 3.7% realized loss \u2014 and DOT dumped 279.419 units at $1.0119 for dead flat. $8.77 paid in taker fees to accomplish nothing. Neither sale was in the plan, and initiator_type came back empty, so I cannot tell you who or what did it. That is the only finding tonight that actually matters."
+      "text": "Sunday book: $1,428 est. (+16.0% on $1,231 deposited), $263 cash. BTC $77,805, flat on the week and sitting below its 7-day average. Dominance 58.9% and climbing \u2014 alts are leaking to BTC. Fear & Greed 57, mild greed with no conviction behind it."
     },
     {
       "agent": "noon",
-      "text": "What survives is fine and boring. LTC +4.2% at $54.20, the only name green on the day. SOL +7.7% at $99.97 after 28 days. ZEC +13.3% at $1,073.91 and still the strongest narrative on the board at +119% over 30 days, sitting in a laughably small $67 position. NEAR -4.7% at $2.3329 but its +41.6% 30-day structure is untouched \u2014 that is a pullback, not a break. Net unrealized +$7.43, or +1.07%. Account $1,412.61."
+      "text": "Position roll: LTC $53.88 (+3.6%), ADA $0.2104 (-0.6%), NEAR $2.41 (-1.5%), SOL $101.53 (+9.4%), ZEC $1,137 (+8.4%), INJ $6.115 (-0.1%, day 0), XTZ $0.280 (-1.3%, day 0). ZEC is still the engine: +130% over 30 days, $1,036\u2013$1,160 range today and still bid. XTZ has the best momentum, +19% on the week with 1.6x volume."
     },
     {
       "agent": "close",
-      "text": "ADA is the weak hand and I will say it plainly: $0.2047 against a $0.2116 entry, -8.3% over 7 days, +14% over 30 against peers at +33% to +119%. Worst performer in the book with no live catalyst and DeFi traction that rounds to zero. The no-trim doctrine says hold. I would swap it. James decides. Three buys validated and not placed: INJ $200 at ~$6.176 for 32.383 units scoring 6 of 7 \u2014 up 42% in 30 days, up 12.5% on the week against BTC down 3.8%, and green +2.8% on a tape that fell 4%, which is a real bid rather than beta. ZEC add $150 at ~$1,081. XTZ $100 as a limit at $0.2840, never market \u2014 the Robinhood spread is 2.1% wide."
+      "text": "Scan verdict: 7/7 HOLD, no thesis breaks, no trims. Screened AVAX, LINK, DOT, SUI, ARB, OP, ATOM, FIL, HBAR, XLM \u2014 only FIL clears 4 lenses ($1.00, +17% 7d, 3.1x volume) and it fails the regime lens with BTC below MA. No orders validated tonight; Robinhood tooling was unavailable to preview."
     },
     {
       "agent": "night",
-      "text": "The best setup I found is unreachable. FIL ran +22% in 24 hours on the AI-storage capex narrative with a 0.38 volume-to-mcap ratio, scored 5 of 7, and Robinhood does not list it. Neither AR nor MINA. That is a structural ceiling on this account, not a scan failure. Passed on RAY at 4 of 7 \u2014 up 123% in 30 days and down 6.5% today is the third inning of a move that is cracking. Passed on BAT, real momentum attached to a token with no accrual mechanism in five years. Holding roughly $260 dry. Fear and Greed is rolling 63 to 57, BTC dominance is 58.9% and climbing, and the tape is down 4% in a day. Firing all $713 into a pullback that is still in progress is how you arrive at the actual low with empty hands."
+      "text": "Weak hand in the book is ADA \u2014 worst relative strength, 0.33x volume, dead money at -0.6%. Not broken, but it loses its seat if $0.20 goes. FIL on watch for a $100 entry at dawn if it holds above $0.95 with volume. Sunday liquidity is thin; nothing tonight deserves fresh capital."
     }
   ],
-  "lastUpdated": "2026-09-14T02:11:22.510620Z",
+  "lastUpdated": "2026-09-14T08:10:21.271341Z",
   "prices": {
-    "LTC": 54.1975,
-    "ADA": 0.2046642,
-    "NEAR": 2.3328715,
-    "SOL": 99.9685,
-    "ZEC": 1073.91
+    "LTC": 53.88,
+    "ADA": 0.2104,
+    "NEAR": 2.413,
+    "SOL": 101.53,
+    "ZEC": 1136.77,
+    "INJ": 6.115,
+    "XTZ": 0.2802
   },
   "history": [
     {
@@ -159,8 +177,8 @@
     },
     {
       "date": "2026-09-13",
-      "value": 1412.65,
-      "cost": 692.3
+      "value": 1427.71,
+      "cost": 1231
     }
   ]
 }
