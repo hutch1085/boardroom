@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>The Boardroom â Crypto Scanner HQ</title>
+<title>The Boardroom Ã¢ÂÂ Crypto Scanner HQ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -106,7 +106,7 @@ body {
 .screen-title.holdings { color: var(--green); }
 .screen-title.aggregate { color: var(--accent); }
 
-/* LEFT SCREEN â Positions */
+/* LEFT SCREEN Ã¢ÂÂ Positions */
 .screen-holdings {
   top: 5%;
   left: 1.5%;
@@ -114,7 +114,7 @@ body {
   height: 52%;
   max-height: 58%;
 }
-/* RIGHT SCREEN â Aggregate */
+/* RIGHT SCREEN Ã¢ÂÂ Aggregate */
 .screen-aggregate {
   top: 5%;
   right: 1.5%;
@@ -272,7 +272,7 @@ body {
   letter-spacing: 0.04em;
 }
 
-/* === SPEECH BUBBLES (hidden â agents talk in chat now) === */
+/* === SPEECH BUBBLES (hidden Ã¢ÂÂ agents talk in chat now) === */
 .agent-bubbles { display: none; }
 
 /* === BOTTOM SECTION (Chat) === */
@@ -428,10 +428,10 @@ body {
 
 @media (max-width: 480px) {
   html { font-size: 14px; }
-  /* Taller container â room for boards on top, agents below */
+  /* Taller container Ã¢ÂÂ room for boards on top, agents below */
   .boardroom { height: 56vh; min-height: 320px; }
   .boardroom img { object-fit: contain; object-position: center bottom; }
-  /* Gentle gradient â new image has no speech bubbles */
+  /* Gentle gradient Ã¢ÂÂ new image has no speech bubbles */
   .boardroom-dim {
     background: linear-gradient(to bottom,
       rgba(11,14,20,0.9) 0%,
@@ -495,7 +495,7 @@ body {
   <img src="boardroom-hero.jpg" alt="Four AI trading agents around a boardroom table">
   <div class="boardroom-dim"></div>
 
-  <!-- LEFT SCREEN â Individual Positions -->
+  <!-- LEFT SCREEN Ã¢ÂÂ Individual Positions -->
   <div class="screen-overlay screen-holdings">
     <div class="screen-title holdings">Positions</div>
     <div id="holdingsSummary" class="screen-summary">
@@ -506,7 +506,7 @@ body {
     </div>
   </div>
 
-  <!-- RIGHT SCREEN â Aggregate P&L + 7-Day Chart -->
+  <!-- RIGHT SCREEN Ã¢ÂÂ Aggregate P&L + 7-Day Chart -->
   <div class="screen-overlay screen-aggregate">
     <div class="screen-title aggregate">Portfolio</div>
     <div id="aggPanel" class="agg-big">
@@ -572,11 +572,13 @@ let HOLDINGS = [
   { sym:'ADA', id:'ada-cardano', qty:468.38, entry:0.2116, date:'Sep 4', cost:100.00 },
   { sym:'NEAR', id:'near-protocol', qty:99.61, entry:2.45, date:'Sep 6', cost:243.94 },
   { sym:'SOL', id:'sol-solana', qty:0.96289, entry:92.80, date:'Aug 16', cost:89.36 },
-  { sym:'ZEC', id:'zec-zcash', qty:0.06224, entry:939.05, date:'Sep 3', cost:59.00 },
+  { sym:'ZEC', id:'zec-zcash', qty:0.19901, entry:1049.00, date:'Sep 3', cost:209.00 },
+  { sym:'INJ', id:'inj-injective', qty:32.319, entry:6.12, date:'Sep 13', cost:200.00 },
+  { sym:'XTZ', id:'xtz-tezos', qty:345.332, entry:0.284, date:'Sep 13', cost:100.00 },
 ];
 let WATCHLIST = [];
-let CASH = 712.92;
-const COST_BASIS = 1231; // $1086 original + $145 transfer Sep 9
+let CASH = 263.24;
+const COST_BASIS = 1231;
 let TENSIONS = '';
 let OPENING = [];
 
@@ -619,10 +621,10 @@ let pricesLoaded = false;
 let historyData = []; // [{date, value}]
 
 const AGENTS = {
-  dawn:  { name:'Dawn',  color:'#FF9F43', bg:'rgba(255,159,67,0.15)', icon:'â' },
-  noon:  { name:'Noon',  color:'#3b82f6', bg:'rgba(59,130,246,0.15)', icon:'ð' },
-  close: { name:'Close', color:'#E91E63', bg:'rgba(233,30,99,0.15)',  icon:'ð¤' },
-  night: { name:'Night', color:'#7C4DFF', bg:'rgba(124,77,255,0.15)', icon:'ð§' },
+  dawn:  { name:'Dawn',  color:'#FF9F43', bg:'rgba(255,159,67,0.15)', icon:'Ã¢ÂÂ' },
+  noon:  { name:'Noon',  color:'#3b82f6', bg:'rgba(59,130,246,0.15)', icon:'Ã°ÂÂÂ' },
+  close: { name:'Close', color:'#E91E63', bg:'rgba(233,30,99,0.15)',  icon:'Ã°ÂÂ¤Â' },
+  night: { name:'Night', color:'#7C4DFF', bg:'rgba(124,77,255,0.15)', icon:'Ã°ÂÂ§Â' },
 };
 
 // ============================================================
@@ -635,12 +637,12 @@ const AGENTS = {
 // loadPortfolioData() populates priceCache and historyData from these fields.
 
 function fmt(n) {
-  if (n == null || isNaN(n)) return 'â';
+  if (n == null || isNaN(n)) return 'Ã¢ÂÂ';
   if (Math.abs(n) >= 1) return n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   if (Math.abs(n) < 0.01) return n.toFixed(6);
   return n.toFixed(4);
 }
-function fmtUSD(n) { return n == null || isNaN(n) ? 'â' : '$' + fmt(n); }
+function fmtUSD(n) { return n == null || isNaN(n) ? 'Ã¢ÂÂ' : '$' + fmt(n); }
 function fmtCompact(n) {
   if (n == null || isNaN(n)) return '...';
   if (Math.abs(n) >= 1000) return '$' + (n/1000).toFixed(1) + 'k';
@@ -650,7 +652,7 @@ function fmtCompact(n) {
 }
 
 // ============================================================
-// === RENDER HOLDINGS (left screen â positions only) ===
+// === RENDER HOLDINGS (left screen Ã¢ÂÂ positions only) ===
 // ============================================================
 function renderHoldings() {
   const container = document.getElementById('holdingsRows');
@@ -743,7 +745,7 @@ function drawHistoryChart() {
     ctx.fillStyle = 'rgba(160,170,190,0.4)';
     ctx.font = '11px sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('Chart builds as scans run â need 2+ days', rect.width / 2, rect.height / 2);
+    ctx.fillText('Chart builds as scans run Ã¢ÂÂ need 2+ days', rect.width / 2, rect.height / 2);
     return;
   }
   const ctx = canvas.getContext('2d');
@@ -846,15 +848,15 @@ function buildSystemPrompt() {
   }).join('\n');
 
   const agentVoices = {
-    dawn: '"Dawn" (6AM HST scan) â The early bird. Enthusiastic, optimistic, always caffeinated. Uses sunrise/morning metaphors. Sees opportunity everywhere. Speaks with energy and exclamation marks.',
-    noon: '"Noon" (12PM HST scan) â The analyst. Sharp, data-driven, references charts and indicators. Professional but not boring. Uses precise numbers. The most measured voice.',
-    close: '"Close" (4PM HST scan) â The risk manager. Cautious, protective of capital. Sunset/end-of-day metaphors. Worries about drawdowns and concentration risk. Maternal/paternal about the portfolio.',
-    night: '"Night" (8PM HST scan) â The contrarian owl. Nocturnal, sees what others miss. Loves going against consensus. Cryptic one-liners. Dark humor. Questions everything.'
+    dawn: '"Dawn" (6AM HST scan) Ã¢ÂÂ The early bird. Enthusiastic, optimistic, always caffeinated. Uses sunrise/morning metaphors. Sees opportunity everywhere. Speaks with energy and exclamation marks.',
+    noon: '"Noon" (12PM HST scan) Ã¢ÂÂ The analyst. Sharp, data-driven, references charts and indicators. Professional but not boring. Uses precise numbers. The most measured voice.',
+    close: '"Close" (4PM HST scan) Ã¢ÂÂ The risk manager. Cautious, protective of capital. Sunset/end-of-day metaphors. Worries about drawdowns and concentration risk. Maternal/paternal about the portfolio.',
+    night: '"Night" (8PM HST scan) Ã¢ÂÂ The contrarian owl. Nocturnal, sees what others miss. Loves going against consensus. Cryptic one-liners. Dark humor. Questions everything.'
   };
   const head = currentHeadAgent;
   const headName = head.charAt(0).toUpperCase() + head.slice(1);
 
-  return `You are ${headName}, a crypto trading scanner agent sitting at the head of a boardroom table. You are the HEAD AGENT right now â the one who ran the most recent scan. Answer James's question in YOUR voice only.
+  return `You are ${headName}, a crypto trading scanner agent sitting at the head of a boardroom table. You are the HEAD AGENT right now Ã¢ÂÂ the one who ran the most recent scan. Answer James's question in YOUR voice only.
 
 YOUR CHARACTER:
 ${agentVoices[head]}
@@ -1026,7 +1028,7 @@ function updateHeadAgent() {
   else if (h >= 16) currentHeadAgent = 'close';
   else if (h >= 12) currentHeadAgent = 'noon';
   else if (h >= 6)  currentHeadAgent = 'dawn';
-  else              currentHeadAgent = 'night'; // before 6AM â last night's run
+  else              currentHeadAgent = 'night'; // before 6AM Ã¢ÂÂ last night's run
   document.querySelectorAll('.nameplate').forEach(el => {
     el.classList.toggle('head-agent', el.dataset.agent === currentHeadAgent);
   });
