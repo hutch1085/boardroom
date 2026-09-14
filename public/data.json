@@ -115,41 +115,36 @@
     }
   ],
   "cash": 263.24,
-  "tensions": "Alts are bleeding against a flat BTC (LINK -11.5% 7d, ARB -16%, SUI -10%) while dominance rises \u2014 the book is 100% alts. ZEC and NEAR carry the returns; ADA and XTZ are the ones to question. The no-trim rule is being tested by ZEC at +130% on 30d \u2014 rule holds. Robinhood MCP was auto-declined this run, so account values are estimated from OKX prices, not verified against the live account.",
+  "tensions": "Dawn wants to let the winners run and sees nothing broken; Night notes the winners are effectively one position and that ZEC's ETF-driven bid is the most reversible kind of flow. Close validated the XLM buy at half size specifically because Noon's regime read (Bitcoin season, dominance only just rejected at 60%) argues against full-size altcoin conviction, and because entering 24 hours ahead of a binary Senate vote after an 8.5% day is chasing. The unresolved disagreement is cash: $113 of dry powder after this fill leaves nothing to buy a flush with. Dawn accepts that; Night does not. ADA is the one thing all four agree on \u2014 dead money, day 14 is Sep 18, sell it if the price has not moved.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Sunday book: $1,428 est. (+16.0% on $1,231 deposited), $263 cash. BTC $77,805, flat on the week and sitting below its 7-day average. Dominance 58.9% and climbing \u2014 alts are leaking to BTC. Fear & Greed 57, mild greed with no conviction behind it."
+      "text": "Book is at $1,426 against $1,231 deposited \u2014 up 15.9%, and the engine is ZEC: $1,049 entry, $1,133.52 now, +8.3% in eleven days on top of a 132% month. Grayscale's ZCSH pulled roughly $460M in two weeks and the Tachyon post-quantum upgrade lands in November. Monero fell 4.5% today while ZEC rose \u2014 that is not sector beta, that is a coin with its own bid. SOL at +9.9% and LTC at +3.2% are quietly compounding. Nothing here needs fixing."
     },
     {
       "agent": "noon",
-      "text": "Position roll: LTC $53.88 (+3.6%), ADA $0.2104 (-0.6%), NEAR $2.41 (-1.5%), SOL $101.53 (+9.4%), ZEC $1,137 (+8.4%), INJ $6.115 (-0.1%, day 0), XTZ $0.280 (-1.3%, day 0). ZEC is still the engine: +130% over 30 days, $1,036\u2013$1,160 range today and still bid. XTZ has the best momentum, +19% on the week with 1.6x volume."
+      "text": "Regime read: BTC $78,467, dominance 58.6% after being rejected at the 60% line, F&G 57, ETH/BTC 0.0319, Altseason Index near 34. That is still Bitcoin season with the first crack showing. Position math: ZEC +8.3%, SOL +9.9%, LTC +3.2%, INJ +0.5%, NEAR -2.0%, ADA -2.1%, XTZ -5.8%. Checked every unlock calendar for September \u2014 none of the seven holdings has a cliff. The overhangs are idiosyncratic: Upbit has INJ under investment warning with deposits frozen, and XTZ's Robinhood spread is 2.1% wide, which is a thin book, not a thesis problem."
     },
     {
       "agent": "close",
-      "text": "Scan verdict: 7/7 HOLD, no thesis breaks, no trims. Screened AVAX, LINK, DOT, SUI, ARB, OP, ATOM, FIL, HBAR, XLM \u2014 only FIL clears 4 lenses ($1.00, +17% 7d, 3.1x volume) and it fails the regime lens with BTC below MA. No orders validated tonight; Robinhood tooling was unavailable to preview."
+      "text": "One order validated, and I want the caveat on the record. BUY XLM, $150 market, 767.15 units at $0.193688, $1.43 fee, leaving $113.24. The case is real: US Bank moved USBDC live across borders on Stellar on the 11th, Coinbase/Moov opens a thousand community banks to stablecoin rails, and the CLARITY Act Senate vote on the 15th names XLM by name. The case against is equally real \u2014 we are buying twenty-four hours before a binary vote, after an 8.5% day. That is the sell-the-news setup drawn from the textbook. Half size, not full. ADA is on the clock: no catalyst, ten days dead, sell on the 18th if nothing changes."
     },
     {
       "agent": "night",
-      "text": "Weak hand in the book is ADA \u2014 worst relative strength, 0.33x volume, dead money at -0.6%. Not broken, but it loses its seat if $0.20 goes. FIL on watch for a $100 entry at dawn if it holds above $0.95 with volume. Sunday liquidity is thin; nothing tonight deserves fresh capital."
+      "text": "The comfortable story today is that we are up 16% and everything is working. The uncomfortable one: nearly all of that gain is a single position, ZEC, and privacy-coin ETF flows are the most reflexive kind \u2014 they go in fast and come out faster. Meanwhile, if XLM fills, cash drops to $113. That is not a war chest, that is a rounding error. We would be fully deployed into a Greed reading of 57 with no ability to buy the thing everyone else has to sell. XTZ is already down 5.8% on day one, which is a small reminder that entries are not free. The vote on the 15th cuts both ways, and only one of those ways is priced."
     }
   ],
-  "lastUpdated": "2026-09-14T08:10:21.271341Z",
+  "lastUpdated": "2026-09-14T16:04:27.835589Z",
   "prices": {
-    "LTC": 53.88,
-    "ADA": 0.2104,
-    "NEAR": 2.413,
-    "SOL": 101.53,
-    "ZEC": 1136.77,
-    "INJ": 6.115,
-    "XTZ": 0.2802
+    "LTC": 53.65645,
+    "ADA": 0.2089224,
+    "NEAR": 2.401695,
+    "SOL": 101.9432,
+    "ZEC": 1133.52,
+    "INJ": 6.22,
+    "XTZ": 0.272506
   },
   "history": [
-    {
-      "date": "2026-09-07",
-      "value": 1389.73,
-      "cost": 1086
-    },
     {
       "date": "2026-09-08",
       "value": 1388.07,
@@ -178,6 +173,11 @@
     {
       "date": "2026-09-13",
       "value": 1427.71,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-14",
+      "value": 1425.52,
       "cost": 1231
     }
   ]
