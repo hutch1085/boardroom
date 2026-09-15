@@ -131,43 +131,38 @@
     }
   ],
   "cash": 13.23,
-  "tensions": "Greed at 69 while market cap drops 3% is a divergence \u2014 sentiment lags price and usually catches down. Four of nine positions were opened in the last 48 hours into what is now a broad alt flush; the 'ride the wave' mandate means sitting through drawdown on fresh entries with no dry powder. XTZ at -8% in a day tests whether 'thesis not broken' is analysis or denial.",
+  "tensions": "The open disagreement is XTZ. The rulebook says hold \u2014 the loss is 10.4%, inside the 15% stop, and the position is two days old, well inside the 14-day window. The discretionary read says it is dead weight with no catalyst and a 2.1% spread, and that $86 in a cash-only account with $13.23 of buying power is worth more as optionality than as Tezos. We defaulted to the rule and flagged the exit as pre-validated but unexecuted. Second tension: Fear & Greed at 69 while the market drops 4.7% is a divergence that usually resolves downward, which argues for raising cash \u2014 but raising cash before FOMC is the same as betting on the outcome, and this system does not bet on macro. Sitting still is a position, and today it is the honest one.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "BTC $76,750, down 1.4% on the day and 3.6% off the 24h high of $79,600. Total crypto market cap -2.9%. Dominance 58.3% and Fear & Greed still at 69 (Greed) \u2014 the crowd hasn't flinched yet, which is exactly when alts get flushed. Book sits at ~$1,392 against $1,231 deposited, +13.1%."
+      "text": "BTC $76,507, down 0.6% on the day and the whole market off 4.7% in 24 hours. Dominance 58.4% \u2014 under the 60% panic line but climbing. Fear & Greed prints 69, Greed, which is the tell: sentiment has not caught down to price yet. Book value $1,376.96 against $1,231 deposited, +11.9%. Nothing in the portfolio triggered a sell rule. We do nothing today."
     },
     {
       "agent": "noon",
-      "text": "Winners: SOL $100.23 (+8.0% from $92.80, 29 days) and ZEC $1,129 (+7.6% from $1,049) are carrying the book. LTC $52.49 flat at entry. XLM $0.1909 is the only holding up on the day (+3%) despite being 1.6% under its fresh $0.1939 entry."
+      "text": "Two binary events inside 36 hours: FOMC Sep 15-16 and the CLARITY Act cloture vote today. That is the entire story. XRP at $1.3909 is holding its 4h 50/100 EMAs at $1.385/$1.375 \u2014 the vote decides whether that shelf holds. Buying power is $13.23, so the market has made the sizing decision for us. There is no scenario where forcing an entry into two coin-flips with $13 is the right trade."
     },
     {
       "agent": "close",
-      "text": "The drag: XTZ $0.261 is -8.1% from a $0.284 entry made yesterday, -7% today alone and pinned to the 24h low. XRP $1.389 is -4.2% after being bought within a cent of its 24h high \u2014 a timing miss, not a thesis miss. ADA $0.2034 (-3.9%) and NEAR $2.36 (-3.6%) are bleeding with beta. INJ $5.99 (-2.2%) is day-1 noise."
+      "text": "ZEC is the only position actually working on thesis rather than beta: $1,049 to $1,120.82, +6.8% in 12 days, with Grayscale ZCSH ETF flows, a $100M inflow Sep 8, and the SwissBorg listing Sep 14 behind it. SOL +7.1% off the SEC core-ETF-asset designation. Everything else is chop. XTZ at -10.4% in two days is the ugliest holding \u2014 no catalyst surfaced, 2.1% bid/ask spread, and it did not trigger a rule, so it stays unless James wants the ~$86 of dry powder."
     },
     {
       "agent": "night",
-      "text": "No orders. Buying power is $13.23, so nothing new can be bought without a sell, and no position has a broken thesis. Mandate is no trimming. XTZ is the one on watch: another red day through $0.25 and it becomes the first cut candidate. Robinhood API calls were declined this run \u2014 positions are from ledger, prices from OKX."
+      "text": "Watch the calendar, not the candles. LTC and ADA both hit the 14-day dead-money deadline on Sep 18 \u2014 LTC is flat at -0.4% over 11 days and its LitVM catalyst is Q4, ADA is pinned on $0.20 support with the x402 launch already priced. Those two are the next forced decisions, not XTZ. INJ at -7.2% gets a pass: 100% of supply is circulating, so there is no unlock cliff, and staking just hit a record 58.8M with a buyback burn completed."
     }
   ],
-  "lastUpdated": "2026-09-15T08:10:04.402905Z",
+  "lastUpdated": "2026-09-15T16:05:02.612724Z",
   "prices": {
-    "LTC": 52.49,
-    "ADA": 0.2034,
-    "NEAR": 2.362,
-    "SOL": 100.23,
-    "ZEC": 1129.12,
-    "INJ": 5.988,
-    "XTZ": 0.261,
-    "XLM": 0.19085,
-    "XRP": 1.3887
+    "LTC": 51.77715,
+    "ADA": 0.2018997,
+    "NEAR": 2.3785645,
+    "SOL": 99.36205,
+    "ZEC": 1120.815,
+    "INJ": 5.68,
+    "XTZ": 0.2545355,
+    "XLM": 0.1926135,
+    "XRP": 1.3909315
   },
   "history": [
-    {
-      "date": "2026-09-08",
-      "value": 1388.07,
-      "cost": 1086
-    },
     {
       "date": "2026-09-09",
       "value": 1189.88,
@@ -196,6 +191,11 @@
     {
       "date": "2026-09-14",
       "value": 1391.82,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-15",
+      "value": 1376.86,
       "cost": 1231
     }
   ]
