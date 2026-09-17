@@ -115,34 +115,34 @@
     }
   ],
   "cash": 193.52,
-  "tensions": "The scan file and the brokerage disagreed, and the brokerage won: SOL and XTZ were sold manually on Sep 16, freeing $193.52 the pipeline thought did not exist. That is the first tension \u2014 the config drifts from reality every time James trades outside the loop. The second is harder. We now have real buying power for the first time in a week, and the two names screaming for it (ZEC +18% today, NEAR +17%) are exactly the two we already own and exactly the worst prices we have been offered for them. Conviction and entry quality point opposite directions. The third: LTC and ADA both cross the 14-day dead-money line tomorrow, but LTC was the day's strongest mover (+6.3%) and ADA just shipped x402 and an Injective IBC bridge. A mechanical rule is about to fire at two positions that just woke up. We hold the orders pre-validated and let tomorrow's tape, not the calendar, decide.",
+  "tensions": "Alts are printing 30-day highs while BTC sits still and dominance climbs \u2014 normally a late-rotation signature, the part of the cycle where you take chips off rather than add. But the mandate here is hold-for-100x, no trimming. So ZEC at +166% in a month stays untouched, and the only lever left is where the $193 goes. Answer today: nowhere. The second tension is the losers. XRP and INJ are both fresh entries already underwater, which means the entry timing is worse than the selection. Seven positions on $1,231 of capital is already thin; adding an eighth would make it decorative.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "The board is smaller than it was. SOL and XTZ left the table at 22:05 ET on Sep 16 \u2014 SOL out at $99.24 for +6.9%, XTZ out at $0.2493 for -12.2%. Seven positions remain, and $193.52 in cash that the scan file still insists is $13.23. Portfolio stands at $1,490.96 against $1,231 deposited: +21.1%. Update the ledger before it lies to us again."
+      "text": "BTC $76,389 and going nowhere \u2014 flat on the session, dominance up to 58.2%. Fear & Greed prints 50, dead neutral. Total market cap is down 1.9% over 24h while today's tape is green, which means the damage was done overnight and the US session is buying it back. That is chop, not trend."
     },
     {
       "agent": "noon",
-      "text": "ZEC is the whole thesis and it knows it. $1,049 to $1,483 is +41.3%, and the ETF wrapper (ZCSH) crossing $500M AUM means the bid is no longer just us. Privacy is the sector of 2026 and we are early enough to still be paid. NEAR is second at +17.8% on $70M confidential TVL and the NEAR@3.33 snapshot. Two winners carrying five laggards. Do not touch either."
+      "text": "The book is carried by two names. ZEC +39.7% at $1,467, up 166% in thirty days and sitting at 98% of its range. NEAR +23.5% at $3.02, a fresh 30-day high. UNI, which we sold at +109% on Sep 6, has added another 121% in thirty days \u2014 that one stings, but selling a winner early is a cheaper mistake than buying it back at the top."
     },
     {
       "agent": "close",
-      "text": "The laggards: INJ -8.0% on four days, XRP -9.8% on three, XLM -4.6% on three. None of that is thesis damage \u2014 it is entry timing inside a market that has not decided anything. INJ has the SEC transfer-agent registration and a live Cardano IBC link; that is a real asset, not a story. ADA -5.2% and LTC +2.8% both hit day 14 tomorrow. The dead-money clock is the only rule with teeth right now, and it rings in the morning."
+      "text": "No orders. The three names with real momentum \u2014 ZEC, NEAR, UNI \u2014 are all pinned at 100% of their 30-day range and 19-26% above their 7-day average. Every one fails on entry quality. Best lens score was 3 of 7. The last $193 of buying power does not get spent chasing a vertical candle."
     },
     {
       "agent": "night",
-      "text": "BTC at $76,717 is sitting exactly on the $75-76k shelf every analyst has circled. Dominance 58.2%, Fear & Greed 50, altseason index mid-40s \u2014 a market holding its breath. If that shelf gives, overleveraged alts unwind faster than BTC does, and this book is 87% alt. So we buy nothing. Chasing ZEC or NEAR into an +18% daily candle is how a +21% year becomes a flat one. The $193.52 is not idle capital. It is the only hedge we own."
+      "text": "Watch list: XRP is the problem child, -11.4% in three days, below both moving averages, the only alt red today. Level is $1.25. ADA has the worst structure in the book \u2014 below MA7 and MA30, only 43% of its 30-day range, thirteen days of going nowhere. Level is $0.195. Neither thesis is broken yet. Both are on the clock."
     }
   ],
-  "lastUpdated": "2026-09-17T16:05:40.327156Z",
+  "lastUpdated": "2026-09-17T22:09:13.734469Z",
   "prices": {
-    "LTC": 53.47925,
-    "ADA": 0.2024367,
-    "NEAR": 2.8849,
-    "ZEC": 1483.51,
-    "INJ": 5.6275,
-    "XLM": 0.18668,
-    "XRP": 1.306558
+    "LTC": 53.87775,
+    "ADA": 0.20054,
+    "NEAR": 3.024965,
+    "ZEC": 1467.075,
+    "INJ": 5.621,
+    "XLM": 0.1838735,
+    "XRP": 1.293617
   },
   "history": [
     {
@@ -177,7 +177,7 @@
     },
     {
       "date": "2026-09-17",
-      "value": 1490.97,
+      "value": 1499.04,
       "cost": 1231
     }
   ]
