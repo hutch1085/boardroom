@@ -25,14 +25,6 @@
       "cost": 243.94
     },
     {
-      "sym": "SOL",
-      "id": "sol-solana",
-      "qty": 0.96289,
-      "entry": 92.8,
-      "date": "Aug 16",
-      "cost": 89.36
-    },
-    {
       "sym": "ZEC",
       "id": "zec-zcash",
       "qty": 0.19901,
@@ -47,14 +39,6 @@
       "entry": 6.12,
       "date": "Sep 13",
       "cost": 200.0
-    },
-    {
-      "sym": "XTZ",
-      "id": "xtz-tezos",
-      "qty": 345.332,
-      "entry": 0.284,
-      "date": "Sep 13",
-      "cost": 100.0
     },
     {
       "sym": "XLM",
@@ -130,44 +114,37 @@
       "recentlyExited": true
     }
   ],
-  "cash": 13.23,
-  "tensions": "The open disagreement is XTZ. The rulebook says hold \u2014 the loss is 10.4%, inside the 15% stop, and the position is two days old, well inside the 14-day window. The discretionary read says it is dead weight with no catalyst and a 2.1% spread, and that $86 in a cash-only account with $13.23 of buying power is worth more as optionality than as Tezos. We defaulted to the rule and flagged the exit as pre-validated but unexecuted. Second tension: Fear & Greed at 69 while the market drops 4.7% is a divergence that usually resolves downward, which argues for raising cash \u2014 but raising cash before FOMC is the same as betting on the outcome, and this system does not bet on macro. Sitting still is a position, and today it is the honest one.",
+  "cash": 193.52,
+  "tensions": "The real tension this run is not which coin to buy, it is that the scan sheet and the account disagreed. Two positions were closed manually and the pipeline would have reported on phantom holdings had it trusted its own table. It did not \u2014 but the table still needs fixing. Second tension: adding $190 to NEAR pushes one name to roughly a third of the portfolio. The ride-the-wave doctrine says press winners and never trim; basic position sizing says do not let one alt become a third of a $1,450 book. Both cannot be fully right. We sided with the doctrine because it is the stated mandate, but the concentration is a real exposure, not a rounding error, and if NEAR's breakout fails the drawdown will be felt across the whole account. Third, quieter tension: Robinhood returned an empty quote for INJ and we priced it off OKX. One missing quote is noise; a pattern of them would mean the data layer cannot be trusted for the position it is valuing.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "BTC $76,507, down 0.6% on the day and the whole market off 4.7% in 24 hours. Dominance 58.4% \u2014 under the 60% panic line but climbing. Fear & Greed prints 69, Greed, which is the tell: sentiment has not caught down to price yet. Book value $1,376.96 against $1,231 deposited, +11.9%. Nothing in the portfolio triggered a sell rule. We do nothing today."
+      "text": "The book changed shape overnight without us. SOL and XTZ were sold manually at 22:05 ET on the 16th \u2014 SOL out at $99.24 for +6.1% on an $89 basis, XTZ out at $0.2493 for -14.6%. Net $180 back into cash, which is why buying power reads $193.52 and not the $13 the scan sheet expected. Seven positions now, not nine. The position table is stale and should be rewritten before the next run."
     },
     {
       "agent": "noon",
-      "text": "Two binary events inside 36 hours: FOMC Sep 15-16 and the CLARITY Act cloture vote today. That is the entire story. XRP at $1.3909 is holding its 4h 50/100 EMAs at $1.385/$1.375 \u2014 the vote decides whether that shelf holds. Buying power is $13.23, so the market has made the sizing decision for us. There is no scenario where forcing an entry into two coin-flips with $13 is the right trade."
+      "text": "Regime is chop, not trend. BTC $76,182, flat on the day, -2.1% on the week, but still +19% on the month. Dominance 58.8%, Fear & Greed 50 \u2014 dead neutral. Total market cap -2.9% in 24 hours. This is a market digesting a month-long move, not starting or ending one. Four of seven holdings are red, all of them positions opened within the last two weeks. None of that is a signal; it is entry timing colliding with a flat tape."
     },
     {
       "agent": "close",
-      "text": "ZEC is the only position actually working on thesis rather than beta: $1,049 to $1,120.82, +6.8% in 12 days, with Grayscale ZCSH ETF flows, a $100M inflow Sep 8, and the SwissBorg listing Sep 14 behind it. SOL +7.1% off the SEC core-ETF-asset designation. Everything else is chop. XTZ at -10.4% in two days is the ugliest holding \u2014 no catalyst surfaced, 2.1% bid/ask spread, and it did not trigger a rule, so it stays unless James wants the ~$86 of dry powder."
+      "text": "Portfolio $1,450.55 against $1,231 deposited \u2014 up 17.8%. ZEC carries the book at +28.8% and +166% on the month. NEAR is +16.8% and printed +15.8% today, a genuine one-day breakout while everything else sat still. The laggards: XRP -11.4%, INJ -10.2%, XLM -7.5%, ADA -7.3%. ADA is the one worth naming \u2014 deepest drawdown from all-time high in the book at -94%, and the weakest 30-day performer at +14.4%. Not a thesis break. But it is the first name to go if one develops."
     },
     {
       "agent": "night",
-      "text": "Watch the calendar, not the candles. LTC and ADA both hit the 14-day dead-money deadline on Sep 18 \u2014 LTC is flat at -0.4% over 11 days and its LitVM catalyst is Q4, ADA is pinned on $0.20 support with the x402 launch already priced. Those two are the next forced decisions, not XTZ. INJ at -7.2% gets a pass: 100% of supply is circulating, so there is no unlock cliff, and staking just hit a record 58.8M with a buyback burn completed."
+      "text": "One order validated: buy $190 of NEAR at market, roughly 65.81 coins near $2.865, $1.43 fee. Six of seven lenses green \u2014 momentum, relative strength, trend, breakout, position confirmation, room to prior highs. The only red is regime, and regime is the reason to size at $190 rather than reach for more. ZEC scored five and was passed over deliberately: it is thirty days into a 2.65x, and a ten-percent green candle at the top of a parabolic is the most expensive chart in crypto. NEAR's move is one day old. That is the difference. The cost is concentration \u2014 NEAR becomes a third of the book \u2014 and we are taking it knowingly, not accidentally."
     }
   ],
-  "lastUpdated": "2026-09-15T16:05:02.612724Z",
+  "lastUpdated": "2026-09-17T11:58:36.718993Z",
   "prices": {
-    "LTC": 51.77715,
-    "ADA": 0.2018997,
-    "NEAR": 2.3785645,
-    "SOL": 99.36205,
-    "ZEC": 1120.815,
-    "INJ": 5.68,
-    "XTZ": 0.2545355,
-    "XLM": 0.1926135,
-    "XRP": 1.3909315
+    "LTC": 52.8038,
+    "ADA": 0.19788525,
+    "NEAR": 2.860365,
+    "ZEC": 1353.01,
+    "INJ": 5.56,
+    "XLM": 0.1811775,
+    "XRP": 1.293975
   },
   "history": [
-    {
-      "date": "2026-09-09",
-      "value": 1189.88,
-      "cost": 938.3
-    },
     {
       "date": "2026-09-10",
       "value": 1335.8,
@@ -196,6 +173,11 @@
     {
       "date": "2026-09-15",
       "value": 1376.86,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-17",
+      "value": 1450.56,
       "cost": 1231
     }
   ]
