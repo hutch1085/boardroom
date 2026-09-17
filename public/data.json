@@ -115,34 +115,34 @@
     }
   ],
   "cash": 193.52,
-  "tensions": "The real tension this run is not which coin to buy, it is that the scan sheet and the account disagreed. Two positions were closed manually and the pipeline would have reported on phantom holdings had it trusted its own table. It did not \u2014 but the table still needs fixing. Second tension: adding $190 to NEAR pushes one name to roughly a third of the portfolio. The ride-the-wave doctrine says press winners and never trim; basic position sizing says do not let one alt become a third of a $1,450 book. Both cannot be fully right. We sided with the doctrine because it is the stated mandate, but the concentration is a real exposure, not a rounding error, and if NEAR's breakout fails the drawdown will be felt across the whole account. Third, quieter tension: Robinhood returned an empty quote for INJ and we priced it off OKX. One missing quote is noise; a pattern of them would mean the data layer cannot be trusted for the position it is valuing.",
+  "tensions": "The scan file and the brokerage disagreed, and the brokerage won: SOL and XTZ were sold manually on Sep 16, freeing $193.52 the pipeline thought did not exist. That is the first tension \u2014 the config drifts from reality every time James trades outside the loop. The second is harder. We now have real buying power for the first time in a week, and the two names screaming for it (ZEC +18% today, NEAR +17%) are exactly the two we already own and exactly the worst prices we have been offered for them. Conviction and entry quality point opposite directions. The third: LTC and ADA both cross the 14-day dead-money line tomorrow, but LTC was the day's strongest mover (+6.3%) and ADA just shipped x402 and an Injective IBC bridge. A mechanical rule is about to fire at two positions that just woke up. We hold the orders pre-validated and let tomorrow's tape, not the calendar, decide.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "The book changed shape overnight without us. SOL and XTZ were sold manually at 22:05 ET on the 16th \u2014 SOL out at $99.24 for +6.1% on an $89 basis, XTZ out at $0.2493 for -14.6%. Net $180 back into cash, which is why buying power reads $193.52 and not the $13 the scan sheet expected. Seven positions now, not nine. The position table is stale and should be rewritten before the next run."
+      "text": "The board is smaller than it was. SOL and XTZ left the table at 22:05 ET on Sep 16 \u2014 SOL out at $99.24 for +6.9%, XTZ out at $0.2493 for -12.2%. Seven positions remain, and $193.52 in cash that the scan file still insists is $13.23. Portfolio stands at $1,490.96 against $1,231 deposited: +21.1%. Update the ledger before it lies to us again."
     },
     {
       "agent": "noon",
-      "text": "Regime is chop, not trend. BTC $76,182, flat on the day, -2.1% on the week, but still +19% on the month. Dominance 58.8%, Fear & Greed 50 \u2014 dead neutral. Total market cap -2.9% in 24 hours. This is a market digesting a month-long move, not starting or ending one. Four of seven holdings are red, all of them positions opened within the last two weeks. None of that is a signal; it is entry timing colliding with a flat tape."
+      "text": "ZEC is the whole thesis and it knows it. $1,049 to $1,483 is +41.3%, and the ETF wrapper (ZCSH) crossing $500M AUM means the bid is no longer just us. Privacy is the sector of 2026 and we are early enough to still be paid. NEAR is second at +17.8% on $70M confidential TVL and the NEAR@3.33 snapshot. Two winners carrying five laggards. Do not touch either."
     },
     {
       "agent": "close",
-      "text": "Portfolio $1,450.55 against $1,231 deposited \u2014 up 17.8%. ZEC carries the book at +28.8% and +166% on the month. NEAR is +16.8% and printed +15.8% today, a genuine one-day breakout while everything else sat still. The laggards: XRP -11.4%, INJ -10.2%, XLM -7.5%, ADA -7.3%. ADA is the one worth naming \u2014 deepest drawdown from all-time high in the book at -94%, and the weakest 30-day performer at +14.4%. Not a thesis break. But it is the first name to go if one develops."
+      "text": "The laggards: INJ -8.0% on four days, XRP -9.8% on three, XLM -4.6% on three. None of that is thesis damage \u2014 it is entry timing inside a market that has not decided anything. INJ has the SEC transfer-agent registration and a live Cardano IBC link; that is a real asset, not a story. ADA -5.2% and LTC +2.8% both hit day 14 tomorrow. The dead-money clock is the only rule with teeth right now, and it rings in the morning."
     },
     {
       "agent": "night",
-      "text": "One order validated: buy $190 of NEAR at market, roughly 65.81 coins near $2.865, $1.43 fee. Six of seven lenses green \u2014 momentum, relative strength, trend, breakout, position confirmation, room to prior highs. The only red is regime, and regime is the reason to size at $190 rather than reach for more. ZEC scored five and was passed over deliberately: it is thirty days into a 2.65x, and a ten-percent green candle at the top of a parabolic is the most expensive chart in crypto. NEAR's move is one day old. That is the difference. The cost is concentration \u2014 NEAR becomes a third of the book \u2014 and we are taking it knowingly, not accidentally."
+      "text": "BTC at $76,717 is sitting exactly on the $75-76k shelf every analyst has circled. Dominance 58.2%, Fear & Greed 50, altseason index mid-40s \u2014 a market holding its breath. If that shelf gives, overleveraged alts unwind faster than BTC does, and this book is 87% alt. So we buy nothing. Chasing ZEC or NEAR into an +18% daily candle is how a +21% year becomes a flat one. The $193.52 is not idle capital. It is the only hedge we own."
     }
   ],
-  "lastUpdated": "2026-09-17T11:58:36.718993Z",
+  "lastUpdated": "2026-09-17T16:05:40.327156Z",
   "prices": {
-    "LTC": 52.8038,
-    "ADA": 0.19788525,
-    "NEAR": 2.860365,
-    "ZEC": 1353.01,
-    "INJ": 5.56,
-    "XLM": 0.1811775,
-    "XRP": 1.293975
+    "LTC": 53.47925,
+    "ADA": 0.2024367,
+    "NEAR": 2.8849,
+    "ZEC": 1483.51,
+    "INJ": 5.6275,
+    "XLM": 0.18668,
+    "XRP": 1.306558
   },
   "history": [
     {
@@ -177,7 +177,7 @@
     },
     {
       "date": "2026-09-17",
-      "value": 1450.56,
+      "value": 1490.97,
       "cost": 1231
     }
   ]
