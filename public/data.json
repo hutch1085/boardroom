@@ -55,6 +55,14 @@
       "entry": 1.449,
       "date": "Sep 14",
       "cost": 100.0
+    },
+    {
+      "sym": "ARB",
+      "id": "arb-arbitrum",
+      "qty": 926.71,
+      "entry": 0.2035,
+      "date": "Sep 17",
+      "cost": 190.0
     }
   ],
   "watchlist": [
@@ -114,42 +122,38 @@
       "recentlyExited": true
     }
   ],
-  "cash": 193.52,
-  "tensions": "Alts are printing 30-day highs while BTC sits still and dominance climbs \u2014 normally a late-rotation signature, the part of the cycle where you take chips off rather than add. But the mandate here is hold-for-100x, no trimming. So ZEC at +166% in a month stays untouched, and the only lever left is where the $193 goes. Answer today: nowhere. The second tension is the losers. XRP and INJ are both fresh entries already underwater, which means the entry timing is worse than the selection. Seven positions on $1,231 of capital is already thin; adding an eighth would make it decorative.",
+  "cash": 3.62,
+  "tensions": "The whole portfolio is +32% on borrowed momentum from one regulatory headline. Dominance at 58.5% is a single bad session from the 60% line that forces us out of everything. Meanwhile buying power is $3.62 \u2014 we are fully deployed with zero optionality, so the only way to act on any new signal is to kill something we already own. ADA is the designated sacrifice, but selling a position on the day it rips 8.7% is exactly the timing error that looks smart in a spreadsheet and dumb in a P&L. NEAR and ZEC are 40% of the book and both are extended; if privacy and AI narratives roll over together, the +32% becomes +10% in a week and there is no cash to average into the wreckage.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "BTC $76,389 and going nowhere \u2014 flat on the session, dominance up to 58.2%. Fear & Greed prints 50, dead neutral. Total market cap is down 1.9% over 24h while today's tape is green, which means the damage was done overnight and the US session is buying it back. That is chop, not trend."
+      "text": "BTC through $80,695, up 5.2%, and the SEC's innovation exemption did it \u2014 five years of tokenized stock trading waved through on the 17th. Dominance sits at 58.5%, under our 60% kill-switch, which means alts get to breathe. F&G 56. Greed, but not the stupid kind yet."
     },
     {
       "agent": "noon",
-      "text": "The book is carried by two names. ZEC +39.7% at $1,467, up 166% in thirty days and sitting at 98% of its range. NEAR +23.5% at $3.02, a fresh 30-day high. UNI, which we sold at +109% on Sep 6, has added another 121% in thirty days \u2014 that one stings, but selling a winner early is a cheaper mistake than buying it back at the top."
+      "text": "NEAR is the whole story: +47.5% in twelve days on confidential perps over Hyperliquid and $70M confidential TVL. It is overbought and I do not care. The rule is no trimming. We do not clip a 47% winner to feel clever \u2014 we let it run or we get stopped out honest."
     },
     {
       "agent": "close",
-      "text": "No orders. The three names with real momentum \u2014 ZEC, NEAR, UNI \u2014 are all pinned at 100% of their 30-day range and 19-26% above their 7-day average. Every one fails on entry quality. Best lens score was 3 of 7. The last $193 of buying power does not get spent chasing a vertical candle."
+      "text": "ZEC +41% but it printed 1519 at midnight and gave back to 1481. ARB did the same thing harder \u2014 0.226 overnight to 0.2085 now, so yesterday's entry is barely green despite CoinGecko's +24% headline. Overnight spikes that fade before New York wakes up are liquidity, not conviction. Watch both."
     },
     {
       "agent": "night",
-      "text": "Watch list: XRP is the problem child, -11.4% in three days, below both moving averages, the only alt red today. Level is $1.25. ADA has the worst structure in the book \u2014 below MA7 and MA30, only 43% of its 30-day range, thirteen days of going nowhere. Level is $0.195. Neither thesis is broken yet. Both are on the clock."
+      "text": "ADA is the problem. Fourteen days, +3.2%, while the book did +32%. It rose 8.7% today on pure beta \u2014 no news, no catalyst, just the tide. Sell order is pre-validated at $102.41 but it does not fire into a green candle. If ADA loses 0.215 or fails to make a new high by the next scan, it funds something better. XRP at -5.3% is the other laggard, but it is only four days old and gets its window."
     }
   ],
-  "lastUpdated": "2026-09-17T22:09:13.734469Z",
+  "lastUpdated": "2026-09-18T16:04:01.753515Z",
   "prices": {
-    "LTC": 53.87775,
-    "ADA": 0.20054,
-    "NEAR": 3.024965,
-    "ZEC": 1467.075,
-    "INJ": 5.621,
-    "XLM": 0.1838735,
-    "XRP": 1.293617
+    "LTC": 55.9,
+    "ADA": 0.22025,
+    "NEAR": 3.6123,
+    "ZEC": 1480.63,
+    "INJ": 6.64,
+    "XLM": 0.191663,
+    "XRP": 1.38335,
+    "ARB": 0.20853
   },
   "history": [
-    {
-      "date": "2026-09-10",
-      "value": 1335.8,
-      "cost": 1184.05
-    },
     {
       "date": "2026-09-11",
       "value": 1445.8,
@@ -178,6 +182,11 @@
     {
       "date": "2026-09-17",
       "value": 1499.04,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-18",
+      "value": 1625.65,
       "cost": 1231
     }
   ]
