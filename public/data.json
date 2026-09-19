@@ -9,14 +9,6 @@
       "cost": 200.0
     },
     {
-      "sym": "ADA",
-      "id": "ada-cardano",
-      "qty": 468.38,
-      "entry": 0.2116,
-      "date": "Sep 4",
-      "cost": 100.0
-    },
-    {
       "sym": "NEAR",
       "id": "near-protocol",
       "qty": 99.61,
@@ -27,10 +19,10 @@
     {
       "sym": "ZEC",
       "id": "zec-zcash",
-      "qty": 0.19901,
+      "qty": 0.13281,
       "entry": 1049.0,
       "date": "Sep 3",
-      "cost": 209.0
+      "cost": 139.47
     },
     {
       "sym": "INJ",
@@ -59,10 +51,18 @@
     {
       "sym": "ARB",
       "id": "arb-arbitrum",
-      "qty": 926.71,
-      "entry": 0.2035,
+      "qty": 861.01,
+      "entry": 0.2205,
       "date": "Sep 17",
-      "cost": 190.0
+      "cost": 189.9
+    },
+    {
+      "sym": "ONDO",
+      "id": "ondo-finance",
+      "qty": 497.3,
+      "entry": 0.3991,
+      "date": "Sep 18",
+      "cost": 199.94
     }
   ],
   "watchlist": [
@@ -122,43 +122,38 @@
       "recentlyExited": true
     }
   ],
-  "cash": 3.62,
-  "tensions": "The whole portfolio is +32% on borrowed momentum from one regulatory headline. Dominance at 58.5% is a single bad session from the 60% line that forces us out of everything. Meanwhile buying power is $3.62 \u2014 we are fully deployed with zero optionality, so the only way to act on any new signal is to kill something we already own. ADA is the designated sacrifice, but selling a position on the day it rips 8.7% is exactly the timing error that looks smart in a spreadsheet and dumb in a P&L. NEAR and ZEC are 40% of the book and both are extended; if privacy and AI narratives roll over together, the +32% becomes +10% in a week and there is no cash to average into the wreckage.",
+  "cash": 7.79,
+  "tensions": "Every position is green or near-flat and every catalyst is confirmed, yet buying power is $7.79 and Fear & Greed jumped 21 points in two sessions. The no-trim mandate maximizes upside capture and simultaneously guarantees we enter any drawdown with zero ammunition. ARB is the live disagreement: the unlock is behind us and the position is only -5.4%, but the Robinhood Chain subsidy expiring in late September is a dated, knowable thesis-killer. Holding it is either patience or denial, and the fee data late this month decides which.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "BTC through $80,695, up 5.2%, and the SEC's innovation exemption did it \u2014 five years of tokenized stock trading waved through on the 17th. Dominance sits at 58.5%, under our 60% kill-switch, which means alts get to breathe. F&G 56. Greed, but not the stupid kind yet."
+      "text": "BTC $81,591, dominance 58.4%, rejected again at the 60% line. Fear & Greed ripped 50 to 71 in forty-eight hours. That is not the arithmetic of a launch; that is the arithmetic of a crowd arriving late. The book is up 36.4% on deposited capital and there is $7.79 of dry powder. We are fully invested into a sentiment spike."
     },
     {
       "agent": "noon",
-      "text": "NEAR is the whole story: +47.5% in twelve days on confidential perps over Hyperliquid and $70M confidential TVL. It is overbought and I do not care. The rule is no trimming. We do not clip a 47% winner to feel clever \u2014 we let it run or we get stopped out honest."
+      "text": "News flow is genuinely good and that is exactly the problem. INJ went live on Solana via Sunrise yesterday with a record 58.8M staked. ONDO printed +9% on Ondo Network and 70% share of tokenized equities. NEAR tripped its NEAR@3.33 reward snapshot at $70M confidential TVL. Three separate real catalysts in one week. When every thesis is working simultaneously, you are not being smart, you are being long beta."
     },
     {
       "agent": "close",
-      "text": "ZEC +41% but it printed 1519 at midnight and gave back to 1481. ARB did the same thing harder \u2014 0.226 overnight to 0.2085 now, so yesterday's entry is barely green despite CoinGecko's +24% headline. Overnight spikes that fade before New York wakes up are liquidity, not conviction. Watch both."
+      "text": "No SELL triggers fire. Nothing is down more than 15%, nothing is fourteen-day dead money, dominance is under 60. Mandate says no trimming, so we hold all eight. ARB is the ugly one: minus 5.4% two days in, the 92.6M unlock already landed Sep 16, and the Robinhood Chain gas subsidy that IS the entire thesis expires in about ten days. Watch the fee data, not the chart."
     },
     {
       "agent": "night",
-      "text": "ADA is the problem. Fourteen days, +3.2%, while the book did +32%. It rose 8.7% today on pure beta \u2014 no news, no catalyst, just the tide. Sell order is pre-validated at $102.41 but it does not fire into a green candle. If ADA loses 0.215 or fails to make a new high by the next scan, it funds something better. XRP at -5.3% is the other laggard, but it is only four days old and gets its window."
+      "text": "ZEC has run from $1,049 to $1,519 on ETF inflows and a privacy-as-insurance story. It is up 45% and we are told to hold for 100x. Fine. But understand the trade we are actually in: eight correlated altcoin longs, zero cash, a BTC that must defend $80K, and no ability to buy a dip if it comes. The upside is real. The absence of optionality is also real."
     }
   ],
-  "lastUpdated": "2026-09-18T16:04:01.753515Z",
+  "lastUpdated": "2026-09-19T16:04:17.353483Z",
   "prices": {
-    "LTC": 55.9,
-    "ADA": 0.22025,
-    "NEAR": 3.6123,
-    "ZEC": 1480.63,
-    "INJ": 6.64,
-    "XLM": 0.191663,
-    "XRP": 1.38335,
-    "ARB": 0.20853
+    "LTC": 57.87105,
+    "NEAR": 3.618968,
+    "ZEC": 1519.005,
+    "INJ": 7.4509,
+    "XLM": 0.1970785,
+    "XRP": 1.428505,
+    "ARB": 0.208492,
+    "ONDO": 0.43495
   },
   "history": [
-    {
-      "date": "2026-09-11",
-      "value": 1445.8,
-      "cost": 1231
-    },
     {
       "date": "2026-09-12",
       "value": 1417.58,
@@ -187,6 +182,11 @@
     {
       "date": "2026-09-18",
       "value": 1625.65,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-19",
+      "value": 1678.0,
       "cost": 1231
     }
   ]
