@@ -123,42 +123,37 @@
     }
   ],
   "cash": 7.79,
-  "tensions": "Every position is green or near-flat and every catalyst is confirmed, yet buying power is $7.79 and Fear & Greed jumped 21 points in two sessions. The no-trim mandate maximizes upside capture and simultaneously guarantees we enter any drawdown with zero ammunition. ARB is the live disagreement: the unlock is behind us and the position is only -5.4%, but the Robinhood Chain subsidy expiring in late September is a dated, knowable thesis-killer. Holding it is either patience or denial, and the fee data late this month decides which.",
+  "tensions": "Fear & Greed prints 71 (Greed) while Bitcoin sits 37% below its October 2025 high and got rejected at $82,000 for the fourth time since August 25. That divergence is the whole story: sentiment is being set by alt-coin fireworks, not by the asset that actually governs liquidity. BTC dominance at 58.9% was rejected at 60% and the Altcoin Season Index is stuck near 27 \u2014 this is not alt season, it is a handful of names with genuine catalysts running while the index bleeds. Second tension: the macro got worse, not better. A rate hike and a failed crypto bill in the same week is a hostile setup, and this book is 99.5% invested with $7.79 of cash. There is no ammunition for a drawdown and no hedge. The XRP rotation is the right trade on its merits, but it is also the only lever available, which is itself the finding.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "BTC $81,591, dominance 58.4%, rejected again at the 60% line. Fear & Greed ripped 50 to 71 in forty-eight hours. That is not the arithmetic of a launch; that is the arithmetic of a crowd arriving late. The book is up 36.4% on deposited capital and there is $7.79 of dry powder. We are fully invested into a sentiment spike."
+      "text": "Book is $1,691 against $1,231 deposited \u2014 up 37.4% in seventeen days. But read the tape, not the P&L: total market cap is down 4.5% on the day, the Fed raised to 3.75-4.00% on the 16th, and the CLARITY Act died 49-50 in the Senate on the 15th. Every green line in this portfolio is idiosyncratic \u2014 NEAR's confidential TVL milestone, INJ's Solana launch, ZEC's ETF inflows, ARB's Robinhood Chain revenue. None of it is beta. That is a feature until it isn't."
     },
     {
       "agent": "noon",
-      "text": "News flow is genuinely good and that is exactly the problem. INJ went live on Solana via Sunrise yesterday with a record 58.8M staked. ONDO printed +9% on Ondo Network and 70% share of tokenized equities. NEAR tripped its NEAR@3.33 reward snapshot at $70M confidential TVL. Three separate real catalysts in one week. When every thesis is working simultaneously, you are not being smart, you are being long beta."
+      "text": "NEAR is the problem child of the winners. Up 62.5% on our entry and up 67% in seven days on the back of a $70M confidential-TVL claim window and Hyperliquid perps. The catalyst is real and the catalyst is also fully in the price. We do not add. We do not trim for the sake of trimming either \u2014 the mandate says ride it. But if this book needs cash at any point next week, NEAR is where it comes from, not ZEC."
     },
     {
       "agent": "close",
-      "text": "No SELL triggers fire. Nothing is down more than 15%, nothing is fourteen-day dead money, dominance is under 60. Mandate says no trimming, so we hold all eight. ARB is the ugly one: minus 5.4% two days in, the 92.6M unlock already landed Sep 16, and the Robinhood Chain gas subsidy that IS the entire thesis expires in about ten days. Watch the fee data, not the chart."
+      "text": "One actionable trade: sell XRP, buy ZEC. XRP is down 4.2% over six days and its entire thesis was regulatory \u2014 the CLARITY vote was the catalyst and it failed. Holding a broken thesis because the loss is small is how small losses become 14-day dead money. Proceeds of $94.33 plus the $7.79 of dry powder into ZEC on a limit at $1,450, which is a 9% pullback from Friday's $1,589 high with $358M of three-week ETF inflows and NU7 passing at 99.9% behind it. Rotating a dead catalyst into a live one beats chasing something up 67% in a week."
     },
     {
       "agent": "night",
-      "text": "ZEC has run from $1,049 to $1,519 on ETF inflows and a privacy-as-insurance story. It is up 45% and we are told to hold for 100x. Fine. But understand the trade we are actually in: eight correlated altcoin longs, zero cash, a BTC that must defend $80K, and no ability to buy a dip if it comes. The upside is real. The absence of optionality is also real."
+      "text": "Watch list, not action list. XLM is dead flat at six days \u2014 day 14 is September 28, and if it hasn't moved by then it funds something else. ARB is down 7.5% but only three days old and the thesis got stronger this week, not weaker: Standard Chartered initiated with a $0.50 2026 target and the September 16 unlock has already been absorbed. The real risk to ARB is the Robinhood Chain gas subsidy ending, which nobody has priced. Buying power is $7.79 \u2014 effectively zero. Every new position in this book now requires killing an old one."
     }
   ],
-  "lastUpdated": "2026-09-19T16:04:17.353483Z",
+  "lastUpdated": "2026-09-20T16:04:27.223183Z",
   "prices": {
-    "LTC": 57.87105,
-    "NEAR": 3.618968,
-    "ZEC": 1519.005,
-    "INJ": 7.4509,
-    "XLM": 0.1970785,
-    "XRP": 1.428505,
-    "ARB": 0.208492,
-    "ONDO": 0.43495
+    "LTC": 57.462,
+    "NEAR": 3.9805,
+    "ZEC": 1440.765,
+    "INJ": 7.95,
+    "XLM": 0.1938,
+    "XRP": 1.38757,
+    "ARB": 0.2039,
+    "ONDO": 0.415585
   },
   "history": [
-    {
-      "date": "2026-09-12",
-      "value": 1417.58,
-      "cost": 1231
-    },
     {
       "date": "2026-09-13",
       "value": 1427.71,
@@ -187,6 +182,11 @@
     {
       "date": "2026-09-19",
       "value": 1678.0,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-20",
+      "value": 1699.27,
       "cost": 1231
     }
   ]
