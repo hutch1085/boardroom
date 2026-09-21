@@ -3,10 +3,10 @@
     {
       "sym": "LTC",
       "id": "ltc-litecoin",
-      "qty": 3.84515721,
+      "qty": 2.56448293,
       "entry": 52.01,
       "date": "Sep 4",
-      "cost": 200.0
+      "cost": 133.34
     },
     {
       "sym": "NEAR",
@@ -19,18 +19,18 @@
     {
       "sym": "ZEC",
       "id": "zec-zcash",
-      "qty": 0.13281,
-      "entry": 1049.0,
+      "qty": 0.20173,
+      "entry": 1187.0,
       "date": "Sep 3",
-      "cost": 139.47
+      "cost": 239.47
     },
     {
       "sym": "INJ",
       "id": "inj-injective",
-      "qty": 32.319,
+      "qty": 21.356,
       "entry": 6.12,
       "date": "Sep 13",
-      "cost": 200.0
+      "cost": 132.16
     },
     {
       "sym": "XLM",
@@ -39,14 +39,6 @@
       "entry": 0.1939,
       "date": "Sep 14",
       "cost": 150.01
-    },
-    {
-      "sym": "XRP",
-      "id": "xrp-ripple",
-      "qty": 68.479,
-      "entry": 1.449,
-      "date": "Sep 14",
-      "cost": 100.0
     },
     {
       "sym": "ARB",
@@ -63,6 +55,14 @@
       "entry": 0.3991,
       "date": "Sep 18",
       "cost": 199.94
+    },
+    {
+      "sym": "W",
+      "id": "wormhole",
+      "qty": 13055,
+      "entry": 0.011375,
+      "date": "Sep 20",
+      "cost": 149.59
     }
   ],
   "watchlist": [
@@ -122,43 +122,38 @@
       "recentlyExited": true
     }
   ],
-  "cash": 7.79,
-  "tensions": "Fear & Greed prints 71 (Greed) while Bitcoin sits 37% below its October 2025 high and got rejected at $82,000 for the fourth time since August 25. That divergence is the whole story: sentiment is being set by alt-coin fireworks, not by the asset that actually governs liquidity. BTC dominance at 58.9% was rejected at 60% and the Altcoin Season Index is stuck near 27 \u2014 this is not alt season, it is a handful of names with genuine catalysts running while the index bleeds. Second tension: the macro got worse, not better. A rate hike and a failed crypto bill in the same week is a hostile setup, and this book is 99.5% invested with $7.79 of cash. There is no ammunition for a drawdown and no hedge. The XRP rotation is the right trade on its merits, but it is also the only lever available, which is itself the finding.",
+  "cash": 10.54,
+  "tensions": "Rotation vs. chasing. Selling ARB is forced by the Sep 23 unlock \u2014 that part is mechanical. Where the proceeds go is not. ZEC has the cleanest dated catalyst (NU7, Sep 30) and the only real institutional bid in the book, but it is up 2,400% on the year and privacy is the most consensus trade in crypto. XLM is the boring hedge: fresh Protocol 28 catalyst, $3.3B tokenized assets, and the smallest gain in the portfolio at +7.8%. Second tension: this is a cash account with $10.54 of buying power. Every new position requires selling something first, and settlement gates the timing. The book is 99.4% invested with no dry powder \u2014 fine in a tape like today's, fragile if the leverage-driven pullback the desks are warning about actually lands.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book is $1,691 against $1,231 deposited \u2014 up 37.4% in seventeen days. But read the tape, not the P&L: total market cap is down 4.5% on the day, the Fed raised to 3.75-4.00% on the 16th, and the CLARITY Act died 49-50 in the Senate on the 15th. Every green line in this portfolio is idiosyncratic \u2014 NEAR's confidential TVL milestone, INJ's Solana launch, ZEC's ETF inflows, ARB's Robinhood Chain revenue. None of it is beta. That is a feature until it isn't."
+      "text": "Broad risk-on: BTC $85.9K (+6.3%), total cap $2.93T, F&G 70. Book at $1,782.82 on $1,231 deposited \u2014 +44.8%. Seven of eight names green today. NEAR is carrying the portfolio at +66.3% on the Hyperliquid confidential-perps launch."
     },
     {
       "agent": "noon",
-      "text": "NEAR is the problem child of the winners. Up 62.5% on our entry and up 67% in seven days on the back of a $70M confidential-TVL claim window and Hyperliquid perps. The catalyst is real and the catalyst is also fully in the price. We do not add. We do not trim for the sake of trimming either \u2014 the mandate says ride it. But if this book needs cash at any point next week, NEAR is where it comes from, not ZEC."
+      "text": "ARB is the one hard sell. 139.15M tokens unlock Sep 23 \u2014 roughly 2% of float, 53.8% to team and 35% to private investors. That is exactly the cohort that sells. ARB ripped +13.6% today; take the $200 into strength rather than into the print."
     },
     {
       "agent": "close",
-      "text": "One actionable trade: sell XRP, buy ZEC. XRP is down 4.2% over six days and its entire thesis was regulatory \u2014 the CLARITY vote was the catalyst and it failed. Holding a broken thesis because the loss is small is how small losses become 14-day dead money. Proceeds of $94.33 plus the $7.79 of dry powder into ZEC on a limit at $1,450, which is a 9% pullback from Friday's $1,589 high with $358M of three-week ETF inflows and NU7 passing at 99.9% behind it. Rotating a dead catalyst into a live one beats chasing something up 67% in a week."
+      "text": "Redeploy ARB proceeds into ZEC: NU7 activates Sep 30, Grayscale's ZCSH ETF pulled ~$460M in two weeks, and as proof-of-work it carries zero unlock risk. ZEC was flat while the book ripped \u2014 buying relative weakness ahead of a dated catalyst, not chasing. Preview rejected for buying power: cash account, sell first, then buy. XLM at $0.2110 is the alternate for anyone unwilling to add to a name up 2,400% on the year."
     },
     {
       "agent": "night",
-      "text": "Watch list, not action list. XLM is dead flat at six days \u2014 day 14 is September 28, and if it hasn't moved by then it funds something else. ARB is down 7.5% but only three days old and the thesis got stronger this week, not weaker: Standard Chartered initiated with a $0.50 2026 target and the September 16 unlock has already been absorbed. The real risk to ARB is the Robinhood Chain gas subsidy ending, which nobody has priced. Buying power is $7.79 \u2014 effectively zero. Every new position in this book now requires killing an old one."
+      "text": "The honest risk: privacy is the most crowded trade in crypto and NU7 is a textbook sell-the-news setup. Offsetting that, funding is benign \u2014 BTC 0.003%, ETH 0.010% \u2014 so this move is spot-led, not a leverage squeeze waiting to unwind. That argues the tape has room. Positions reconcile exactly against Robinhood; no discrepancies."
     }
   ],
-  "lastUpdated": "2026-09-20T16:04:27.223183Z",
+  "lastUpdated": "2026-09-21T16:04:17.825694Z",
   "prices": {
-    "LTC": 57.462,
-    "NEAR": 3.9805,
-    "ZEC": 1440.765,
-    "INJ": 7.95,
-    "XLM": 0.1938,
-    "XRP": 1.38757,
-    "ARB": 0.2039,
-    "ONDO": 0.415585
+    "LTC": 63.33415,
+    "NEAR": 4.071835,
+    "ZEC": 1497.99,
+    "INJ": 7.73,
+    "XLM": 0.211038,
+    "ARB": 0.2327305,
+    "ONDO": 0.4447,
+    "W": 0.01177735
   },
   "history": [
-    {
-      "date": "2026-09-13",
-      "value": 1427.71,
-      "cost": 1231
-    },
     {
       "date": "2026-09-14",
       "value": 1391.82,
@@ -187,6 +182,11 @@
     {
       "date": "2026-09-20",
       "value": 1699.27,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-21",
+      "value": 1782.82,
       "cost": 1231
     }
   ]
