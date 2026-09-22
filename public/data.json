@@ -1,28 +1,36 @@
 {
   "holdings": [
     {
-      "sym": "LTC",
-      "id": "ltc-litecoin",
-      "qty": 2.56448293,
-      "entry": 52.01,
-      "date": "Sep 4",
-      "cost": 133.34
+      "sym": "ZEC",
+      "id": "zec-zcash",
+      "qty": 0.32751,
+      "entry": 1313.0,
+      "date": "Sep 3",
+      "cost": 430.0
+    },
+    {
+      "sym": "LINK",
+      "id": "chainlink",
+      "qty": 19.2174,
+      "entry": 12.86,
+      "date": "Sep 21",
+      "cost": 247.0
+    },
+    {
+      "sym": "ONDO",
+      "id": "ondo-finance",
+      "qty": 497.3,
+      "entry": 0.3991,
+      "date": "Sep 18",
+      "cost": 199.94
     },
     {
       "sym": "NEAR",
       "id": "near-protocol",
-      "qty": 99.61,
+      "qty": 43.74,
       "entry": 2.45,
       "date": "Sep 6",
-      "cost": 243.94
-    },
-    {
-      "sym": "ZEC",
-      "id": "zec-zcash",
-      "qty": 0.20173,
-      "entry": 1187.0,
-      "date": "Sep 3",
-      "cost": 239.47
+      "cost": 107.0
     },
     {
       "sym": "INJ",
@@ -41,28 +49,20 @@
       "cost": 150.01
     },
     {
-      "sym": "ARB",
-      "id": "arb-arbitrum",
-      "qty": 861.01,
-      "entry": 0.2205,
-      "date": "Sep 17",
-      "cost": 189.9
-    },
-    {
-      "sym": "ONDO",
-      "id": "ondo-finance",
-      "qty": 497.3,
-      "entry": 0.3991,
-      "date": "Sep 18",
-      "cost": 199.94
+      "sym": "LTC",
+      "id": "ltc-litecoin",
+      "qty": 2.56448293,
+      "entry": 52.01,
+      "date": "Sep 4",
+      "cost": 133.34
     },
     {
       "sym": "W",
       "id": "wormhole",
       "qty": 13055,
-      "entry": 0.011375,
+      "entry": 0.0114891,
       "date": "Sep 20",
-      "cost": 149.59
+      "cost": 149.99
     }
   ],
   "watchlist": [
@@ -122,43 +122,38 @@
       "recentlyExited": true
     }
   ],
-  "cash": 10.54,
-  "tensions": "Rotation vs. chasing. Selling ARB is forced by the Sep 23 unlock \u2014 that part is mechanical. Where the proceeds go is not. ZEC has the cleanest dated catalyst (NU7, Sep 30) and the only real institutional bid in the book, but it is up 2,400% on the year and privacy is the most consensus trade in crypto. XLM is the boring hedge: fresh Protocol 28 catalyst, $3.3B tokenized assets, and the smallest gain in the portfolio at +7.8%. Second tension: this is a cash account with $10.54 of buying power. Every new position requires selling something first, and settlement gates the timing. The book is 99.4% invested with no dry powder \u2014 fine in a tape like today's, fragile if the leverage-driven pullback the desks are warning about actually lands.",
+  "cash": 17.43,
+  "tensions": "Fear and Greed printed 78 after jumping eight points in a day -- Extreme Greed -- while every position in the book is green and the buying power is $17.43. That is the definition of being fully committed at the exact moment the crowd agrees with you. The counterweight is that funding rates are nowhere near euphoric, which says the leverage that usually ends these moves has not been added yet. So the honest read is not 'get out,' it is 'you have no optionality.' Full hold today is the correct call, but it is correct by default rather than by choice, and that is a different thing. The real decision is deferred to the 28th: XLM either starts participating or it becomes the funding leg, and NEAR either consolidates or gives back a chunk of an 80 percent gain that was never trimmed on principle. Riding to 100x and refusing to raise cash are the same policy right up until the tape turns, and then they are not.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Broad risk-on: BTC $85.9K (+6.3%), total cap $2.93T, F&G 70. Book at $1,782.82 on $1,231 deposited \u2014 +44.8%. Seven of eight names green today. NEAR is carrying the portfolio at +66.3% on the Hyperliquid confidential-perps launch."
+      "text": "Dominance reads 58.9 and falling. Seven-day tape: NEAR +88, AVAX +50, UNI +47, ZEC +39, INJ +36 against Bitcoin's +14. The alt bid is real and it is spot. Funding across OKX sits at 0.005 to 0.01 percent per eight hours -- nobody is levered into this. Moves that run on cash last longer than moves that run on borrowed size. The v5.7 regime gate wanted dominance above 58 AND rising AND Bitcoin beating the median alt. One of three. Gate stays shut. No rotation to majors."
     },
     {
       "agent": "noon",
-      "text": "ARB is the one hard sell. 139.15M tokens unlock Sep 23 \u2014 roughly 2% of float, 53.8% to team and 35% to private investors. That is exactly the cohort that sells. ARB ripped +13.6% today; take the $200 into strength rather than into the print."
+      "text": "Book is $1,816.79, up 48 percent on $1,231 deposited, every one of eight positions green, $255 unrealized on $1,549 open cost. Robinhood reconciles to the ledger line for line and unsettled funds are zero, so the $17.43 buying power is honest -- there is no hidden dry powder. That number is the whole constraint. Any buy today has to be a funded sell, and no position triggers a sell rule. Thesis intact everywhere, no loss beyond -15, nothing dead past fourteen days, dominance under 60."
     },
     {
       "agent": "close",
-      "text": "Redeploy ARB proceeds into ZEC: NU7 activates Sep 30, Grayscale's ZCSH ETF pulled ~$460M in two weeks, and as proof-of-work it carries zero unlock risk. ZEC was flat while the book ripped \u2014 buying relative weakness ahead of a dated catalyst, not chasing. Preview rejected for buying power: cash account, sell first, then buy. XLM at $0.2110 is the alternate for anyone unwilling to add to a name up 2,400% on the year."
+      "text": "AVAX screened six of nine and I still passed. ICE testing tokenized equities, Paxos live for 650 institutions, New York Life fund via Centrifuge, Helicon mainnet. Good story. But Helicon ships TODAY, after a 50 percent week, at an eight-month high -- that is paying full retail for news already in the tape. And Avalanche TVL is $0.63 billion. The announcements have not converted to traction yet. Worse, it is the same RWA-tokenization bet ONDO and LINK already carry. Adding a fifth expression of a trade we already own, at the top of its news cycle, funded by selling something that works, is not a trade. It is motion."
     },
     {
       "agent": "night",
-      "text": "The honest risk: privacy is the most crowded trade in crypto and NU7 is a textbook sell-the-news setup. Offsetting that, funding is benign \u2014 BTC 0.003%, ETH 0.010% \u2014 so this move is spot-led, not a leverage squeeze waiting to unwind. That argues the tape has room. Positions reconcile exactly against Robinhood; no discrepancies."
+      "text": "The tell of the day is turnover. ZEC runs vol-to-mcap at 0.054 with $890 million of ETF assets behind it and a 3-for-1 split on the 28th. NEAR runs 0.315. Same green column, completely different money. One is an allocator building a position; the other is a crowd renting one. ZEC is the anchor at 27.8 percent and I would not trim a share of it. NEAR is up 80.7 percent in sixteen days and is the fragile leg -- if anything gets sold to fund a buy, it comes from there, never from ZEC and never from XLM at these levels. XLM is the quiet problem: +12.1 percent on the week, under Bitcoin, eight days in. Payments is not what this rotation pays for. Rule says fourteen days, so it lives. If it is still trailing on the 28th, it funds the next idea."
     }
   ],
-  "lastUpdated": "2026-09-21T16:04:17.825694Z",
+  "lastUpdated": "2026-09-22T16:09:33.108022Z",
   "prices": {
-    "LTC": 63.33415,
-    "NEAR": 4.071835,
-    "ZEC": 1497.99,
-    "INJ": 7.73,
-    "XLM": 0.211038,
-    "ARB": 0.2327305,
-    "ONDO": 0.4447,
-    "W": 0.01177735
+    "ZEC": 1543.65,
+    "LINK": 13.03,
+    "ONDO": 0.429607,
+    "NEAR": 4.42,
+    "INJ": 7.7,
+    "XLM": 0.214083,
+    "LTC": 61.26,
+    "W": 0.01193996
   },
   "history": [
-    {
-      "date": "2026-09-14",
-      "value": 1391.82,
-      "cost": 1231
-    },
     {
       "date": "2026-09-15",
       "value": 1376.86,
@@ -187,6 +182,11 @@
     {
       "date": "2026-09-21",
       "value": 1782.82,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-22",
+      "value": 1821.83,
       "cost": 1231
     }
   ]
