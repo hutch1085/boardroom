@@ -123,42 +123,37 @@
     }
   ],
   "cash": 17.43,
-  "tensions": "Fear and Greed printed 78 after jumping eight points in a day -- Extreme Greed -- while every position in the book is green and the buying power is $17.43. That is the definition of being fully committed at the exact moment the crowd agrees with you. The counterweight is that funding rates are nowhere near euphoric, which says the leverage that usually ends these moves has not been added yet. So the honest read is not 'get out,' it is 'you have no optionality.' Full hold today is the correct call, but it is correct by default rather than by choice, and that is a different thing. The real decision is deferred to the 28th: XLM either starts participating or it becomes the funding leg, and NEAR either consolidates or gives back a chunk of an 80 percent gain that was never trimmed on principle. Riding to 100x and refusing to raise cash are the same policy right up until the tape turns, and then they are not.",
+  "tensions": "Zero dry powder is the exposure nobody wants to name. We are 99% deployed with $17.43 in cash on a day the tape dropped 5%. The discipline that kept us from a bad rotation today is the same discipline that leaves us with nothing to buy a real dislocation with tomorrow. ZEC's overweight is not a problem to fix \u2014 it is the designated ATM, and it should stay untouched until something genuinely high-conviction shows up with a tight enough spread to be worth the toll. The trap is treating the 25% cap as an order. It is a flag. Selling a winner with an intact thesis \u2014 Grayscale's ZCSH at $362M AUM, ZEC holding 60%+ of a $33.6B privacy segment \u2014 because a number crossed a line is exactly the profit-taking reflex v5.7.22 was written to stop.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Dominance reads 58.9 and falling. Seven-day tape: NEAR +88, AVAX +50, UNI +47, ZEC +39, INJ +36 against Bitcoin's +14. The alt bid is real and it is spot. Funding across OKX sits at 0.005 to 0.01 percent per eight hours -- nobody is levered into this. Moves that run on cash last longer than moves that run on borrowed size. The v5.7 regime gate wanted dominance above 58 AND rising AND Bitcoin beating the median alt. One of three. Gate stays shut. No rotation to majors."
+      "text": "Book at $1,779 on $1,231 deposited \u2014 +44.6%. But today is a flush: BTC $84,276 down 1.8% from the HST close, alts bleeding 3-9%, Fear & Greed off 78 to 71. Nothing in the book broke. NEAR at $4.27 is +48.5% on the week behind Hyperliquid perps and Intents limit orders; INJ at $7.66 is +36.8% on the Solana native launch and the Canary staked-ETF filing. Those two carried us. ZEC did not."
     },
     {
       "agent": "noon",
-      "text": "Book is $1,816.79, up 48 percent on $1,231 deposited, every one of eight positions green, $255 unrealized on $1,549 open cost. Robinhood reconciles to the ledger line for line and unsettled funds are zero, so the $17.43 buying power is honest -- there is no hidden dry powder. That number is the whole constraint. Any buy today has to be a funded sell, and no position triggers a sell rule. Thesis intact everywhere, no loss beyond -15, nothing dead past fourteen days, dominance under 60."
+      "text": "Regime check fails cleanly. Dominance reads 58.8%, over the 58 threshold, but BTC put up +9.8% over 7 days against a median alt of +14.8%. Bitcoin is lagging, so dominance is falling, not rising. Both conditions must hold and only one does. Majors stay off the buy list. No rotation to BTC or ETH today."
     },
     {
       "agent": "close",
-      "text": "AVAX screened six of nine and I still passed. ICE testing tokenized equities, Paxos live for 650 institutions, New York Life fund via Centrifuge, Helicon mainnet. Good story. But Helicon ships TODAY, after a 50 percent week, at an eight-month high -- that is paying full retail for news already in the tape. And Avalanche TVL is $0.63 billion. The announcements have not converted to traction yet. Worse, it is the same RWA-tokenization bet ONDO and LINK already carry. Adding a fifth expression of a trade we already own, at the top of its news cycle, funded by selling something that works, is not a trade. It is motion."
+      "text": "The real argument was ZEC. It is 28.7% of the book, over the 25% cap, and the worst 7-day name we own at +5.3%. RSI 77.6, bearish divergence, $44M of long liquidation exposure stacked underneath. Every instinct says trim. The fee math says no. INJ's book is market-maker routed at a 2.01% spread; add 0.75% RH taker fees on three legs and the round trip costs 4.28%. INJ has to beat ZEC by more than 4.3% for the rotation to be worth doing, and after a 36.8% week that is a coin flip, not an edge. W has the same 2.15% spread problem. NEAR is parabolic. LINK is the second-worst 7-day name \u2014 funding a laggard with a laggard is not an upgrade. Every path fails. Hold."
     },
     {
       "agent": "night",
-      "text": "The tell of the day is turnover. ZEC runs vol-to-mcap at 0.054 with $890 million of ETF assets behind it and a 3-for-1 split on the 28th. NEAR runs 0.315. Same green column, completely different money. One is an allocator building a position; the other is a crowd renting one. ZEC is the anchor at 27.8 percent and I would not trim a share of it. NEAR is up 80.7 percent in sixteen days and is the fragile leg -- if anything gets sold to fund a buy, it comes from there, never from ZEC and never from XLM at these levels. XLM is the quiet problem: +12.1 percent on the week, under Bitcoin, eight days in. Payments is not what this rotation pays for. Rule says fourteen days, so it lives. If it is still trailing on the 28th, it funds the next idea."
+      "text": "The preview confirmed the structural problem. ZEC's sell order validated fine \u2014 0.0964 at a $1,550 limit, $148.30 net after a $1.12 taker fee. The paired INJ buy was rejected outright for insufficient buying power. Cash account, proceeds unsettled. Any rotation here is a two-step with a settlement gap in the middle, which means legging into a thin book during a liquidation cascade. That is how you pay 6% instead of 4%. Sitting still is the trade."
     }
   ],
-  "lastUpdated": "2026-09-22T16:09:33.108022Z",
+  "lastUpdated": "2026-09-23T16:11:58.119286Z",
   "prices": {
-    "ZEC": 1543.65,
-    "LINK": 13.03,
-    "ONDO": 0.429607,
-    "NEAR": 4.42,
-    "INJ": 7.7,
-    "XLM": 0.214083,
-    "LTC": 61.26,
-    "W": 0.01193996
+    "ZEC": 1556.795,
+    "LINK": 12.26584,
+    "ONDO": 0.414715,
+    "NEAR": 4.2727795,
+    "INJ": 7.65931395,
+    "XLM": 0.2042295,
+    "LTC": 60.0775,
+    "W": 0.011429845
   },
   "history": [
-    {
-      "date": "2026-09-15",
-      "value": 1376.86,
-      "cost": 1231
-    },
     {
       "date": "2026-09-17",
       "value": 1499.04,
@@ -187,6 +182,11 @@
     {
       "date": "2026-09-22",
       "value": 1821.83,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-23",
+      "value": 1779.49,
       "cost": 1231
     }
   ]
