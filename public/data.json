@@ -3,34 +3,34 @@
     {
       "sym": "ZEC",
       "id": "zec-zcash",
-      "qty": 0.32751,
+      "qty": 0.19893,
       "entry": 1313.0,
       "date": "Sep 3",
-      "cost": 430.0
+      "cost": 261.2
     },
     {
       "sym": "LINK",
       "id": "chainlink",
       "qty": 19.2174,
-      "entry": 12.86,
+      "entry": 12.91197,
       "date": "Sep 21",
-      "cost": 247.0
+      "cost": 250.0
     },
     {
       "sym": "ONDO",
       "id": "ondo-finance",
       "qty": 497.3,
-      "entry": 0.3991,
-      "date": "Sep 18",
+      "entry": 0.39905,
+      "date": "Sep 19",
       "cost": 199.94
     },
     {
       "sym": "NEAR",
       "id": "near-protocol",
       "qty": 43.74,
-      "entry": 2.45,
+      "entry": 2.45306,
       "date": "Sep 6",
-      "cost": 107.0
+      "cost": 107.3
     },
     {
       "sym": "INJ",
@@ -38,13 +38,13 @@
       "qty": 21.356,
       "entry": 6.12,
       "date": "Sep 13",
-      "cost": 132.16
+      "cost": 130.7
     },
     {
       "sym": "XLM",
       "id": "xlm-stellar",
       "qty": 766.27,
-      "entry": 0.1939,
+      "entry": 0.193914,
       "date": "Sep 14",
       "cost": 150.01
     },
@@ -54,7 +54,7 @@
       "qty": 2.56448293,
       "entry": 52.01,
       "date": "Sep 4",
-      "cost": 133.34
+      "cost": 133.43
     },
     {
       "sym": "W",
@@ -63,6 +63,14 @@
       "entry": 0.0114891,
       "date": "Sep 20",
       "cost": 149.99
+    },
+    {
+      "sym": "AVAX",
+      "id": "avalanche-2",
+      "qty": 9.0511,
+      "entry": 0.0,
+      "date": "pre-Aug 15",
+      "cost": 0.0
     }
   ],
   "watchlist": [
@@ -122,43 +130,39 @@
       "recentlyExited": true
     }
   ],
-  "cash": 17.43,
-  "tensions": "No orders today, and the honest reason is that buying power is $17.43 \u2014 below any size worth paying spread on. So the only trade available is a rotation, and a rotation requires conviction that the target beats the source by more than the round trip. ZEC is the obvious source: flat while the book ran, divergent RSI, overweight. But the targets are all names we already own that just printed their catalyst day. Chasing day two of a 32% pop is not an edge. The discipline here is recognizing that 'ZEC looks tired' and 'I know where to put the money' are two separate claims, and only the first one is true right now. The fee correction matters more than it sounds \u2014 at 1.9% round trip instead of 3%, rotations that looked marginal all month were actually live. That is a systematic error in our favor going forward, and a reason to look harder at the next setup rather than pass on reflex.",
+  "cash": 208.69,
+  "tensions": "The framework scores NEAR 9/9 and prescribes $200; judgment says $100. Both cannot be right, and the disagreement is worth naming rather than splitting quietly. The mechanical case is strong: negative funding, 15.6% volume-to-mcap, a real AI-agent narrative, an entry at 19% of the daily range rather than a breakout chase. The discretionary case is that NEAR is up 152% in thirty days, Fear and Greed printed 78 two days ago, and total market cap is down 2.5% today - buying the month's biggest winner with every dollar of dry powder on a greed print is how good frameworks produce bad entries. Second tension: idle cash is not free. $208.69 is 10.1% of the book earning nothing in a tape where the median alt returned 14% in a week; the cost of caution is real and should be stated, not hidden behind the word discipline. Third: W is the weakest holding on every risk axis - $80M cap, $11M daily volume, a 2.1% Robinhood spread, and an unlock schedule this scan could not verify - yet it is up 11.4% and only clears the hold window tomorrow, so the rules forbid touching it today. Holding a position because the calendar says so, while knowing it is the worst thing in the book, is the price of having rules at all.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book at $1,974 against $1,231 deposited \u2014 up 60.3%. BTC dominance got rejected at 60 and is bleeding: BTC +3.6% over 7d while the median alt did +14%. The regime check does not trigger. We are not rotating into majors while the majors are the laggard. Every one of the eight positions is green. That is not a signal to do something."
+      "text": "Book $2,064 on $1,231 deposited - up 67.6%. All nine positions green, nothing over the 25% cap, not one redeploy trigger within 18% of tripping. NEAR +97.6%, LTC +40.3%, ONDO +35.6%. The correct action today is almost nothing, which is the hardest action to take."
     },
     {
       "agent": "noon",
-      "text": "ONDO +38% on the week off BlackRock Intelligent Portfolios going live Sep 24, volume up 281%. NEAR +32% with Venice AI shipping encrypted inference on it the same day, plus Hyperliquid perps and the milestone incentive window. LINK is the quiet one at +13% while Circle's Arc mainnet launched with Chainlink as oracle and BlackRock, DTCC and Visa as founding validators \u2014 the strongest institutional story in the book and the least extended chart in it."
+      "text": "Three items off-book. ZEC trimmed 0.12858 on Sep 25 at $1,555 - clean exit near the high, but the table still carried 0.32751. AVAX 9.0511 sits in the account with no buy order on record back to Aug 17 and no line in the tracking table: roughly $99 of book with no cost basis. And the fee tier slipped back to 0.95% taker from 0.75%, so a round trip now costs about 1.9% in explicit fees before spread."
     },
     {
       "agent": "close",
-      "text": "ZEC is the exception and the tell. Dead flat over 7d, -0.07%, while everything around it ran 13 to 38%. Bearish RSI divergence, $44M of long liquidation sitting at $1,488, resistance at $1,700-1,750, and 25.8% of the book \u2014 over the cap. We do not sell it to bank a gain. But when the next buy shows up, it comes out of ZEC. Trigger raised from $1,202 to $1,488."
+      "text": "The SUI round trip is the lesson of the week. Bought $199.94 at 20:22 ET on Sep 25, sold $193.12 at 22:53 ET. Two hours thirty-one minutes, minus $6.82, no thesis change in between - just a price wiggle and an itchy hand. SUI then posted the best seven-day return in the entire universe at +39.8%. The seven-day minimum hold is not bureaucracy; it is the rule that would have kept that $6.82 and the 40% behind it."
     },
     {
       "agent": "night",
-      "text": "Two corrections. The W unlock scare is dead: the 28.39% figure is April 3, already behind us. The Oct 3 unlock is 47.2M tokens, 0.72% of supply, roughly $557K notional \u2014 noise. And the fee assumption in the ruleset is wrong. The preview came back at 0.95% taker, not 1.5%. Round trip is 1.9%, not 3%. We have been holding rotations to a bar that is 60% too high."
+      "text": "Regime is alt-led, not BTC-led: dominance 58.2% but Bitcoin only +3.2% over seven days against a median alt +14.0%, so dominance is falling and the rotation check does not fire. What makes it credible rather than frothy is funding - flat to negative on every holding, NEAR at -0.0076% while price is up 35%. Shorts are paying in a Greed-74 tape. That is spot demand, not leverage. Call: $100 into NEAR on the -5.6% dip, half the framework size, keeping about $109 dry."
     }
   ],
-  "lastUpdated": "2026-09-26T00:05:24.303655Z",
+  "lastUpdated": "2026-09-26T16:09:09.766498Z",
   "prices": {
-    "ZEC": 1554.115,
-    "LINK": 13.94696,
-    "ONDO": 0.54824,
-    "NEAR": 4.95365,
-    "INJ": 8.15849,
-    "XLM": 0.219901,
-    "LTC": 72.2825,
-    "W": 0.01232544
+    "ZEC": 1551.405,
+    "LINK": 14.227645,
+    "ONDO": 0.54532,
+    "NEAR": 4.847934,
+    "INJ": 7.86566,
+    "XLM": 0.219814,
+    "LTC": 72.98455,
+    "W": 0.012797565,
+    "AVAX": 10.95325
   },
   "history": [
-    {
-      "date": "2026-09-18",
-      "value": 1625.65,
-      "cost": 1231
-    },
     {
       "date": "2026-09-19",
       "value": 1678.0,
@@ -187,6 +191,11 @@
     {
       "date": "2026-09-25",
       "value": 1972.77,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-26",
+      "value": 2063.76,
       "cost": 1231
     }
   ]
