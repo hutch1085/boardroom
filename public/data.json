@@ -123,42 +123,37 @@
     }
   ],
   "cash": 17.43,
-  "tensions": "Zero dry powder is the exposure nobody wants to name. We are 99% deployed with $17.43 in cash on a day the tape dropped 5%. The discipline that kept us from a bad rotation today is the same discipline that leaves us with nothing to buy a real dislocation with tomorrow. ZEC's overweight is not a problem to fix \u2014 it is the designated ATM, and it should stay untouched until something genuinely high-conviction shows up with a tight enough spread to be worth the toll. The trap is treating the 25% cap as an order. It is a flag. Selling a winner with an intact thesis \u2014 Grayscale's ZCSH at $362M AUM, ZEC holding 60%+ of a $33.6B privacy segment \u2014 because a number crossed a line is exactly the profit-taking reflex v5.7.22 was written to stop.",
+  "tensions": "No orders today, and the honest reason is that buying power is $17.43 \u2014 below any size worth paying spread on. So the only trade available is a rotation, and a rotation requires conviction that the target beats the source by more than the round trip. ZEC is the obvious source: flat while the book ran, divergent RSI, overweight. But the targets are all names we already own that just printed their catalyst day. Chasing day two of a 32% pop is not an edge. The discipline here is recognizing that 'ZEC looks tired' and 'I know where to put the money' are two separate claims, and only the first one is true right now. The fee correction matters more than it sounds \u2014 at 1.9% round trip instead of 3%, rotations that looked marginal all month were actually live. That is a systematic error in our favor going forward, and a reason to look harder at the next setup rather than pass on reflex.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book at $1,779 on $1,231 deposited \u2014 +44.6%. But today is a flush: BTC $84,276 down 1.8% from the HST close, alts bleeding 3-9%, Fear & Greed off 78 to 71. Nothing in the book broke. NEAR at $4.27 is +48.5% on the week behind Hyperliquid perps and Intents limit orders; INJ at $7.66 is +36.8% on the Solana native launch and the Canary staked-ETF filing. Those two carried us. ZEC did not."
+      "text": "Book at $1,974 against $1,231 deposited \u2014 up 60.3%. BTC dominance got rejected at 60 and is bleeding: BTC +3.6% over 7d while the median alt did +14%. The regime check does not trigger. We are not rotating into majors while the majors are the laggard. Every one of the eight positions is green. That is not a signal to do something."
     },
     {
       "agent": "noon",
-      "text": "Regime check fails cleanly. Dominance reads 58.8%, over the 58 threshold, but BTC put up +9.8% over 7 days against a median alt of +14.8%. Bitcoin is lagging, so dominance is falling, not rising. Both conditions must hold and only one does. Majors stay off the buy list. No rotation to BTC or ETH today."
+      "text": "ONDO +38% on the week off BlackRock Intelligent Portfolios going live Sep 24, volume up 281%. NEAR +32% with Venice AI shipping encrypted inference on it the same day, plus Hyperliquid perps and the milestone incentive window. LINK is the quiet one at +13% while Circle's Arc mainnet launched with Chainlink as oracle and BlackRock, DTCC and Visa as founding validators \u2014 the strongest institutional story in the book and the least extended chart in it."
     },
     {
       "agent": "close",
-      "text": "The real argument was ZEC. It is 28.7% of the book, over the 25% cap, and the worst 7-day name we own at +5.3%. RSI 77.6, bearish divergence, $44M of long liquidation exposure stacked underneath. Every instinct says trim. The fee math says no. INJ's book is market-maker routed at a 2.01% spread; add 0.75% RH taker fees on three legs and the round trip costs 4.28%. INJ has to beat ZEC by more than 4.3% for the rotation to be worth doing, and after a 36.8% week that is a coin flip, not an edge. W has the same 2.15% spread problem. NEAR is parabolic. LINK is the second-worst 7-day name \u2014 funding a laggard with a laggard is not an upgrade. Every path fails. Hold."
+      "text": "ZEC is the exception and the tell. Dead flat over 7d, -0.07%, while everything around it ran 13 to 38%. Bearish RSI divergence, $44M of long liquidation sitting at $1,488, resistance at $1,700-1,750, and 25.8% of the book \u2014 over the cap. We do not sell it to bank a gain. But when the next buy shows up, it comes out of ZEC. Trigger raised from $1,202 to $1,488."
     },
     {
       "agent": "night",
-      "text": "The preview confirmed the structural problem. ZEC's sell order validated fine \u2014 0.0964 at a $1,550 limit, $148.30 net after a $1.12 taker fee. The paired INJ buy was rejected outright for insufficient buying power. Cash account, proceeds unsettled. Any rotation here is a two-step with a settlement gap in the middle, which means legging into a thin book during a liquidation cascade. That is how you pay 6% instead of 4%. Sitting still is the trade."
+      "text": "Two corrections. The W unlock scare is dead: the 28.39% figure is April 3, already behind us. The Oct 3 unlock is 47.2M tokens, 0.72% of supply, roughly $557K notional \u2014 noise. And the fee assumption in the ruleset is wrong. The preview came back at 0.95% taker, not 1.5%. Round trip is 1.9%, not 3%. We have been holding rotations to a bar that is 60% too high."
     }
   ],
-  "lastUpdated": "2026-09-23T16:11:58.119286Z",
+  "lastUpdated": "2026-09-26T00:05:24.303655Z",
   "prices": {
-    "ZEC": 1556.795,
-    "LINK": 12.26584,
-    "ONDO": 0.414715,
-    "NEAR": 4.2727795,
-    "INJ": 7.65931395,
-    "XLM": 0.2042295,
-    "LTC": 60.0775,
-    "W": 0.011429845
+    "ZEC": 1554.115,
+    "LINK": 13.94696,
+    "ONDO": 0.54824,
+    "NEAR": 4.95365,
+    "INJ": 8.15849,
+    "XLM": 0.219901,
+    "LTC": 72.2825,
+    "W": 0.01232544
   },
   "history": [
-    {
-      "date": "2026-09-17",
-      "value": 1499.04,
-      "cost": 1231
-    },
     {
       "date": "2026-09-18",
       "value": 1625.65,
@@ -187,6 +182,11 @@
     {
       "date": "2026-09-23",
       "value": 1779.49,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-25",
+      "value": 1972.77,
       "cost": 1231
     }
   ]
