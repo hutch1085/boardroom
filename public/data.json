@@ -14,23 +14,39 @@
       "qty": 19.2174,
       "entry": 12.91197,
       "date": "Sep 21",
-      "cost": 250.0
-    },
-    {
-      "sym": "ONDO",
-      "id": "ondo-finance",
-      "qty": 497.3,
-      "entry": 0.39905,
-      "date": "Sep 19",
-      "cost": 199.94
+      "cost": 248.13
     },
     {
       "sym": "NEAR",
       "id": "near-protocol",
-      "qty": 43.74,
-      "entry": 2.45306,
+      "qty": 43.19,
+      "entry": 3.2153,
       "date": "Sep 6",
-      "cost": 107.3
+      "cost": 138.87
+    },
+    {
+      "sym": "W",
+      "id": "wormhole",
+      "qty": 13055,
+      "entry": 0.0114891,
+      "date": "Sep 20",
+      "cost": 149.99
+    },
+    {
+      "sym": "LTC",
+      "id": "ltc-litecoin",
+      "qty": 2.56448293,
+      "entry": 52.01,
+      "date": "Sep 4",
+      "cost": 133.38
+    },
+    {
+      "sym": "ONDO",
+      "id": "ondo-finance",
+      "qty": 330.61,
+      "entry": 0.3991,
+      "date": "Sep 18",
+      "cost": 131.95
     },
     {
       "sym": "INJ",
@@ -44,33 +60,17 @@
       "sym": "XLM",
       "id": "xlm-stellar",
       "qty": 766.27,
-      "entry": 0.193914,
+      "entry": 0.1939,
       "date": "Sep 14",
-      "cost": 150.01
-    },
-    {
-      "sym": "LTC",
-      "id": "ltc-litecoin",
-      "qty": 2.56448293,
-      "entry": 52.01,
-      "date": "Sep 4",
-      "cost": 133.43
-    },
-    {
-      "sym": "W",
-      "id": "wormhole",
-      "qty": 13055,
-      "entry": 0.0114891,
-      "date": "Sep 20",
-      "cost": 149.99
+      "cost": 148.58
     },
     {
       "sym": "AVAX",
-      "id": "avalanche-2",
+      "id": "avax-avalanche",
       "qty": 9.0511,
-      "entry": 0.0,
-      "date": "pre-Aug 15",
-      "cost": 0.0
+      "entry": 0,
+      "date": "unknown",
+      "cost": 0
     }
   ],
   "watchlist": [
@@ -130,44 +130,39 @@
       "recentlyExited": true
     }
   ],
-  "cash": 208.69,
-  "tensions": "The framework scores NEAR 9/9 and prescribes $200; judgment says $100. Both cannot be right, and the disagreement is worth naming rather than splitting quietly. The mechanical case is strong: negative funding, 15.6% volume-to-mcap, a real AI-agent narrative, an entry at 19% of the daily range rather than a breakout chase. The discretionary case is that NEAR is up 152% in thirty days, Fear and Greed printed 78 two days ago, and total market cap is down 2.5% today - buying the month's biggest winner with every dollar of dry powder on a greed print is how good frameworks produce bad entries. Second tension: idle cash is not free. $208.69 is 10.1% of the book earning nothing in a tape where the median alt returned 14% in a week; the cost of caution is real and should be stated, not hidden behind the word discipline. Third: W is the weakest holding on every risk axis - $80M cap, $11M daily volume, a 2.1% Robinhood spread, and an unlock schedule this scan could not verify - yet it is up 11.4% and only clears the hold window tomorrow, so the rules forbid touching it today. Holding a position because the calendar says so, while knowing it is the worst thing in the book, is the price of having rules at all.",
+  "cash": 304.64,
+  "tensions": "Every exit rule in v5.7.22 is currently inert. No thesis broken, no -15% stop, no 21-day dead money, no position over 25%. So the system has nothing to say about a book that is up 71% and fully invested in extended names. That is the gap: the ruleset is built to stop bad selling, and it has succeeded, but it offers no discipline at all on entries. The churn is happening on the buy side and in same-day reversals that the 7-day hold was supposed to prevent and did not. Second tension: AAVE is the disciplined, boring, revenue-backed pick, and it will probably underperform NEAR or SUI if this altseason has another leg. Buying the laggard is right on process and may well be wrong on outcome for the next three weeks. Third: $105 left in cash is either prudence or indecision, and the honest answer is that there was no second idea worth 0.95%.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book $2,064 on $1,231 deposited - up 67.6%. All nine positions green, nothing over the 25% cap, not one redeploy trigger within 18% of tripping. NEAR +97.6%, LTC +40.3%, ONDO +35.6%. The correct action today is almost nothing, which is the hardest action to take."
+      "text": "Book is $2,112 against $1,231 deposited, up 71.6%. Every position is green, which is less a compliment to the selection than a description of the tape: BTC dominance broke below 60% and alts are running. NEAR +61% on our basis, LTC +37%, ONDO +37%, W +34%. Enjoy it and do not confuse a rising tide with skill."
     },
     {
       "agent": "noon",
-      "text": "Three items off-book. ZEC trimmed 0.12858 on Sep 25 at $1,555 - clean exit near the high, but the table still carried 0.32751. AVAX 9.0511 sits in the account with no buy order on record back to Aug 17 and no line in the tracking table: roughly $99 of book with no cost basis. And the fee tier slipped back to 0.95% taker from 0.75%, so a round trip now costs about 1.9% in explicit fees before spread."
+      "text": "Three things the scan prompt got wrong. Cash is $304.64, not $17.43, so 14.4% of the book sat idle through the best alt week of the quarter. AVAX 9.0511 (about $100) sits in the account with zero order history behind it; it is not in the prompt table and nothing in this account bought it. And the position table is five trades stale. Fix the source of truth before trusting another signal from it."
     },
     {
       "agent": "close",
-      "text": "The SUI round trip is the lesson of the week. Bought $199.94 at 20:22 ET on Sep 25, sold $193.12 at 22:53 ET. Two hours thirty-one minutes, minus $6.82, no thesis change in between - just a price wiggle and an itchy hand. SUI then posted the best seven-day return in the entire universe at +39.8%. The seven-day minimum hold is not bureaucracy; it is the rule that would have kept that $6.82 and the 40% behind it."
+      "text": "The real damage is not a bad pick, it is friction. Sep 21 to 26 cost $15.10 in fees on a $2.1k book, 0.7% in six days, roughly 37% annualized. The SUI round trip on Sep 25 is the indictment: bought 166.7 at $1.188, sold two and a half hours later at $1.169, lost $6.82, then watched SUI run 50% on the week. That trade broke the 7-day minimum hold and paid for the privilege. The fee tier also slipped from 0.75% to 0.95% taker, so a round trip is now 1.9% before spread. The 3% net hurdle in v5.7.22 is too generous. Make it 4%."
     },
     {
       "agent": "night",
-      "text": "Regime is alt-led, not BTC-led: dominance 58.2% but Bitcoin only +3.2% over seven days against a median alt +14.0%, so dominance is falling and the rotation check does not fire. What makes it credible rather than frothy is funding - flat to negative on every holding, NEAR at -0.0076% while price is up 35%. Shorts are paying in a Greed-74 tape. That is spot demand, not leverage. Call: $100 into NEAR on the -5.6% dip, half the framework size, keeping about $109 dry."
+      "text": "One order today: buy $200 AAVE at about $154.79, roughly 1.2799 AAVE, $1.90 fee, pre-validated. Aave V3 leads all lending by fees at $35.6M over 30 days and is accelerating 8.2% week over week, while AAVE the token is up only 14% on the week, the least extended major on the screen. Not chasing the BCH CME squeeze, not re-entering SUI, not rotating to BTC or ETH because the dominance check fails on its second condition: BTC is underperforming the median alt. Keep the last $105 in cash. Doing nothing is a position."
     }
   ],
-  "lastUpdated": "2026-09-26T16:09:09.766498Z",
+  "lastUpdated": "2026-09-27T16:20:27.179794Z",
   "prices": {
-    "ZEC": 1551.405,
-    "LINK": 14.227645,
-    "ONDO": 0.54532,
-    "NEAR": 4.847934,
-    "INJ": 7.86566,
-    "XLM": 0.219814,
-    "LTC": 72.98455,
-    "W": 0.012797565,
-    "AVAX": 10.95325
+    "ZEC": 1590.425,
+    "LINK": 14.138425,
+    "ONDO": 0.546075,
+    "NEAR": 5.187725,
+    "INJ": 7.78743335,
+    "XLM": 0.2160685,
+    "LTC": 71.33595,
+    "W": 0.01537536,
+    "AVAX": 11.02135
   },
   "history": [
-    {
-      "date": "2026-09-19",
-      "value": 1678.0,
-      "cost": 1231
-    },
     {
       "date": "2026-09-20",
       "value": 1699.27,
@@ -196,6 +191,11 @@
     {
       "date": "2026-09-26",
       "value": 2063.76,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-27",
+      "value": 2112.62,
       "cost": 1231
     }
   ]
