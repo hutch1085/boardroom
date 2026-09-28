@@ -71,6 +71,14 @@
       "entry": 0,
       "date": "unknown",
       "cost": 0
+    },
+    {
+      "sym": "QNT",
+      "id": "qnt-quant",
+      "qty": 0.3862,
+      "entry": 256.538,
+      "date": "Sep 27",
+      "cost": 100.02
     }
   ],
   "watchlist": [
@@ -130,44 +138,40 @@
       "recentlyExited": true
     }
   ],
-  "cash": 304.64,
-  "tensions": "Every exit rule in v5.7.22 is currently inert. No thesis broken, no -15% stop, no 21-day dead money, no position over 25%. So the system has nothing to say about a book that is up 71% and fully invested in extended names. That is the gap: the ruleset is built to stop bad selling, and it has succeeded, but it offers no discipline at all on entries. The churn is happening on the buy side and in same-day reversals that the 7-day hold was supposed to prevent and did not. Second tension: AAVE is the disciplined, boring, revenue-backed pick, and it will probably underperform NEAR or SUI if this altseason has another leg. Buying the laggard is right on process and may well be wrong on outcome for the next three weeks. Third: $105 left in cash is either prudence or indecision, and the honest answer is that there was no second idea worth 0.95%.",
+  "cash": 204.62,
+  "tensions": "Yesterday's note said the ruleset is built to stop bad selling and has nothing to say about a book that is up 65% in extended names. Today that gap produced a concrete cost: $100 went into QNT at $256.54 on the fourth day of a 245% vertical, and is down 9.3% before the position is a day old. v5.7.22 has no rule against buying strength, only against selling it. Second tension: the redeploy rule says never sell except to fund a better opportunity, but $204.62 has sat idle and the correct call today is still PASS. Holding cash into PCE Sep 30 and NFP Oct 2, with F&G at 74 and the US 10-year at 5.17%, is a position, not indecision. The rule cannot express that, so it reads idle cash as a failure when it is a choice. Third: the scan prompt's hardcoded position table was wrong on five of ten lines again today and had to be reconciled against Robinhood from scratch. Until that table is replaced by a live pull, every run starts by repairing its own inputs. The stale redeploy triggers are the visible symptom: NEAR flagged below $3.31 while it trades $4.90, ZEC below $1,202 while it trades $1,523. Those levels are a full leg of the move out of date and would never fire.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book is $2,112 against $1,231 deposited, up 71.6%. Every position is green, which is less a compliment to the selection than a description of the tape: BTC dominance broke below 60% and alts are running. NEAR +61% on our basis, LTC +37%, ONDO +37%, W +34%. Enjoy it and do not confuse a rising tide with skill."
+      "text": "Book $2,039 against $1,231 deposited, +65.7%. That is down from $2,112 yesterday, and the drawdown is instructive: ZEC $1,590 to $1,523, NEAR $5.19 to $4.90, W $0.0154 to $0.0137, INJ $7.79 to $7.31. The alt bid that carried us all week took a day off. Nothing is broken. BTC dominance is 58.3% and still losing ground to alts on a 7-day basis, so the rotation-to-majors check does not fire."
     },
     {
       "agent": "noon",
-      "text": "Three things the scan prompt got wrong. Cash is $304.64, not $17.43, so 14.4% of the book sat idle through the best alt week of the quarter. AVAX 9.0511 (about $100) sits in the account with zero order history behind it; it is not in the prompt table and nothing in this account bought it. And the position table is five trades stale. Fix the source of truth before trusting another signal from it."
+      "text": "The new fact is QNT. Filled Sep 27 at 23:58 ET, 0.3862 units at $256.538, $100 committed. It now marks $232.67, down 9.3% inside a day. The catalyst is not the problem: The Clearing House, owned by the 25 largest US banks and clearing $2T daily, selected Quant for its On-Chain Money Initiative, and seven UK banks ran live tokenized sterling on Quant rails. Supply is 99.5% circulating, so there is no unlock overhang. The problem is the entry. QNT traded $181 to $358 today, a 98% intraday range, and the buy landed 35% below the high it printed hours later. The launch is H1 2027. Nothing about that timeline rewards paying up on day four of a 245% move."
     },
     {
       "agent": "close",
-      "text": "The real damage is not a bad pick, it is friction. Sep 21 to 26 cost $15.10 in fees on a $2.1k book, 0.7% in six days, roughly 37% annualized. The SUI round trip on Sep 25 is the indictment: bought 166.7 at $1.188, sold two and a half hours later at $1.169, lost $6.82, then watched SUI run 50% on the week. That trade broke the 7-day minimum hold and paid for the privilege. The fee tier also slipped from 0.75% to 0.95% taker, so a round trip is now 1.9% before spread. The 3% net hurdle in v5.7.22 is too generous. Make it 4%."
+      "text": "W is the one dated risk in the book. A core-contributor cliff unlock lands Oct 2, four days out, and W is already down 11.2% in 24 hours, which reads as front-running. Eight days held clears the minimum-hold gate. The exit is validated at ~$177.45 credit with a $0 fee, because W is not eligible for fee tiers. A free exit ahead of a known unlock is the cheapest risk reduction available anywhere in this portfolio. The ARB sale on Sep 21 was the same trade and it was right."
     },
     {
       "agent": "night",
-      "text": "One order today: buy $200 AAVE at about $154.79, roughly 1.2799 AAVE, $1.90 fee, pre-validated. Aave V3 leads all lending by fees at $35.6M over 30 days and is accelerating 8.2% week over week, while AAVE the token is up only 14% on the week, the least extended major on the screen. Not chasing the BCH CME squeeze, not re-entering SUI, not rotating to BTC or ETH because the dominance check fails on its second condition: BTC is underperforming the median alt. Keep the last $105 in cash. Doing nothing is a position."
+      "text": "The leak is fees, and it is now measurable. The taker tier moved from 0.75% to 0.95% between Sep 21 and Sep 25. Twelve fee-bearing fills since Sep 20 cost $16.60, which is 0.81% of the book in eight days, roughly 37% annualized. The SUI trade on Sep 25 is the clearest case: bought $199.94 at 20:22, sold $193.12 at 22:53, held two hours thirty-one minutes for a $6.82 loss, $3.73 of it fees. That trade broke the 7-day minimum hold outright. No alpha in this book survives that turnover rate."
     }
   ],
-  "lastUpdated": "2026-09-27T16:20:27.179794Z",
+  "lastUpdated": "2026-09-28T16:20:54.087173Z",
   "prices": {
-    "ZEC": 1590.425,
-    "LINK": 14.138425,
-    "ONDO": 0.546075,
-    "NEAR": 5.187725,
-    "INJ": 7.78743335,
-    "XLM": 0.2160685,
-    "LTC": 71.33595,
-    "W": 0.01537536,
-    "AVAX": 11.02135
+    "ZEC": 1522.66,
+    "LINK": 14.6582,
+    "ONDO": 0.515213,
+    "NEAR": 4.90045,
+    "INJ": 7.31251725,
+    "XLM": 0.22261,
+    "LTC": 70.20695,
+    "W": 0.01365042,
+    "AVAX": 10.318465,
+    "QNT": 232.673
   },
   "history": [
-    {
-      "date": "2026-09-20",
-      "value": 1699.27,
-      "cost": 1231
-    },
     {
       "date": "2026-09-21",
       "value": 1782.82,
@@ -196,6 +200,11 @@
     {
       "date": "2026-09-27",
       "value": 2112.62,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-28",
+      "value": 2039.45,
       "cost": 1231
     }
   ]
