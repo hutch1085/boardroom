@@ -4,81 +4,65 @@
       "sym": "ZEC",
       "id": "zec-zcash",
       "qty": 0.19893,
-      "entry": 1313.0,
+      "entry": 1469.6627,
       "date": "Sep 3",
-      "cost": 261.2
+      "cost": 292.36
     },
     {
       "sym": "LINK",
       "id": "chainlink",
-      "qty": 19.2174,
-      "entry": 12.91197,
+      "qty": 29.0145,
+      "entry": 13.6759,
       "date": "Sep 21",
-      "cost": 248.13
+      "cost": 396.8
+    },
+    {
+      "sym": "XLM",
+      "id": "xlm-stellar",
+      "qty": 1642.26,
+      "entry": 0.211185,
+      "date": "Sep 14",
+      "cost": 346.82
     },
     {
       "sym": "NEAR",
       "id": "near-protocol",
       "qty": 43.19,
-      "entry": 3.2153,
+      "entry": 3.5726,
       "date": "Sep 6",
-      "cost": 138.87
-    },
-    {
-      "sym": "W",
-      "id": "wormhole",
-      "qty": 13055,
-      "entry": 0.0114891,
-      "date": "Sep 20",
-      "cost": 149.99
+      "cost": 154.3
     },
     {
       "sym": "LTC",
       "id": "ltc-litecoin",
       "qty": 2.56448293,
-      "entry": 52.01,
+      "entry": 51.5348,
       "date": "Sep 4",
-      "cost": 133.38
-    },
-    {
-      "sym": "ONDO",
-      "id": "ondo-finance",
-      "qty": 330.61,
-      "entry": 0.3991,
-      "date": "Sep 18",
-      "cost": 131.95
+      "cost": 132.16
     },
     {
       "sym": "INJ",
       "id": "inj-injective",
       "qty": 21.356,
-      "entry": 6.12,
+      "entry": 6.1894,
       "date": "Sep 13",
-      "cost": 130.7
+      "cost": 132.18
     },
     {
-      "sym": "XLM",
-      "id": "xlm-stellar",
-      "qty": 766.27,
-      "entry": 0.1939,
-      "date": "Sep 14",
-      "cost": 148.58
+      "sym": "ONDO",
+      "id": "ondo-finance",
+      "qty": 330.61,
+      "entry": 0.39906,
+      "date": "Sep 18",
+      "cost": 131.93
     },
     {
       "sym": "AVAX",
       "id": "avax-avalanche",
       "qty": 9.0511,
-      "entry": 0,
+      "entry": 10.9379,
       "date": "unknown",
-      "cost": 0
-    },
-    {
-      "sym": "QNT",
-      "id": "qnt-quant",
-      "qty": 0.3862,
-      "entry": 256.538,
-      "date": "Sep 27",
-      "cost": 100.02
+      "cost": 99.0
     }
   ],
   "watchlist": [
@@ -138,45 +122,38 @@
       "recentlyExited": true
     }
   ],
-  "cash": 204.62,
-  "tensions": "Yesterday's note said the ruleset is built to stop bad selling and has nothing to say about a book that is up 65% in extended names. Today that gap produced a concrete cost: $100 went into QNT at $256.54 on the fourth day of a 245% vertical, and is down 9.3% before the position is a day old. v5.7.22 has no rule against buying strength, only against selling it. Second tension: the redeploy rule says never sell except to fund a better opportunity, but $204.62 has sat idle and the correct call today is still PASS. Holding cash into PCE Sep 30 and NFP Oct 2, with F&G at 74 and the US 10-year at 5.17%, is a position, not indecision. The rule cannot express that, so it reads idle cash as a failure when it is a choice. Third: the scan prompt's hardcoded position table was wrong on five of ten lines again today and had to be reconciled against Robinhood from scratch. Until that table is replaced by a live pull, every run starts by repairing its own inputs. The stale redeploy triggers are the visible symptom: NEAR flagged below $3.31 while it trades $4.90, ZEC below $1,202 while it trades $1,523. Those levels are a full leg of the move out of date and would never fire.",
+  "cash": 112.35,
+  "tensions": "The ruleset says sell only to redeploy, never to avoid a drawdown. That rule was written to stop panic selling on coin-specific noise and it is good at that job. It has no macro override, and today is the day that gap has teeth: 94.5%% odds of further hikes by December, a 5.25%% 10-year, and a binary PCE print in under 24 hours, against a book that is 94.4%% invested in high-beta alts with a 5.6%% cash buffer. Fear and Greed reads 73, which against a hiking Fed is complacency rather than confirmation. I am not overriding the rule and I am recommending no trades, which happens to be the defensive action anyway. But the honest statement is that the report says hold because the rules permit nothing else, not because a 94%%-invested alt book is the right posture into this calendar. The cheaper fix is upstream: stop paying 0.95%% taker on market orders, and stop opening positions that get closed the same night.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book $2,039 against $1,231 deposited, +65.7%. That is down from $2,112 yesterday, and the drawdown is instructive: ZEC $1,590 to $1,523, NEAR $5.19 to $4.90, W $0.0154 to $0.0137, INJ $7.79 to $7.31. The alt bid that carried us all week took a day off. Nothing is broken. BTC dominance is 58.3% and still losing ground to alts on a 7-day basis, so the rotation-to-majors check does not fire."
+      "text": "Book $2006.78 against $1,231 deposited, +63.0%. Second straight down day and $106 below Saturday's $2,112 peak. But the price action is not the story today. The Fed hiked to 3.75-4.00% in mid-September, its first hike since January 2023, and the market now prices 72.5% odds of another 25bp on October 28 and 94.5% odds of at least one more by December 9. The 10-year sits at 5.25%, the highest since 2007. Brent is near $107 on a second day of gains. PCE prints tomorrow, jobs on Friday. Every one of those is a reason to own the $112 of cash rather than spend it."
     },
     {
       "agent": "noon",
-      "text": "The new fact is QNT. Filled Sep 27 at 23:58 ET, 0.3862 units at $256.538, $100 committed. It now marks $232.67, down 9.3% inside a day. The catalyst is not the problem: The Clearing House, owned by the 25 largest US banks and clearing $2T daily, selected Quant for its On-Chain Money Initiative, and seven UK banks ran live tokenized sterling on Quant rails. Supply is 99.5% circulating, so there is no unlock overhang. The problem is the entry. QNT traded $181 to $358 today, a 98% intraday range, and the buy landed 35% below the high it printed hours later. The launch is H1 2027. Nothing about that timeline rewards paying up on day four of a 245% move."
+      "text": "Execution audit, because it is now the largest recoverable cost in this book. Every order placed to date has been a market order. I previewed the same $100 AVAX buy both ways just now: market fills 8.7935 AVAX with a $0.95 fee at 0.95%% taker; a limit at $11.05 fills 9.0047 AVAX with a $0.50 fee at 0.5%% maker. Same hundred dollars, 2.4%% more coin and half the fee, call it 2.8%% of edge per entry. The fee tier also moved against us: fills on Sep 18-21 were 0.75%% taker, fills since Sep 25 are 0.95%%. The rotation rule demands better than 3%% net expected gain. We have been paying that entire hurdle to the exchange at the moment of the click."
     },
     {
       "agent": "close",
-      "text": "W is the one dated risk in the book. A core-contributor cliff unlock lands Oct 2, four days out, and W is already down 11.2% in 24 hours, which reads as front-running. Eight days held clears the minimum-hold gate. The exit is validated at ~$177.45 credit with a $0 fee, because W is not eligible for fee tiers. A free exit ahead of a known unlock is the cheapest risk reduction available anywhere in this portfolio. The ARB sale on Sep 21 was the same trade and it was right."
+      "text": "The churn ledger, four days: SUI bought 20:22 and sold 22:53 the same night for -$6.82. QNT bought Sep 27 and sold Sep 28 for -$20.97, a 19%% loss inside 22 hours. NEAR bought 14:09 and sold 22:11 the same day. That is -$27.79 realized and $13.44 in fees, roughly 2%% of the book, and all three trades violated the 7-day minimum hold the ruleset already contains. Yesterday's tension note called the QNT entry a mistake while the position was a day old and down 9.3%%. It closed down 19%%. The rule was right, the rule was written down, and the rule was ignored."
     },
     {
       "agent": "night",
-      "text": "The leak is fees, and it is now measurable. The taker tier moved from 0.75% to 0.95% between Sep 21 and Sep 25. Twelve fee-bearing fills since Sep 20 cost $16.60, which is 0.81% of the book in eight days, roughly 37% annualized. The SUI trade on Sep 25 is the clearest case: bought $199.94 at 20:22, sold $193.12 at 22:53, held two hours thirty-one minutes for a $6.82 loss, $3.73 of it fees. That trade broke the 7-day minimum hold outright. No alpha in this book survives that turnover rate."
+      "text": "No sell trigger fires anywhere. No loss exceeds -15%% (ZEC is the worst at -5.6%%), BTC dominance is 58.2%% and below the 60%% rotation gate, BTC is down 3.7%% on the week against a median alt at +4.3%% so the majors check fails on both legs, nothing is 21-day dead money and no position exceeds the 25%% cap (LINK is largest at 21.4%%). ZEC is the weakest name: -14.9%% on the week with OKX open interest down 30.4%% from its September 18 peak, which is leverage leaving rather than a broken thesis. Trigger stays $1,202. AVAX is the one name with improving internals, $131M of tokenized-stock inflows in a single week, more than every other chain combined, volume at 1.76x its weekly average, and the only green print on the board today. Verdict is hold everything and place nothing."
     }
   ],
-  "lastUpdated": "2026-09-28T16:20:54.087173Z",
+  "lastUpdated": "2026-09-29T16:21:04.966292Z",
   "prices": {
-    "ZEC": 1522.66,
-    "LINK": 14.6582,
-    "ONDO": 0.515213,
-    "NEAR": 4.90045,
-    "INJ": 7.31251725,
-    "XLM": 0.22261,
-    "LTC": 70.20695,
-    "W": 0.01365042,
-    "AVAX": 10.318465,
-    "QNT": 232.673
+    "ZEC": 1387.45,
+    "LINK": 14.79135,
+    "ONDO": 0.50527,
+    "NEAR": 4.976524,
+    "INJ": 7.60684155,
+    "XLM": 0.2254695,
+    "LTC": 67.536,
+    "AVAX": 11.197345
   },
   "history": [
-    {
-      "date": "2026-09-21",
-      "value": 1782.82,
-      "cost": 1231
-    },
     {
       "date": "2026-09-22",
       "value": 1821.83,
@@ -205,6 +182,11 @@
     {
       "date": "2026-09-28",
       "value": 2039.45,
+      "cost": 1231
+    },
+    {
+      "date": "2026-09-29",
+      "value": 2006.78,
       "cost": 1231
     }
   ]
