@@ -4,65 +4,65 @@
       "sym": "ZEC",
       "id": "zec-zcash",
       "qty": 0.19893,
-      "entry": 1469.6627,
+      "entry": 1480.65,
       "date": "Sep 3",
-      "cost": 292.36
+      "cost": 294.55
     },
     {
       "sym": "LINK",
       "id": "chainlink",
       "qty": 29.0145,
-      "entry": 13.6759,
+      "entry": 13.69,
       "date": "Sep 21",
-      "cost": 396.8
-    },
-    {
-      "sym": "XLM",
-      "id": "xlm-stellar",
-      "qty": 1642.26,
-      "entry": 0.211185,
-      "date": "Sep 14",
-      "cost": 346.82
+      "cost": 397
     },
     {
       "sym": "NEAR",
       "id": "near-protocol",
       "qty": 43.19,
-      "entry": 3.5726,
+      "entry": 3.61,
       "date": "Sep 6",
-      "cost": 154.3
+      "cost": 156
     },
     {
       "sym": "LTC",
       "id": "ltc-litecoin",
       "qty": 2.56448293,
-      "entry": 51.5348,
+      "entry": 52.01,
       "date": "Sep 4",
-      "cost": 132.16
-    },
-    {
-      "sym": "INJ",
-      "id": "inj-injective",
-      "qty": 21.356,
-      "entry": 6.1894,
-      "date": "Sep 13",
-      "cost": 132.18
+      "cost": 133.34
     },
     {
       "sym": "ONDO",
       "id": "ondo-finance",
       "qty": 330.61,
-      "entry": 0.39906,
+      "entry": 0.3991,
       "date": "Sep 18",
-      "cost": 131.93
+      "cost": 133
+    },
+    {
+      "sym": "INJ",
+      "id": "inj-injective",
+      "qty": 21.356,
+      "entry": 6.12,
+      "date": "Sep 13",
+      "cost": 132.16
+    },
+    {
+      "sym": "XLM",
+      "id": "xlm-stellar",
+      "qty": 1642.26,
+      "entry": 0.2132,
+      "date": "Sep 14",
+      "cost": 350
     },
     {
       "sym": "AVAX",
-      "id": "avax-avalanche",
+      "id": "avalanche-2",
       "qty": 9.0511,
-      "entry": 10.9379,
-      "date": "unknown",
-      "cost": 99.0
+      "entry": 11.05,
+      "date": "Sep 25",
+      "cost": 100
     }
   ],
   "watchlist": [
@@ -122,36 +122,36 @@
       "recentlyExited": true
     }
   ],
-  "cash": 112.35,
-  "tensions": "The ruleset says sell only to redeploy, never to avoid a drawdown. That rule was written to stop panic selling on coin-specific noise and it is good at that job. It has no macro override, and today is the day that gap has teeth: 94.5%% odds of further hikes by December, a 5.25%% 10-year, and a binary PCE print in under 24 hours, against a book that is 94.4%% invested in high-beta alts with a 5.6%% cash buffer. Fear and Greed reads 73, which against a hiking Fed is complacency rather than confirmation. I am not overriding the rule and I am recommending no trades, which happens to be the defensive action anyway. But the honest statement is that the report says hold because the rules permit nothing else, not because a 94%%-invested alt book is the right posture into this calendar. The cheaper fix is upstream: stop paying 0.95%% taker on market orders, and stop opening positions that get closed the same night.",
+  "cash": 112,
+  "tensions": "BTC dominance at 58.8% — 1.2% from the 60% forced-exit trigger. Derivatives deleveraging (49K BTC OI drop) suggests cooling but also less speculative froth to fuel altcoin rallies. ZEC underwater at 21 days but ETF inflows ($414M+) and 3:1 split provide institutional floor. LINK at 21.4% weight nearing 25% cap while CCIP 2.0 just launched — trim or let it ride? QNT Clearing House deal ($2T/day) is generational but 77% wash trading makes entry treacherous.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Book $2006.78 against $1,231 deposited, +63.0%. Second straight down day and $106 below Saturday's $2,112 peak. But the price action is not the story today. The Fed hiked to 3.75-4.00% in mid-September, its first hike since January 2023, and the market now prices 72.5% odds of another 25bp on October 28 and 94.5% odds of at least one more by December 9. The 10-year sits at 5.25%, the highest since 2007. Brent is near $107 on a second day of gains. PCE prints tomorrow, jobs on Friday. Every one of those is a reason to own the $112 of cash rather than spend it."
+      "text": "Risk-off morning. BTC $83K, dom 58.8% approaching 60% exit line. Derivatives OI shed 49K BTC — biggest weekly drop since Oct 2025. All 8 positions HOLD; ZEC flagged 21d dead money but Grayscale ETF ($414M+) keeps thesis alive. BP thin at $112, no new entries. Watching QNT Clearing House deal and AAVE for next deployment."
     },
     {
       "agent": "noon",
-      "text": "Execution audit, because it is now the largest recoverable cost in this book. Every order placed to date has been a market order. I previewed the same $100 AVAX buy both ways just now: market fills 8.7935 AVAX with a $0.95 fee at 0.95%% taker; a limit at $11.05 fills 9.0047 AVAX with a $0.50 fee at 0.5%% maker. Same hundred dollars, 2.4%% more coin and half the fee, call it 2.8%% of edge per entry. The fee tier also moved against us: fills on Sep 18-21 were 0.75%% taker, fills since Sep 25 are 0.95%%. The rotation rule demands better than 3%% net expected gain. We have been paying that entire hurdle to the exchange at the moment of the click."
+      "text": "Awaiting noon scan."
     },
     {
       "agent": "close",
-      "text": "The churn ledger, four days: SUI bought 20:22 and sold 22:53 the same night for -$6.82. QNT bought Sep 27 and sold Sep 28 for -$20.97, a 19%% loss inside 22 hours. NEAR bought 14:09 and sold 22:11 the same day. That is -$27.79 realized and $13.44 in fees, roughly 2%% of the book, and all three trades violated the 7-day minimum hold the ruleset already contains. Yesterday's tension note called the QNT entry a mistake while the position was a day old and down 9.3%%. It closed down 19%%. The rule was right, the rule was written down, and the rule was ignored."
+      "text": "Awaiting close scan."
     },
     {
       "agent": "night",
-      "text": "No sell trigger fires anywhere. No loss exceeds -15%% (ZEC is the worst at -5.6%%), BTC dominance is 58.2%% and below the 60%% rotation gate, BTC is down 3.7%% on the week against a median alt at +4.3%% so the majors check fails on both legs, nothing is 21-day dead money and no position exceeds the 25%% cap (LINK is largest at 21.4%%). ZEC is the weakest name: -14.9%% on the week with OKX open interest down 30.4%% from its September 18 peak, which is leverage leaving rather than a broken thesis. Trigger stays $1,202. AVAX is the one name with improving internals, $131M of tokenized-stock inflows in a single week, more than every other chain combined, volume at 1.76x its weekly average, and the only green print on the board today. Verdict is hold everything and place nothing."
+      "text": "Awaiting night scan."
     }
   ],
-  "lastUpdated": "2026-09-29T16:21:04.966292Z",
+  "lastUpdated": "2026-09-29T17:10:27.089Z",
   "prices": {
-    "ZEC": 1387.45,
-    "LINK": 14.79135,
-    "ONDO": 0.50527,
-    "NEAR": 4.976524,
-    "INJ": 7.60684155,
-    "XLM": 0.2254695,
-    "LTC": 67.536,
-    "AVAX": 11.197345
+    "ZEC": 1382.68,
+    "LINK": 14.69,
+    "NEAR": 4.93,
+    "LTC": 67.63,
+    "ONDO": 0.502,
+    "INJ": 7.57,
+    "XLM": 0.2231,
+    "AVAX": 11.14
   },
   "history": [
     {
@@ -186,8 +186,8 @@
     },
     {
       "date": "2026-09-29",
-      "value": 2006.78,
-      "cost": 1231
+      "value": 1994.49,
+      "cost": 1331
     }
   ]
 }
