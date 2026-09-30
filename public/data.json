@@ -1,76 +1,76 @@
 {
   "holdings": [
     {
-      "sym": "ZEC",
-      "id": "zec-zcash",
-      "qty": 0.19893,
-      "entry": 1469.72,
-      "date": "Sep 3",
-      "cost": 292.36
-    },
-    {
       "sym": "LINK",
       "id": "chainlink",
       "qty": 29.0145,
-      "entry": 13.69,
-      "date": "Sep 21",
+      "entry": 13.6759,
+      "date": "Sep 21/28",
       "cost": 396.8
+    },
+    {
+      "sym": "XLM",
+      "id": "xlm-stellar",
+      "qty": 1642.26,
+      "entry": 0.21118,
+      "date": "Sep 14/28",
+      "cost": 346.82
+    },
+    {
+      "sym": "ZEC",
+      "id": "zec-zcash",
+      "qty": 0.19893,
+      "entry": 1469.66,
+      "date": "Sep 3-21",
+      "cost": 292.36
     },
     {
       "sym": "NEAR",
       "id": "near-protocol",
       "qty": 43.19,
-      "entry": 3.57,
-      "date": "Sep 6",
+      "entry": 3.5726,
+      "date": "Sep 6/26",
       "cost": 154.3
     },
     {
       "sym": "LTC",
       "id": "ltc-litecoin",
       "qty": 2.56448293,
-      "entry": 52.01,
-      "date": "Sep 4",
+      "entry": 51.535,
+      "date": "Sep 4/20",
       "cost": 132.16
-    },
-    {
-      "sym": "ONDO",
-      "id": "ondo-finance",
-      "qty": 330.61,
-      "entry": 0.3991,
-      "date": "Sep 18",
-      "cost": 131.93
     },
     {
       "sym": "INJ",
       "id": "inj-injective",
       "qty": 21.356,
-      "entry": 6.12,
-      "date": "Sep 13",
+      "entry": 6.1894,
+      "date": "Sep 13/20",
       "cost": 132.18
     },
     {
-      "sym": "XLM",
-      "id": "xlm-stellar",
-      "qty": 1642.26,
-      "entry": 0.2112,
-      "date": "Sep 14",
-      "cost": 346.82
-    },
-    {
-      "sym": "AVAX",
-      "id": "avalanche-2",
-      "qty": 9.0511,
-      "entry": 10.94,
-      "date": "Sep 25",
-      "cost": 99.0
+      "sym": "ONDO",
+      "id": "ondo-finance",
+      "qty": 330.61,
+      "entry": 0.39905,
+      "date": "Sep 18",
+      "cost": 131.93
     },
     {
       "sym": "BTC",
-      "id": "bitcoin",
+      "id": "btc-bitcoin",
       "qty": 0.00118491,
-      "entry": 83601.29,
-      "date": "Sep 29",
+      "entry": 83600.02,
+      "date": "Sep 30",
       "cost": 99.06
+    },
+    {
+      "sym": "AVAX",
+      "id": "avax-avalanche",
+      "qty": 9.0511,
+      "entry": 10.9379,
+      "date": "pre-Sep 20",
+      "cost": 99.0
     }
   ],
   "watchlist": [
@@ -131,36 +131,36 @@
     }
   ],
   "cash": 12.35,
-  "tensions": "Noon wants the NEAR trim; Night notes the rotation only clears its own fee load if ONDO beats NEAR by 2% \u2014 an edge measured in inches. Close vetoed QNT on skew despite it being the strongest fundamental catalyst on the board this week, which is the kind of discipline that looks smart until it looks like cowardice. Unresolved: LINK at 20.6% weight has the freshest live catalyst (CCIP 2.0, Sibos) but the least room to add. And ZEC remains the position nobody wants to defend and nobody will cut.",
+  "tensions": "The rulebook forbids selling to avoid a drawdown, and ZEC is drawing down hard off a parabola. Those two facts are in direct conflict and only one of them can be right. I am holding, because the redeploy trigger is not hit and because the honest read of the last ten days is that discretionary exits cost more than they saved. But if ZEC keeps bleeding, the rule that protected the winners will be the rule that gave back the ZEC gain. Second tension: XLM is 18.3 percent of the book on $45K of 30-day protocol fees, the thinnest fundamentals of anything held, and it got doubled on Sep 28 at a price that is already underwater. Size and conviction point in opposite directions there.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Dominance ticked down to 58.4% and the 60% forced-exit line stopped closing. BTC hedge is green on day one. Book is +12.0% on $1,784.61 cost. Nothing broken; the question today is allocation, not survival."
+      "text": "The book I was handed is not the book that exists. The scan table said W, 766 XLM, 19 LINK, 0.3275 ZEC. Reality: W sold Sep 28, XLM doubled to 1,642, LINK up to 29.01, ZEC cut to 0.1989, and two positions nobody told me about, AVAX at $99 and BTC at $99 bought at 5:59 this morning. Nine days of drift. I reconciled against Robinhood and rebuilt from the order tape. Everything below is from fills, not from memory."
     },
     {
       "agent": "noon",
-      "text": "NEAR is the trade. NRR listed Sep 29 \u2014 the catalyst that carried it from $3.57 to $5.36 has been paid out. +180% in thirty days with a spent event is not a hold, it is a gift. Trim $100, keep 24.47 coins as the runner, and stop pretending the $4.20 break is the only valid signal."
+      "text": "The number that matters: $2,011 against $1,231 deposited. Plus 63.4 percent. NEAR is the engine, plus 49.2 percent on cost and plus 180 percent over thirty days on the AI rotation. LTC plus 30.7, ONDO plus 26.1, INJ plus 19.4. Nothing is broken. But ZEC cracked: $1,653 on Sep 27 to $1,418 this morning, down 14 percent in three sessions, minus 10.2 on the week while the median alt printed plus 10. It is the only red line in the book and it carries 14.4 percent of the weight. The parabola is unwinding."
     },
     {
       "agent": "close",
-      "text": "Redeploying into ONDO, not QNT. QNT's Clearing House deal is genuinely the biggest institutional print of the quarter, and QNT is also up 317% in seven days and already 19% off the high. You do not buy week one of a 5x. ONDO carries the same RWA narrative with negative funding and an 8.3% weight. Boring is the point."
+      "text": "The uncomfortable part is the tape, not the prices. Twenty-one dollars and fifty-nine cents of explicit fees in ten days. The fee tier went the wrong way, 0.75 percent to 0.95 percent taker, so a round trip is now 1.9 percent before spread, not the 1.5 the rulebook assumes. SUI was bought and sold inside two and a half hours for minus $6.81. QNT was bought and sold inside twenty-two hours for minus $20.97. Both broke the seven-day minimum hold. Combined, $27.78 handed to the house to learn nothing."
     },
     {
       "agent": "night",
-      "text": "Honest accounting: 1.95% in fees to rotate inside the same sector is expensive for a thesis this fine. ZEC is still the real exposure \u2014 underwater, 27 days held, and one delisting headline from a forced exit. LINK at 20.6% is the next weight problem, not an opportunity."
+      "text": "So the call is nothing. No buys: $12.35 of cash and no rotation that clears a 3 percent net bar against 1.9 percent round-trip fees. No sells: no minus-15 breach, no 25 percent weight breach, no dead money past 21 days. BTC dominance is 58.4 percent and falling from 60.66, so the regime check does not fire and there is no forced rotation into majors. One optional order sits validated: a stop on half the ZEC at $1,250, which is not a discretionary exit but the codified minus-15 percent level off a $1,469.66 basis. Hold the winners. Stop feeding the spread."
     }
   ],
-  "lastUpdated": "2026-09-30T16:10:47.393496Z",
+  "lastUpdated": "2026-09-30T16:19:21.547669Z",
   "prices": {
-    "ZEC": 1447.47,
-    "LINK": 14.26,
-    "NEAR": 5.36,
-    "LTC": 67.35,
-    "ONDO": 0.5043,
-    "INJ": 7.43,
-    "XLM": 0.2236,
-    "AVAX": 11.02,
-    "BTC": 84288.47
+    "ZEC": 1443.695,
+    "LINK": 14.39102,
+    "ONDO": 0.503595,
+    "NEAR": 5.330063,
+    "INJ": 7.38252,
+    "XLM": 0.2245305,
+    "LTC": 67.31325,
+    "AVAX": 11.02256,
+    "BTC": 84290.625
   },
   "history": [
     {
@@ -195,8 +195,8 @@
     },
     {
       "date": "2026-09-30",
-      "value": 2010.49,
-      "cost": 1784.61
+      "value": 2012.46,
+      "cost": 1231
     }
   ]
 }
