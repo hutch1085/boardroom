@@ -4,9 +4,9 @@
       "sym": "ZEC",
       "id": "zec-zcash",
       "qty": 0.19893,
-      "entry": 1480.65,
+      "entry": 1469.72,
       "date": "Sep 3",
-      "cost": 294.55
+      "cost": 292.36
     },
     {
       "sym": "LINK",
@@ -30,7 +30,7 @@
       "qty": 2.56448293,
       "entry": 52.01,
       "date": "Sep 4",
-      "cost": 133.34
+      "cost": 132.16
     },
     {
       "sym": "ONDO",
@@ -46,7 +46,7 @@
       "qty": 21.356,
       "entry": 6.12,
       "date": "Sep 13",
-      "cost": 132.16
+      "cost": 132.18
     },
     {
       "sym": "XLM",
@@ -122,43 +122,38 @@
       "recentlyExited": true
     }
   ],
-  "cash": 112,
-  "tensions": "BTC dominance at 58.8% — 1.2% from the 60% forced-exit trigger. Derivatives deleveraging (49K BTC OI drop) suggests cooling but also less speculative froth to fuel altcoin rallies. ZEC underwater at 21 days but ETF inflows ($414M+) and 3:1 split provide institutional floor. LINK at 21.4% weight nearing 25% cap while CCIP 2.0 just launched — trim or let it ride? QNT Clearing House deal ($2T/day) is generational but 77% wash trading makes entry treacherous.",
+  "cash": 112.35,
+  "tensions": "BTC dominance approaching 60% forced-exit line while book is 94% alts with zero BTC/ETH exposure. NEAR surging on ETF launch vs sell-the-news risk. ZEC 21-day dead money and underwater but not at -15% stop. LINK biggest position at 20.8% dropped -7.8% today. QNT ripping +7.9% the day after we sold it.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Risk-off morning. BTC $83K, dom 58.8% approaching 60% exit line. Derivatives OI shed 49K BTC — biggest weekly drop since Oct 2025. All 8 positions HOLD; ZEC flagged 21d dead money but Grayscale ETF ($414M+) keeps thesis alive. BP thin at $112, no new entries. Watching QNT Clearing House deal and AAVE for next deployment."
+      "text": "Markets opened soft with BTC pulling back from $84.2K. Alt book unchanged — no overnight triggers fired."
     },
     {
       "agent": "noon",
-      "text": "Awaiting noon scan."
+      "text": "BTC dom 59.15% at noon check. NEAR popping +5% ahead of Bitwise NRR ETF launch. Most alts drifting lower. Regime pressure building."
     },
     {
       "agent": "close",
-      "text": "Awaiting close scan."
+      "text": "LINK gave back -7.8% intraday — largest single-day drop since entry. ONDO -5.4%. NEAR held gains at +6.7%. QNT surged +7.9% post our exit."
     },
     {
       "agent": "night",
-      "text": "Awaiting night scan."
+      "text": "8PM scan: Portfolio $1,993 (+49.7%). BTC dom ~59.5% approaching 60% forced-exit line. Book 94% alts, zero BTC/ETH — recommending $100 BTC as regime hedge. No exits triggered. ZEC 21d dead money, underwater -4.5%. NEAR ETF NRR live."
     }
   ],
-  "lastUpdated": "2026-09-29T17:10:27.089Z",
+  "lastUpdated": "2026-09-30T09:05:59.922Z",
   "prices": {
-    "ZEC": 1382.68,
-    "LINK": 14.69,
-    "NEAR": 4.93,
-    "LTC": 67.63,
-    "ONDO": 0.502,
-    "INJ": 7.57,
-    "XLM": 0.2231,
-    "AVAX": 11.14
+    "ZEC": 1403.93,
+    "LINK": 14.257,
+    "NEAR": 5.093,
+    "LTC": 66.76,
+    "ONDO": 0.4994,
+    "INJ": 7.652,
+    "XLM": 0.2245,
+    "AVAX": 11.072
   },
   "history": [
-    {
-      "date": "2026-09-22",
-      "value": 1821.83,
-      "cost": 1231
-    },
     {
       "date": "2026-09-23",
       "value": 1779.49,
@@ -187,6 +182,11 @@
     {
       "date": "2026-09-29",
       "value": 1994.49,
+      "cost": 1331
+    },
+    {
+      "date": "2026-09-30",
+      "value": 1993.89,
       "cost": 1331
     }
   ]
