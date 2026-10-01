@@ -4,7 +4,7 @@
       "sym": "ZEC",
       "id": "zec-zcash",
       "qty": 0.19893,
-      "entry": 1469.72,
+      "entry": 1469.66,
       "date": "Sep 3",
       "cost": 292.36
     },
@@ -12,65 +12,65 @@
       "sym": "LINK",
       "id": "chainlink",
       "qty": 29.0145,
-      "entry": 13.69,
+      "entry": 13.676,
       "date": "Sep 21",
-      "cost": 397.0
-    },
-    {
-      "sym": "NEAR",
-      "id": "near-protocol",
-      "qty": 24.49,
-      "entry": 4.57,
-      "date": "Sep 6",
-      "cost": 112.0
-    },
-    {
-      "sym": "LTC",
-      "id": "ltc-litecoin",
-      "qty": 2.56448293,
-      "entry": 52.01,
-      "date": "Sep 4",
-      "cost": 132.16
-    },
-    {
-      "sym": "ONDO",
-      "id": "ondo-finance",
-      "qty": 546.57,
-      "entry": 0.4446,
-      "date": "Sep 18",
-      "cost": 243.0
-    },
-    {
-      "sym": "INJ",
-      "id": "inj-injective",
-      "qty": 21.356,
-      "entry": 6.12,
-      "date": "Sep 13",
-      "cost": 132.18
+      "cost": 396.8
     },
     {
       "sym": "XLM",
       "id": "xlm-stellar",
       "qty": 1642.26,
-      "entry": 0.2132,
+      "entry": 0.21118,
       "date": "Sep 14",
-      "cost": 350.0
+      "cost": 346.82
     },
     {
-      "sym": "AVAX",
-      "id": "avalanche-2",
-      "qty": 9.0511,
-      "entry": 11.05,
-      "date": "Sep 25",
-      "cost": 100.0
+      "sym": "ONDO",
+      "id": "ondo-finance",
+      "qty": 546.57,
+      "entry": 0.44069,
+      "date": "Sep 18",
+      "cost": 240.87
+    },
+    {
+      "sym": "LTC",
+      "id": "ltc-litecoin",
+      "qty": 2.56448293,
+      "entry": 51.535,
+      "date": "Sep 4",
+      "cost": 132.16
+    },
+    {
+      "sym": "INJ",
+      "id": "inj-injective",
+      "qty": 21.356,
+      "entry": 6.1894,
+      "date": "Sep 13",
+      "cost": 132.18
+    },
+    {
+      "sym": "NEAR",
+      "id": "near-protocol",
+      "qty": 24.49,
+      "entry": 4.4504,
+      "date": "Sep 6",
+      "cost": 108.99
     },
     {
       "sym": "BTC",
-      "id": "bitcoin",
+      "id": "btc-bitcoin",
       "qty": 0.00118491,
-      "entry": 83600.02,
-      "date": "Sep 29",
-      "cost": 100.0
+      "entry": 83601.29,
+      "date": "Sep 30",
+      "cost": 99.06
+    },
+    {
+      "sym": "AVAX",
+      "id": "avax-avalanche",
+      "qty": 9.0511,
+      "entry": 10.9379,
+      "date": "unknown",
+      "cost": 99.0
     }
   ],
   "watchlist": [
@@ -131,36 +131,36 @@
     }
   ],
   "cash": 1.41,
-  "tensions": "The portfolio is +48.4% and the Fed is pricing 42% odds of a HIKE into the October 28 meeting with the 10-year at 24-year highs. Fear & Greed reads 74 \u2014 Greed \u2014 while total market cap fell 3.0% in 24 hours. Sentiment is lagging price, which is the order those two usually resolve in. Second tension: XLM funding is -21.6% annualized, meaning shorts are paying us to hold, while XLM generates $45k of fees per month on a $7.7B valuation. The squeeze setup and the fundamental point opposite directions and the squeeze is the only one with a timer. Third: we are out of dry powder at $1.41. Every future buy is a forced sale of something healthy, which means the fee gate, not the thesis, is now the binding constraint on this account. That is a structural problem no scan can research its way out of.",
+  "tensions": "Primary tension is no longer a position, it is behavior. The rulebook's 7-day minimum hold was written on September 22 to stop fee drag, and it was broken three times in the nine days after: SUI held 2.5 hours, QNT held 22 hours, NEAR flipped in 8 hours, net -$20.96 plus fees. Total explicit fees since September 20 are $23.57 over 21 orders, 1.9% of lifetime deposits in eleven days, and the taker rate has worsened from 0.75% to 0.95%. The system's edge this cycle came from the two patient decisions (W held eight days for +19.2%, ARB sold ahead of its October 16 unlock) and was partly given back by the impatient ones. Second tension: Fear and Greed reads 74 (Greed) while total market cap fell 2.9% in 24 hours and eight of nine positions are green. Sentiment is lagging price, and that order usually resolves downward. Yet dominance is falling and the Altcoin Season Index has nearly tripled in a month to 61, which argues the alt leg is mid-move, not done. Those two point opposite ways and only the sentiment one has a timer. Third tension: dry powder is $1.41, confirmed by a rejected order preview, so the fee gate rather than the thesis now decides every allocation. At a 3-4% round trip, the bar for any rotation is high enough that the default is paralysis \u2014 which is correct when nothing is broken, and dangerous the day something is. UNRESOLVED DATA ISSUES, needs James: (1) AVAX, 9.0511 units at a $99.00 basis, has NO order history in Robinhood under any date \u2014 origin unexplained, and its entry date is therefore unknown, which means its 7-day hold eligibility cannot be verified. (2) Lifetime deposits are ambiguous: the scan config says $1,231 but two of seven history rows said $1,331, which is why yesterday's return read +48.4% and today's reads +60.5%. I normalized the series to $1,231 per the config; if $1,331 is correct, every return figure on this board is overstated by about 12 points.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Nine positions, nine holds, and I am not apologizing for it. Not one redeploy trigger is within 13% of being hit, nothing is down more than 5.8%, and AVAX is locked under the 7-day minimum anyway. The only tradable idea on the board was QNT and it scored 4 of 9. A no-trade day is a decision, not an absence of one."
+      "text": "Nine positions, nine holds, and buying power is $1.41 \u2014 I pre-flighted a $150 AAVE buy and Robinhood rejected it outright for insufficient funds. That is the whole scan in one line: every buy from here is a forced sale of something healthy. Worst position is ZEC at -6.5% against a -15% stop. Nothing is thesis-broken, nothing is 21-day dead money, nothing breaches the 25% weight cap (LINK is highest at 21.1%). A no-trade day is a decision."
     },
     {
       "agent": "noon",
-      "text": "QNT is the whole conversation and the answer is no. The catalyst is real \u2014 The Clearing House picked them for the On-Chain Money Initiative and four UK banks are live on tokenized sterling. But funding is +0.0588% per 8 hours, 64% annualized, which is the market charging a toll to be long. The founder wallet moved $6.97M out. Protocol revenue is approximately zero. We would be trimming Litecoin, eating 1.84% in fees, to buy the first red candle after a 60-to-300 run on a seven-day-old headline. Momentum-buy means do not veto for having run. It does not mean buy distribution."
+      "text": "The tradable idea I modeled was AAVE, +18.6% over 7 days and +31.8% over 30, funded by trimming ZEC. I killed it on arithmetic. Robinhood's taker fee just moved from 0.75% to 0.95%, so a round trip is now ~1.9% in explicit fees plus 1-2% of spread \u2014 call it 3-4%. The v5.7.22 gate wants more than 3% of net forward edge. Paying 4% to chase a name already up 32% in a month, with Fear and Greed at 74, is not a 4% edge. PASS."
     },
     {
       "agent": "close",
-      "text": "I owe a correction. Last scan I called the NEAR ETF spent and sold into it. The ETF took $35.5M on day one and bought 7.2M NEAR, 0.55% of supply, and there is a protocol upgrade on October 5 that eliminates the developer gas rebate and raises the burn. The trim at $5.34 still printed well against $4.94 today, so the trade was right. The reasoning was not. NEAR Intents is doing $7.3M of fees in 30 days, the most of anything we own."
+      "text": "The honest finding this morning is not in the book, it is in the blotter. v5.7.22 imposed a 7-day minimum hold on September 22 specifically to stop fee drag. In the nine days since: SUI held 2.5 hours for -$6.82, QNT held 22 hours for -$20.97, NEAR flipped in 8 hours for +$6.83. Net -$20.96 on trades the rules forbade. Explicit fees since September 20 are $23.57 across 21 orders \u2014 1.9% of all capital ever deposited, burned in eleven days. The two things that actually made money were W, held eight days for +19.2%, and dodging the October 16 ARB unlock. Both were patience, not activity."
     },
     {
       "agent": "night",
-      "text": "Look at what the book actually owns. Chainlink: $4.3M of staking revenue, Swift Ledger integration, CCIP 2.0, ETF inflows three weeks running \u2014 that one is earned. Ondo: $6.4M of fees on a $2.4B cap, the best ratio here. Then Zcash: $23.5B of market cap against $144k of fees in a month. The only reason to hold it is that a whale pulled 24,706 coins off Binance and Gate and has not stopped. That is a bid, not a valuation. I will hold the bid and I will not pretend it is anything else."
+      "text": "Regime says stay in alts and stop looking at BTC. Dominance is 58.6% and FALLING, down 1.11%, while the Altcoin Season Index has gone from 23 to 61 in a month. Step 1b needs dominance above 58 AND rising AND Bitcoin beating the median alt; it is above 58 and fails the other two, so the BTC/ETH rotation does not fire. Derivatives are clean \u2014 funding runs +4% to +11% annualized with no froth, and NEAR funding is actually negative at -2% despite +143% over 30 days, meaning shorts are paying us. No unlock touches the book: October's supply events are ENA, 2Z, SUI, ARB, EIGEN and WLD, and we are already out of SUI and ARB. ZEC shipped Ironwood, a formally verified pool replacing Orchard, so the privacy thesis is intact and the -7.7% week is a pullback off +61%, not a break."
     }
   ],
-  "lastUpdated": "2026-10-01T16:11:22.387327Z",
+  "lastUpdated": "2026-10-01T16:20:25.013083Z",
   "prices": {
-    "ZEC": 1384.205,
-    "LINK": 14.380155,
-    "NEAR": 4.943778,
-    "LTC": 67.0216,
-    "ONDO": 0.49207,
-    "INJ": 7.5113741,
-    "XLM": 0.2194715,
-    "AVAX": 10.91355,
-    "BTC": 84253.735
+    "ZEC": 1373.955,
+    "LINK": 14.32636,
+    "XLM": 0.2187935,
+    "ONDO": 0.489145,
+    "INJ": 7.4807256,
+    "LTC": 67.0525,
+    "NEAR": 4.908345,
+    "BTC": 84195.655,
+    "AVAX": 10.8875
   },
   "history": [
     {
@@ -186,7 +186,7 @@
     {
       "date": "2026-09-29",
       "value": 1994.49,
-      "cost": 1331
+      "cost": 1231
     },
     {
       "date": "2026-09-30",
@@ -195,8 +195,8 @@
     },
     {
       "date": "2026-10-01",
-      "value": 1975.36,
-      "cost": 1331
+      "value": 1967.3,
+      "cost": 1231
     }
   ]
 }
