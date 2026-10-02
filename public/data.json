@@ -4,65 +4,65 @@
       "sym": "LINK",
       "id": "chainlink",
       "qty": 29.0145,
-      "entry": 13.69,
-      "date": "Sep 21",
-      "cost": 397.0
-    },
-    {
-      "sym": "NEAR",
-      "id": "near-protocol",
-      "qty": 24.49,
-      "entry": 4.57,
-      "date": "Sep 6",
-      "cost": 112.0
-    },
-    {
-      "sym": "LTC",
-      "id": "ltc-litecoin",
-      "qty": 2.56448293,
-      "entry": 52.01,
-      "date": "Sep 4",
-      "cost": 132.16
-    },
-    {
-      "sym": "ONDO",
-      "id": "ondo-finance",
-      "qty": 546.57,
-      "entry": 0.4446,
-      "date": "Sep 18",
-      "cost": 243.0
-    },
-    {
-      "sym": "INJ",
-      "id": "inj-injective",
-      "qty": 21.356,
-      "entry": 6.12,
-      "date": "Sep 13",
-      "cost": 132.18
+      "entry": 13.67592,
+      "date": "Sep 21+28",
+      "cost": 396.8
     },
     {
       "sym": "XLM",
       "id": "xlm-stellar",
       "qty": 1642.26,
-      "entry": 0.2132,
-      "date": "Sep 14",
-      "cost": 350.0
+      "entry": 0.21118,
+      "date": "Sep 14+28",
+      "cost": 346.82
     },
     {
-      "sym": "AVAX",
-      "id": "avalanche-2",
-      "qty": 9.0511,
-      "entry": 11.05,
-      "date": "Sep 25",
-      "cost": 100.0
+      "sym": "ONDO",
+      "id": "ondo-finance",
+      "qty": 546.57,
+      "entry": 0.44069,
+      "date": "Sep 18+30",
+      "cost": 240.87
+    },
+    {
+      "sym": "LTC",
+      "id": "ltc-litecoin",
+      "qty": 2.56448293,
+      "entry": 51.53476,
+      "date": "Sep 4/20",
+      "cost": 132.16
+    },
+    {
+      "sym": "INJ",
+      "id": "inj-injective",
+      "qty": 21.356,
+      "entry": 6.18936,
+      "date": "Sep 13/20",
+      "cost": 132.18
+    },
+    {
+      "sym": "NEAR",
+      "id": "near-protocol",
+      "qty": 24.49,
+      "entry": 4.45039,
+      "date": "Sep 6+26",
+      "cost": 108.99
     },
     {
       "sym": "BTC",
-      "id": "bitcoin",
+      "id": "btc-bitcoin",
       "qty": 0.00118491,
-      "entry": 83600.02,
-      "date": "Sep 29",
-      "cost": 100.0
+      "entry": 83601.28,
+      "date": "Sep 30",
+      "cost": 99.06
+    },
+    {
+      "sym": "AVAX",
+      "id": "avax-avalanche",
+      "qty": 9.0511,
+      "entry": 10.9379,
+      "date": "pre-Sep 21",
+      "cost": 99.0
     }
   ],
   "watchlist": [
@@ -122,36 +122,36 @@
       "recentlyExited": true
     }
   ],
-  "cash": 265,
-  "tensions": "The weight cap is being satisfied in letter and defeated in spirit: no position exceeds 25%, yet LINK + XLM + ONDO + the proposed AAVE and QNT are one trade wearing five tickers. Second tension: LTC is +37.4% at 28 days held, past the 21-day dead-money line but nowhere near dead \u2014 negative funding on a +42% month with 90% Bloomberg ETF odds is the single best risk/reward in the book, and the rules have no language for a winner that is also old. Third: QNT scores 6/9 and the rulebook says fund it at $200; the two failing signals are founder distribution and the absence of any base, which are precisely the two that decide whether a momentum entry survives. Scoring treats all nine signals as equal. They are not.",
+  "cash": 265.48,
+  "tensions": "The system's discipline rules are correct and are being overridden. Two trades broke the 7-day minimum hold last week; those two are the only losers (-$27.79 combined), while every multi-day hold profited. Meanwhile the scheduled prompt's position table drifted 11 days stale \u2014 carrying ZEC and W as live holdings after both were closed, missing BTC and AVAX entirely \u2014 leaving the automation one unreconciled run from publishing invented numbers. The fee tier also degraded 0.75% to 0.95% taker, making churn 27% more expensive exactly as churn rose. Resolution: edit the stored task's table, and treat the 7-day hold as binding rather than advisory.",
   "opening": [
     {
       "agent": "dawn",
-      "text": "Eight positions, eight green. That is not skill, that is a tide \u2014 BTC dom 58.7% and grinding up means the alt bid is borrowed, not earned. F&G 72. Portfolio +49.2% on $1,331 deposited. Enjoy it and distrust it."
+      "text": "The book is $1,984.47 against $1,231 deposited \u2014 up 61.2%. Realized $400.49 month-to-date on an 11.76% rate. That is the headline and it is a good one. But this scan opened against a position table eleven days dead: it listed ZEC as the largest holding and W beside it, and both were gone \u2014 W sold Sep 28, ZEC closed Oct 1. BTC and AVAX had appeared without ever being written down. Reconciling against the broker is not a formality in this system; it is the only thing standing between us and a dashboard full of fiction."
     },
     {
       "agent": "noon",
-      "text": "AAVE is the trade. 8 of 9 signals: V4 past $1B deposits with 81.7% TVL growth, Base Equities Hub taking tokenized COIN as collateral, a $50M institutional lending proposal, Kulechov floating a burn in Aavenomics 3.0, a $4.26M whale buy, and volume/mcap at 23.3% \u2014 the deepest liquidity in the whole screen. And it is still 72% below its all-time high. Everything else on the board is asking me to pay up for a move that already happened."
+      "text": "Regime says wait. BTC dominance 58.7%, Fear and Greed 72 and cooling from 74, BTC up 1.54% over seven days against a median alt of 1.51%. That three-hundredths-of-a-point gap is noise, not a signal, so the Step 1b rotation check does not fire however much the dominance number flirts with the 58% line. Thirty-day prints say where we are in the move: NEAR +161%, INJ +59%, AVAX +56%, ONDO +49%, LTC +44%. Buying greed-72 after that run is chasing. The $265.48 stays in cash, and that is a position, not an absence of one."
     },
     {
       "agent": "close",
-      "text": "QNT at $100 and not a dollar more, and by limit at $235 rather than market at $250. The Clearing House clearing more than half of US ACH and wire is as real a catalyst as this asset class produces. But the founder wallet moved $6.97M into a 5x. Insiders selling into a parabola is the oldest tell there is. The momentum rule says do not veto for being extended; it says nothing about ignoring the people who built the thing taking money off the table. So we bid below, and we are content to miss."
+      "text": "Here is the part worth paying for. The seven-day minimum hold broke twice last week and both breaches are the only losing trades in the stretch. SUI: bought Sep 25 at 20:22, sold at 22:53 \u2014 two and a half hours \u2014 minus $6.82. QNT: bought Sep 27 at 23:58, sold Sep 28 at 22:06 \u2014 twenty-two hours \u2014 minus $20.97. Combined, minus $27.79. Every position given multiple days to work made money. The rule was never a constraint on good trades; it was the thing preventing bad ones, and overriding it produced a perfect two-for-two record of loss."
     },
     {
       "agent": "night",
-      "text": "The honest risk in this book is concentration of theme, not of ticker. LINK, ONDO, XLM, QNT, AAVE \u2014 that is five bets on the same sentence: institutions tokenize things in 2026. At 20.8% + 18.3% + 14.1% plus two new entries, the RWA/institutional-plumbing cluster is most of the portfolio. No single weight breaks 25%, so the rulebook is satisfied and the actual exposure is not. LTC and BTC are the only genuinely uncorrelated legs. If the tokenization narrative takes a month off, this book draws down as one position."
+      "text": "A quieter leak: Robinhood moved the fee tier the wrong way, 0.75% to 0.95% taker, somewhere between Sep 21 and Sep 25. Roughly $26.10 in explicit fees across twelve days \u2014 1.32% of the book, call it 40% annualized at this trade rate. The v5.7.22 fee model assumes 1.5% per side and still roughly holds once spread is added, so the model is not the problem. The trade frequency is. Weights are clean \u2014 LINK 20.8%, XLM 18.4%, nothing near the 25% cap \u2014 so nothing in the book forces action. Doing nothing today is the highest-expected-value move available."
     }
   ],
-  "lastUpdated": "2026-10-02T16:10:46.868150Z",
+  "lastUpdated": "2026-10-02T16:20:03.248329Z",
   "prices": {
-    "LINK": 14.2213,
-    "NEAR": 4.8348,
-    "LTC": 70.776,
-    "ONDO": 0.51157,
-    "INJ": 7.5823,
-    "XLM": 0.221981,
-    "AVAX": 11.1355,
-    "BTC": 85394.81
+    "LINK": 14.2,
+    "XLM": 0.22202,
+    "ONDO": 0.51272,
+    "LTC": 70.44,
+    "INJ": 7.57,
+    "NEAR": 4.82,
+    "BTC": 85203.0,
+    "AVAX": 11.14
   },
   "history": [
     {
@@ -186,8 +186,8 @@
     },
     {
       "date": "2026-10-02",
-      "value": 1985.59,
-      "cost": 1331
+      "value": 1984.47,
+      "cost": 1231
     }
   ]
 }
